@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<searchresult>
+	<query />
+	<document id="P1476">
+		<title>title</title>
+		<snippet>the title of a work</snippet>
+	</document>
+	<document id="P1705">
+		<title>native label</title>
+		<snippet>label for the items in their official language (Q23492) or
+			their original language (P364)</snippet>
+	</document>
+	<document id="P1448">
+		<title>official name</title>
+		<snippet>official name of the subject in its official language(s)
+		</snippet>
+	</document>
+	<document id="P1451">
+		<title>motto text</title>
+		<snippet>short motivation sentence associated to item (e.g. at the
+			bottom of its coat of arms)</snippet>
+	</document>
+	<document id="P1449">
+		<title>nickname</title>
+		<snippet>the nickname of an entity</snippet>
+	</document>
+	<document id="P1559">
+		<title>name in native language</title>
+		<snippet>name of a person in their native language</snippet>
+	</document>
+	<document id="P1635">
+		<title>religious name</title>
+		<snippet>name taken or used as a member of a religious community
+		</snippet>
+	</document>
+	<document id="P1638">
+		<title>working title</title>
+		<snippet>temporary name of a product or project used during its
+			development</snippet>
+	</document>
+	<document id="P1683">
+		<title>quote</title>
+		<snippet>"quote supporting the statement claim (to be used in the
+			sources"" field)"""</snippet>
+	</document>
+</searchresult>

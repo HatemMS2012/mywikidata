@@ -1,0 +1,550 @@
+propId 	 label 	 description 	 aliases 	  type 	 count
+P1000	record held	"notable record achieved by a person or entity, include qualifiers for dates held"		wikibase-item	3
+P1001	applies to jurisdiction	"the item (an institution, law, ...) belongs to or applies to the value (a jurisdiction: a country, state, municipality, ...)"	"of jurisdiction, linked to jurisdiction, belongs to jurisdiction, jurisdiction"	wikibase-item	4192
+P1002	engine configuration	configuration of an engine's cylinders	configuration of engine cylinders	wikibase-item	347
+P101	field of work	"fields of work related to this item (physics, history). For occupation like physicist, historian see P106. Note: Can be used in any item besides person"	"field of study, fields, discipline, subject, area, specialism, domain"	wikibase-item	8877
+P1012	including	usually used as a qualifier		wikibase-item	11
+P1013	criterion used	usually used as a qualifier		wikibase-item	6
+P1018	language regulatory body	regulatory body of a language	regulatory body	wikibase-item	98
+P102	member of political party	the political party of which this politician is or has been a member	"political party, party"	wikibase-item	182969
+P1026	doctoral thesis	thesis that someone wrote to obtain a PhD degree		wikibase-item	23
+P1027	conferred by	person or organization who awards a prize to or bestows an honor upon a recipient	"awarded by, bestowed by, given by"	wikibase-item	776
+P1028	donated by	person or organization who donated the object		wikibase-item	127
+P1029	crew member	person that participated operating or serving aboard this vehicle		wikibase-item	1857
+P103	native language	language that a person learned natively	"first language, mother tongue, language"	wikibase-item	4288
+P1033	GHS signal word	"please use with items ""warning"" (Q15350847) and ""danger"" (Q15221217)"		wikibase-item	14
+P1034	main food source	"the species, genus or family that an organism depends on for nutrition"	"food source, food plant"	wikibase-item	3
+P1035	honorific suffix	"word or expression with connotations conveying esteem or respect when used, after a name, in addressing or referring to a person"	"style suffix, post-nominal"	wikibase-item	4
+P1037	manager/director	person who manages any kind of group		wikibase-item	766
+P1038	relative	"family member (qualify with ""type of kinship"", P1039; for direct family member please use specific property)"		wikibase-item	1626
+P1040	film editor	"person who worked with the raw footage, selecting shots and combining them into sequences to create a finished motion picture"	"picture editor, Edited by"	wikibase-item	831
+P1041	sockets supported	socket for which the electronic part was made	"cpu slot, cpu socket"	wikibase-item	7
+P1046	discovery method	way an exoplanet was discovered	detection method	wikibase-item	28
+P1049	deity of	religion or group/civilization that worships a given deity		wikibase-item	356
+P105	taxon rank	level in a taxonomic hierarchy	"taxonomic rank, rank, type of taxon"	wikibase-item	1923141
+P1050	medical condition	disease or other health problem affecting an individual human or other animal	"disability, Paralympic disability, ailment, health problem, disorder, illness, disease"	wikibase-item	3846
+P1056	produces	"the material produced by a mine, an industrial site or a production process"	"material produced, ore"	wikibase-item	505
+P1057	chromosome	chromosome on which an entity is localized	on chromosome	wikibase-item	50600
+P106	occupation	"occupation of a person; see also ""field of work"" (Property:P101)"	"profession, job, work, career, employment"	wikibase-item	1913712
+P1060	pathogen transmission process	process by which a pathogen is transmitted	"transmitted by, transmission process"	wikibase-item	5
+P1064	track gauge	spacing of the rails on a railway track	gauge	wikibase-item	5009
+P1066	student of	person who has taught this person	"teacher, professor, pupil of"	wikibase-item	2004
+P1068	instruction set	instruction set on which the processor architecture is based	ISA	wikibase-item	46
+P107	(OBSOLETE) main type (GND)	** Do not use ** Due to be deleted. Please use instance of (P31)/subclass of (P279)	"entity type (GND), item type (GND), GND main type"	wikibase-item	12978
+P1071	location of final assembly	place where the item was made; location of final assembly	"assembly location, place built, place made"	wikibase-item	1085
+P1072	readable file format	file format a program can open and read		wikibase-item	50
+P1073	writable file format	file format a program can create and/or write to		wikibase-item	42
+P1074	fictional analog of	used to link a class of items appearing in a creative work with the analogous class of objects in the real world		wikibase-item	234
+P1075	rector	rector of a university		wikibase-item	229
+P1078	valvetrain configuration	configuration of the valvetrain utilized by this engine		wikibase-item	3
+P1079	launch contractor	organization contracted to launch the rocket	launch service provider	wikibase-item	4
+P108	employer	organization for which the subject works or worked	"workplace, employed by, works at, working for"	wikibase-item	88183
+P1080	from fictional universe	subject's fictional entity is in the object narrative. See also P1441 and P1445	"from universe, universe, featured in universe, appears in universe, fictional universe"	wikibase-item	8142
+P110	illustrator	illustrator of a book		wikibase-item	1977
+P111	measured physical quantity	physical property measured by a unit		wikibase-item	134
+P112	founder	"founder or co-founder of the organization, religion or place"	"founded by, is founded by"	wikibase-item	6360
+P113	airline hub	airport that serves as a hub for an airline	hub	wikibase-item	2047
+P1134	(OBSOLETE) located in place (use P276)	"location of the item (such as village, neighborhood, park). In case of an administrative entity use P131. In case of a distinct terrain feature use P706."	"village, neighborhood, park, locale, is in, location of item"	wikibase-item	8247
+P1136	solved by	person that solved a scientific question		wikibase-item	4
+P1137	fossil found in this unit	fossils that are found in this stratigraphic unit		wikibase-item	19
+P114	airline alliance	the alliance the airline belongs to		wikibase-item	244
+P1142	political ideology	political ideology of this organization	ideology	wikibase-item	6446
+P1145	Lagrangian point	libration point of an object (default: object-sun-earth)	libration point	wikibase-item	25
+P115	home venue	home stadium or venue of a sports team or applicable performing arts organization	"ground, home field, arena, home ground, stadium, ballpark, home water"	wikibase-item	5407
+P1151	topic's main portal	Wikimedia portal associated with this topic		wikibase-item	902
+P1158	location of landing	location where the craft landed	landing site	wikibase-item	14
+P1165	home world	home world/planet of a fictional race or character	"homeworld, planet"	wikibase-item	23
+P1170	transmitted signal	type of signal transmitted by a device	"transmits, signal transmitted"	wikibase-item	1
+P1171	approximation algorithm	method used to approximate a number		wikibase-item	1
+P118	league	league in which the team plays or has played in	division	wikibase-item	11335
+P119	location of burial	"location of grave, resting place, place of ash-scattering, etc, (e.g. city or cemetery) for a person. There may be several places: e.g. re-burials, cenotaphs, parts of body buried separately."	"burial place, resting place, place of grave, buried in, grave at, place of burial"	wikibase-item	34583
+P1192	connecting service	service stopping at a station		wikibase-item	969
+P1194	received signal	signals detected by a machine		wikibase-item	1
+P1196	manner of death	"circumstances of a person's death; one of: natural causes, accident, suicide, homicide, pending investigation or special 'unknown value'.  Use 'cause of death' (P509) for more immediate or underlying causes and events, e.g. heart attack, car accident"	"circumstance of death, type of death"	wikibase-item	3873
+P1199	mode of inheritance	the manner in which a particular genetic trait or disorder is passed from one generation to the next		wikibase-item	4
+P1200	bodies of water basin category	the category associated with the basin of a bodies of water		wikibase-item	1980
+P1201	space tug	"spacecraft vehicle designed to move the payload from a reference orbit to the target orbit, or direct it to an interplanetary trajectory"	"payload deliverer, upper stage"	wikibase-item	365
+P1202	carries scientific instrument	"scientific instruments carried by a vessel, satellite, or device that are not required for propelling or navigating"	"scientific equipment, metering equipment"	wikibase-item	15
+P1204	portal's main topic	primary topic of this portal		wikibase-item	986
+P121	equipment operated	equipment currently or formerly used by subject	"fleet, acop, aircraft in fleet, aircraft operated, inventory"	wikibase-item	3274
+P1210	supercharger	supercharger or turbocharger used by an engine		wikibase-item	1
+P1211	fuel system	fuel system that an engine uses		wikibase-item	2
+P122	basic form of government	the subject's government	"type of government, form of government, government"	wikibase-item	628
+P1221	compressor type			wikibase-item	2
+P123	publisher	"organization responsible for publishing books, periodicals or software"	"book publisher, video game publisher, software publisher, publishing house"	wikibase-item	41005
+P126	maintained by	organization in charge of keeping the subject (for instance an infrastructure) in functioning order	"maintenance, curator, administered by"	wikibase-item	13264
+P1264	valid in period	time period when a statement is valid	"applies to period, time period"	wikibase-item	17
+P1268	represents organisation	organization that an entity represents		wikibase-item	8
+P1269	facet of	the main aspect of this topic	"aspect of, subitem of, topic of, subtopic of"	wikibase-item	9919
+P127	owned by	owner of the subject	"is owned by, owner, belongs to"	wikibase-item	26689
+P128	regulates (molecular biology)	process regulated by a protein in molecular biology		wikibase-item	1
+P1283	filmography	list of films a person has contributed to		wikibase-item	128
+P129	physically interacts with	physical entity that the subject interacts with		wikibase-item	13
+P1290	godparent	person who is the godparent of a given person	"godfather, godmother"	wikibase-item	22
+P1299	depicted by	object depicting this subject		wikibase-item	48
+P1302	primary destinations	major cities that a road serves		wikibase-item	68
+P1303	instrument	instrument that a person plays	plays	wikibase-item	25238
+P1304	central bank	country's central bank		wikibase-item	7
+P1308	officeholder	person who holds an office	incumbent	wikibase-item	136
+P131	located in the administrative territorial entity	the item is located on the territory of the following administrative entity	"located in the administrative unit, located in administrative unit, is in administrative unit, is located in, is in the state of, is in the province of, is in the county of, is in the district of, is in the department of, is in the region of, is in the borough of, is in the city of, is in the town of, is in the village of, is in the municipality of, is in the territory of, is in the prefecture of, is in the voivodeship of, is in the Indian reservation of, is in the Indian reserve of, is in the ward of, is in the administrative region of, is in the settlement of, is in the local government area of, is in the rural city of, is in the shire of, happens in, is in the commune of, in administrative unit, in, is in the administrative unit, administrative territorial entity, city, town, state, Indian reservation, in the administrative unit, locality"	wikibase-item	2369539
+P1312	has facet polytope	"facet of a polytope, in the next-lower dimension"	facet of a polytope	wikibase-item	928
+P1313	office held by head of government	political office that is fulfilled by the head of the government of this item	"office of head of government, position of head of government"	wikibase-item	2162
+P1318	proved by	person who proved something		wikibase-item	20
+P1321	place of origin (Switzerland)	lieu d'origine of a Swiss national. Not be confused with place of birth or place of residence	"lieu d'origine, Heimatort, Bürgerort, luogo d'origine"	wikibase-item	1687
+P1322	dual to	"dual of a polytope, graph or curve"		wikibase-item	273
+P1327	professional or sports partner	person a professional or athlete works with		wikibase-item	5
+P1336	territory claimed by	administrative divisions that claim control of a given area		wikibase-item	40
+P134	has dialect	dialects of this language (a single language may be linked to many dialects)	"dialect, has as dialect, includes dialect"	wikibase-item	217
+P1340	eye color	color of the irises of a person's eyes	eye colour	wikibase-item	783
+P1343	described by source	dictionary or encyclopaedia where this item is described		wikibase-item	33109
+P1344	participant of	"event a person was a participant in, inverse of P710"	"took part, took part in, participant in"	wikibase-item	145683
+P1346	winner	winner of an event	won by	wikibase-item	1047
+P1347	military casualty classification			wikibase-item	8
+P1349	ploidy	ploidy of a genome		wikibase-item	2
+P135	movement	"literary, artistic or philosophical movement associated with this person or work"	"school, architectural style"	wikibase-item	9713
+P136	genre	genre of a creative work or genre in which an artist works	"music genre, film genre"	wikibase-item	251784
+P1363	points/goal scored by	person who scored a point or goal in a game		wikibase-item	75
+P1365	replaces	"Person, state or other item who was replaced in an office, position, etc.. Use P167 (structure replaced by) for structures. Use P155 (follows) if the previous item was not replaced and predecessor and successor are identical."	"forefather, previous job holder, replaced, preceded by, succeeds, after, predecessor"	wikibase-item	636
+P1366	succeeded by	"Person or state or item who replaces another in an office, position, etc. Use P156 (followed by) if the item is not replaced, e.g. books in a series"	"heir, next job holder, successor, after, replaced by"	wikibase-item	930
+P137	operator	"organization that operates the service, facility, ship, aircraft, missile"	"service operator, facility operator, operated by, managed by, user, administrator"	wikibase-item	36949
+P1372	binding of software library	software library in another programming language provided by the subject software binding		wikibase-item	4
+P1376	capital of	"country, state, department, canton or other administrative division of which the municipality is the governmental seat"	"county seat of, county seat for"	wikibase-item	187
+P138	named after	"entity or event that inspired the subject's name, or namesake (in at least one language)"	"eponym, named for, namesake, etymology"	wikibase-item	38419
+P1382	coincident with	"an object that is partially part of, but not fully part of (P361), the subject"	"partially overlaps, partial concurrency, concurrent with, partially in, concurrency"	wikibase-item	572
+P1383	contains settlement	settlement which an administrative division contains		wikibase-item	19189
+P1387	political alignment	political position within the political spectrum	political position	wikibase-item	48
+P1389	product certification	"certification for a product, qualify with P1001 (""applies to jurisdiction"") if needed"		wikibase-item	2536
+P1393	proxy	person authorized to act for another		wikibase-item	10
+P1398	replaced by structure	building/structure which replaced the subject building or structure at the same location	replacement building	wikibase-item	11
+P1399	convicted of	crime a person was convicted of		wikibase-item	2440
+P140	religion	religion of a person or organization (MUST be claimed by the subject or documented by historical sources)	"faith, religious affiliation, denomination, life stance"	wikibase-item	28815
+P1403	original combination	for animals: the combination (binomen or trinomen) where the species-group name used in this taxon name was first published		wikibase-item	246
+P1406	script directionality	direction that a writing system goes in		wikibase-item	8
+P1408	licensed to broadcast to	place that a radio/TV station is licensed/required to broadcast to	"city of license, community of license"	wikibase-item	27
+P141	IUCN conservation status	conservation status assigned by the International Union for Conservation of Nature		wikibase-item	73328
+P1411	nominated for	"award nomination received by a person, organisation or creative work (inspired from ""award received"" (Property:P166))"	"nominee for, nomination received"	wikibase-item	1438
+P1412	languages spoken or published	language(s) that a person speaks or writes. Can include native languages	"languages spoken, language spoken, language of expression, languages of expression"	wikibase-item	61028
+P1414	GUI toolkit or framework	framework or toolkit a program uses to display the graphical user interface		wikibase-item	127
+P1416	affiliation	organization that a person is affiliated with		wikibase-item	68
+P1419	shape	geometric shape of an object		wikibase-item	118
+P1420	taxon synonym	synonym(s) of the taxon name		wikibase-item	231
+P1423	template's main topic	primary topic of the subject template or infobox	infobox's main topic	wikibase-item	157
+P1424	topic's main template	primary infobox or navigational template of this subject	topic's main infobox	wikibase-item	100
+P1425	ecoregion (WWF)	ecoregion of the item (choose from WWF's list)		wikibase-item	1
+P1427	journey origin	"starting place of this journey, flight, voyage, trek, etc. (excl. spaceflight launch)"	"flight origin, start location"	wikibase-item	121
+P1429	pet	pet that a person owns		wikibase-item	16
+P143	imported from	source of this claim's value (use only in References section)		wikibase-item	765
+P1431	executive producer	executive producer of a movie or TV show		wikibase-item	158
+P1432	b-side	song/track which is the b-side of this single		wikibase-item	2
+P1433	published in	larger work that a given work was published in	work	wikibase-item	5722
+P1434	describes the fictional universe	"the subject is a work describing a fictional universe, ie where the plot occurs in this universe."	"describes fictional universe, fictional universe"	wikibase-item	441
+P1435	heritage status	the heritage status of a historical site	"designation, listing, listed status, protected status, protection, legal protection, heritage designation"	wikibase-item	168464
+P144	based on	the work(s) used as basis for subject	"copie of, fork of, derived from, extended from"	wikibase-item	7815
+P1441	present in work	work in which this fictional entity (Q14897293) is present. See also P:1080 for in-universe information	"from work, from narrative, featured in work"	wikibase-item	5766
+P1444	journey destination	"intended destination for this journey, flight, sailing, exploration, etc."	destination	wikibase-item	107
+P1445	fictional universe described in	"to link a fictional universe with a work that describes it: <universe> ""described in the work:"" <work>"		wikibase-item	93
+P1454	legal form	legal form of an organization	business entity	wikibase-item	405
+P1455	list of works	link to the article with the works of a person	bibliography	wikibase-item	42
+P1456	list of monuments	link to the list of heritage monuments in the place/area		wikibase-item	4212
+P1462	standards body	body or organisation responsible for publication and maintenance of standard	"standards organisation, standards setting organization, standards setting organisation, standards developing organization, standards developing organisation"	wikibase-item	221
+P1464	category for people born here	category item that groups people born in this place		wikibase-item	16324
+P1465	category for people who died here	category item for people who died in this location		wikibase-item	8119
+P1478	has immediate cause	"nearest, proximate thing that directly resulted in this outcome or effect. Used in conjunction with 'has cause' (i.e. underlying cause) and 'has contributing factor'. See 'Help:Modeling causes'."	"has immediate causes, immediate cause, immediate effect of, immediate result of, immediate outcome of, has proximate cause"	wikibase-item	39
+P1479	has contributing factor	"thing that significantly influenced, but did not directly cause, this outcome or effect.  Used in conjunction with 'has cause' and 'has immediate cause'.  See 'Help:Modeling causes'."	"has contributing factors, contributing factor, significant contributing factor"	wikibase-item	24
+P149	architectural style	architectural style of a structure or architect		wikibase-item	17753
+P150	contains administrative territorial entity	(list of) direct subdivisions of an administrative entity	"contains, consists of, divides into, divided into, composed of, has towns, has shires, has cities, has rural cities, has municipalities, has wards, has local government areas, has districts, has boroughs, has administrative division, comprises, subdivided into, has counties"	wikibase-item	860305
+P1531	parents of hybrids			wikibase-item	8
+P1532	country for sport	country a person represents when playing a sport	sports nationality	wikibase-item	18
+P1533	family name identical to this first name	last name that is the same as a given first name. Use on items for given names.	"related surname, related family name"	wikibase-item	501
+P1534	end cause	qualifier for the end date property (P582)		wikibase-item	3
+P1535	used by	"person or organization that uses a given object, for buildings use P466"		wikibase-item	34
+P1536	immediate cause of	immediate cause of this effect		wikibase-item	1
+P1537	contributing factor of	"thing that is significantly influenced by this cause, but does not directly result from it.  See 'Help:Modeling causes' for examples and discussion."		wikibase-item	3
+P1542	cause of	effect of this cause; inverse of has cause (P828). See 'Help:Modeling causes' for examples and discussion.	"has effect, effect, has result, result, has outcome, outcome, has symptom, symptom, consequence"	wikibase-item	34
+P1546	motto	description of the motto of the subject		wikibase-item	11
+P1547	depends on	subject software depends on object software	dependency	wikibase-item	4
+P155	follows	"The immediately prior item in some series of which the subject is part. Use P1365 (replaces) if the preceding item was replaced, e.g. political offices, states and there is no identity between precedent and following geographic unit"	"succeeds to, previous is, before was, predecessor, preceded by, prequel"	wikibase-item	199210
+P1552	has quality	the entity has an inherent or distinguishing non-material characteristic that cannot be migrated	"trait, inherent property, attribute, aspect"	wikibase-item	55
+P1557	manifestation of	this is the physical embodiment of a given concept		wikibase-item	14
+P1558	tempo marking	indication about the speed or pace of a given musical piece		wikibase-item	17
+P156	followed by	"The immediately following item in some series of which the subject is part. Use P1366 (succeeded by) if the item is replaced, e.g. political offices, states"	"sequel, successor, succeded by, next is"	wikibase-item	198917
+P1560	given name version for other gender	"equivalent name (with respect to the meaning of the name) in the same language: female version of a male first name, male version of a female first name. Add primarily the closest matching one"		wikibase-item	264
+P1568	domain	subset of the input set of a function for which every value has an image		wikibase-item	5
+P157	killed by	person who killed the subject	"killer, assassin, murderer, murdered by, executioner, assassinated by, slain by, mortally wounded by, executed by, slaughtered by"	wikibase-item	329
+P1571	codomain	codomain of a function		wikibase-item	7
+P1574	exemplar of	"property for manuscripts, autographs, incunabula, distinct printed copies"		wikibase-item	76
+P1576	lifestyle	"typical way of life of an individual, group, or culture"		wikibase-item	580
+P1582	natural product of taxon	"links a natural product with its source (animal, plant, fungal, algal, etc)"		wikibase-item	75
+P1589	deepest point	"point with lowest elevation in the country, region, city or area"	lowest point	wikibase-item	2
+P159	headquarters location	specific location where an organization's HQ is or has been situated	"head office location, HQ, garrison, admin HQ"	wikibase-item	15039
+P1591	defendant	"person or organization accused, at a trial"		wikibase-item	4
+P1592	prosecutor	"person representing the prosecuting authority, at a trial"		wikibase-item	4
+P1593	defender	"Person representing the defendant, at a trial"		wikibase-item	1
+P1594	judge	"Judge, magistrate or equivalent, presiding at a trial"		wikibase-item	1
+P1595	charge	"offence with which someone is charged, at a trial"		wikibase-item	4
+P1596	penalty	"penalty passed, at a trial"		wikibase-item	3
+P1597	Slovene Cultural Heritage designation	type of cultural heritage as designated by the Slovene Cultural Heritage Registry (RKD)		wikibase-item	1454
+P1598	consecrator	bishop who presided as consecrator or co-consecrator of this bishop	consecrated by	wikibase-item	84
+P16	highway system	system of which the highway is a part		wikibase-item	18856
+P1604	biosafety level	level of the biocontainment precautions required to isolate dangerous biological agents		wikibase-item	1
+P1605	has natural reservoir	host species for the pathogen in which it is endemic	natural reservoir	wikibase-item	2
+P1606	natural reservoir of	pathogen of which this species is a long-term host		wikibase-item	1
+P161	cast member	"production's cast members; to add the roles, use ""character role"" (P453) as qualifier"	"film starring, actor, actress, starring"	wikibase-item	572590
+P1611	NATO code for grade	NATO Code for Grades of Military Personnel		wikibase-item	27
+P162	producer	"producer(s) of this film or music work (film: not executive producers, associate producers, etc.)"	record producer	wikibase-item	43630
+P1620	plaintiff	the party who initiates a lawsuit	"claimant, pursuer"	wikibase-item	4
+P1622	drives on the	the direction that cars drive in a given country		wikibase-item	7
+P1625	has melody	this work has the melody of the following work	"to the tune of, TTTO"	wikibase-item	1
+P1629	subject item of this property	item corresponding exactly to the concept represented by the property (use in statements on properties)	"item, represents, subject item"	wikibase-item	415
+P163	flag	subject's flag		wikibase-item	1885
+P1637	undercarriage	type of aircraft landing gear the item is equipped with	"landing gear, aircraft landing gear, aircraft undercarriage"	wikibase-item	81
+P1639	pendant of	"other work in a pair of opposing artworks, such as wedding portraits, commissioned together, but not always"	pendant to	wikibase-item	161
+P1640	curator	content specialist responsible for this collection	"has curator, keeper"	wikibase-item	1
+P1652	referee	referee or umpire of a match	umpire	wikibase-item	8
+P1654	wing configuration	configuration of wing(s) used by an aircraft		wikibase-item	509
+P1656	unveiled by	"person who unveils a statue, sculpture, memorial or plaque, etc."		wikibase-item	2
+P1657	MPAA film rating	US film-rating system		wikibase-item	11
+P166	award received	"award or recognition received by a person, organisation or creative work"	"prize received, awards, honorary title, recognition title, award, honours, honors, medals"	wikibase-item	282664
+P1660	has index case	"primary case, patient zero: initial patient in the population of an epidemiological investigation"		wikibase-item	1
+P167	structure replaced by	"the item which replaced this building or structure, at the same geographic location"	replaced by	wikibase-item	57
+P1672	this taxon is source of	"links a taxon to natural products it produces. Note that it does not say ""this taxon is the source of"" or ""this taxon is a source of"" as this may vary. Some products may be yielded by more than one taxon."		wikibase-item	72
+P1677	index case of	"primary case, patient zero: initial patient in the population of an epidemiological investigation"		wikibase-item	1
+P1678	has vertex figure	the figure exposed when a corner of a polytope is sliced off		wikibase-item	3
+P169	chief executive officer	highest-ranking corporate officer appointed as the CEO within an organization	"CEO, chief executive, ceo"	wikibase-item	338
+P17	country	sovereign state of this item	"sovereign state, nation"	wikibase-item	3064161
+P170	creator	maker of a creative work or other object (where no more specific property exists)	"artist (non-musical), created by, painter, sculptor, inventor"	wikibase-item	37502
+P1703	pollination	process that moves pollen from the male anthers of a flower to the female stigma of a flower to accomplish fertilization	pollination by	wikibase-item	2
+P1704	pollenizer	source of pollen for an animal		wikibase-item	1
+P171	parent taxon	closest parent taxon of the taxon in question	"next higher taxon, taxon parent"	wikibase-item	1859849
+P1716	brand	brand of a product		wikibase-item	149
+P172	ethnic group	"subject's ethnicity (consensus is that a VERY high standard of proof is needed for this field to be used. In general this means 1) the subject claims it him/herself, or 2) it is widely agreed on by scholars, or 3) is fictional and portrayed as such)."	ethnicity	wikibase-item	9757
+P1731	Fach	describes the special ablilites of an operatic singers voice		wikibase-item	214
+P1740	category for films shot at this location	the object is a category for films shot at/in the subject	"cat films shot, cfsi, cff"	wikibase-item	1188
+P175	performer	"musician, music group, or other performer associated with this work, actor portraying a character"	"band, musician, music group, musical artist, group, singer"	wikibase-item	142689
+P1750	name day	"day of the year associated with a first/given name. A qualifier should be used to identify the calendar that is being used. Distinguish from ""feast day"" (P:P841)"		wikibase-item	1363
+P1753	list related to category	Wikimedia list equivalent to a Wikimedia category		wikibase-item	164
+P1754	category related to list	Wikimedia category equivalent to a Wikimedia list		wikibase-item	163
+P176	manufacturer	main manufacturer of this product (excluding sub-contracted manufacturers)	"manufactured by, maker, mfr, built by, builder, made by"	wikibase-item	20769
+P177	crosses	"obstacle (body of water, road, ...) which this bridge crosses over or this tunnel goes under"	"bridge over, tunnel under"	wikibase-item	3109
+P1773	attributed to	uncertain but likely creator of an artwork		wikibase-item	1
+P1774	workshop of	artist whose work group are the likely creator of an artwork		wikibase-item	1
+P178	developer	organisation or person that developed this item	developed by	wikibase-item	15908
+P1789	chief operating officer	the chief operating officer of an organization		wikibase-item	4
+P179	series	"the subject is part of a series, whose sum constitutes the object"		wikibase-item	31754
+P1791	category of people buried here	Wikipedia category for people with a burial site within this area		wikibase-item	202
+P1792	category of associated people	Wikipedia category for people associated with this place		wikibase-item	5812
+P180	depicts	depicted entity (see also P921: subject heading)	"depiction of, painting of, motif, portrait of, landscape of"	wikibase-item	52289
+P1809	choreographer	person(s) who did the choreography		wikibase-item	5
+P1811	list of episodes	link to the article with the list of episodes for this series		wikibase-item	9
+P1817	addressee	person or organization to whom a letter or note is addressed		wikibase-item	11
+P183	endemic to	sole location or habitat type where the taxon lives	endemism	wikibase-item	616
+P1830	owner of	entities owned by the subject		wikibase-item	2
+P184	doctoral advisor	person who supervised the doctorate or PhD thesis of the subject		wikibase-item	632
+P185	doctoral student	doctoral student(s) of a professor		wikibase-item	249
+P186	material used	material the subject is made of	"medium, made from, constructed from, constructed out of, construction material, media, built from, built out of, manufactured from, manufactured out of, crafted from, crafted out of, formed from, formed out of, ingredients, made of"	wikibase-item	44497
+P189	location of discovery	where the item was located when discovered	"findspot, location of discovered object, discovery place, place of discovery"	wikibase-item	306
+P19	place of birth	"the most specific known (e.g. city instead of country, or hospital instead of city)"	"birthplace, born in, POB, birth place, location born, born at, birth location, location of birth"	wikibase-item	737895
+P190	sister city	"twin towns, sister cities, twinned municipalities and other localities"	"twin town, sister cities, sister town, twin cities, twin towns, sister towns, twin city"	wikibase-item	38470
+P193	main building contractor	the main organization responsible for construction of this structure or building	"building contractor, built by, constructed by, builder"	wikibase-item	358
+P194	legislative body	"legislative body governing this entity; political institution with elected representatives, such as a parliament/legislature or council"	"representative body, parliament, council, assembly, diet, legislature, rural council, district council, municipal council, aboriginal council, indigenous council, city council"	wikibase-item	807
+P195	collection	"art, museum or bibliographic collection the subject is part of"	"art collection, museum collection"	wikibase-item	40197
+P196	minor planet group	is in grouping of minor planets according to similar orbital characteristics	asteroid group	wikibase-item	50391
+P197	adjacent station	"the stations next to this station, sharing the same line(s)"	"next station, previous station, next stop, neighbouring station"	wikibase-item	25025
+P199	business division	divisions of this organization	divisions	wikibase-item	467
+P20	place of death	"the most specific known (e.g. city instead of country, or hospital instead of city)"	"deathplace, died in, death place, POD, location of death, death location"	wikibase-item	339545
+P200	lake inflows	"major inflow sources — rivers, aquifers, glacial runoff, etc. Some terms may not be place names, e.g. none"	"inflow, inflows, lake inflow"	wikibase-item	436
+P201	lake outflow	"rivers and other outflows waterway names. If evaporation or seepage are notable outflows, they may be included. Some terms may not be place names, e.g. evaporation"	"outflows, outflow"	wikibase-item	353
+P205	basin country	countries that have drainage to/from or border the lake	basin countries	wikibase-item	161
+P206	located next to body of water	lake or river	"on lake, next to lake, located on body of water, On river, on bay, on harbour, on shore of"	wikibase-item	1066
+P208	executive body	branch of government for the daily administration of the state	executive branch	wikibase-item	71
+P209	highest judicial authority	"supreme judicial body within a country, administrative division, or other organization"		wikibase-item	60
+P21	sex or gender	"Sexual identity of  subject. Main: male (Q6581097), female (Q6581072), transgender female (Q1052281),  transgender male (Q2449503). For animals, use male animal (Q44148), female animal (Q43445). For groups of  same gender, use ""subclass of"" (P279)"	"gender identity, gender expression, gender, biological sex, man, woman, male, female, intersex, sex"	wikibase-item	2611401
+P210	party chief representative	chief representative of a party in an institution or an administrative unit (use qualifier to identify the party)	"party chief, communist party chief, party secretary, Communist Party Secretary"	wikibase-item	28
+P22	father	male parent	"dad, son of, has father, daughter of, child of"	wikibase-item	43525
+P237	coat of arms	subject's coat of arms		wikibase-item	1677
+P241	military branch	"the branch to which this military unit, award, or person belongs, e.g. Royal Navy"	"branch, formation, service branch"	wikibase-item	27526
+P248	stated in	"to be used in the source field, to indicate where a claim is made"	source	wikibase-item	62
+P25	mother	female parent	"mum, mom, mam, has mother, son of, daughter of, child of"	wikibase-item	16945
+P26	spouse	"the subject has the object as their spouse (husband, wife, partner, etc.). Use ""cohabitant"" for non-married companions"	"husband, wife, married to, consort, partner"	wikibase-item	31651
+P263	official residence	the residence at which heads of government and other senior figures officially reside		wikibase-item	305
+P264	record label	brand and trademark associated with the marketing of subject music recordings and music videos	label	wikibase-item	110151
+P27	country of citizenship	the object is a country that recognizes the subject as its citizen	"citizenship, nationality, citizen of"	wikibase-item	1463056
+P272	production company	"company that produced this film, audio or performing arts work"	"film studio, studio, motion picture studio, movie studio, production house, theatre company, theater company, theatrical troupe, ballet company, broadcasting company"	wikibase-item	27287
+P275	license	license under which this copyrighted work is released	licence	wikibase-item	3324
+P276	location	"location the item, physical object or event is within.  In case of an administrative entity use P131. In case of a distinct terrain feature use P706."	"moveable object location, located in, event location, venue, is in, location of item"	wikibase-item	217406
+P277	programming language	the programming language(s) in which the software is developed		wikibase-item	1241
+P279	subclass of	all of these items are instances of those items; this item is a class of that item	"rdfs:subClassOf, hyponym of, is a, type of, is a type of, generalized by, generalization, superclass"	wikibase-item	215089
+P282	writing system	"alphabet, character set or other system of writing used by subject language"	alphabet	wikibase-item	891
+P286	team manager	"on-field manager or head coach of this sports club (not to be confused with a general manager, which is not a coaching position)"	"manager, club manager, head coach, senior coach"	wikibase-item	2435
+P287	designer	designer of this item	designed by	wikibase-item	4187
+P289	ship class	ship classification (e.g. Nelson-class battleship)		wikibase-item	5175
+P291	place of publication	geographical place of publication of the edition (use 1st edition when referring to works)	"release region, publication region, published in"	wikibase-item	1198
+P30	continent	"continent of which the subject is a part. Use for countries, locations in Antarctica, and items located in countries that belong to more than one continent, e.g. Russian cities."		wikibase-item	21610
+P301	category's main topic	primary topic of the subject category	"main article in category, main category topic, topic, main topic of category, category's main article, main article"	wikibase-item	363188
+P306	operating system	operating system (OS) on which a software works; OS installed on hardware	OS	wikibase-item	1407
+P31	instance of	this item is a specific example and a member of that class	"is a, is an, rdf:type"	wikibase-item	13324704
+P344	director of photography	"person responsible for the framing, lighting and filtration of the subject work"	cinematographer	wikibase-item	27484
+P35	head of state	official with the highest formal authority in a country	"chief of state, president"	wikibase-item	703
+P355	subsidiaries	"subsidiary of a company or organization, opposite of parent company (P749)"	"subsidiary company, Parent company of, subsidiary entities"	wikibase-item	703
+P358	discography	link to discography in artist or band page	discography link	wikibase-item	3223
+P36	capital	"location (city, municipality) of governmental seat of the country, or administrative territorial entity"	"capital city, capital town, chef-lieu, principal place, county seat, administrative centre"	wikibase-item	16205
+P360	is a list of	this is a list of the following items	"main topic of list, list of, main article of list"	wikibase-item	118773
+P361	part of	subject is a part of that object	"meronym of, section of, system of, subsystem of, subassembly of, merged into, contained within, assembly of, within a set"	wikibase-item	106394
+P364	original language of work	language in which a work was originally created	"language, original language, language of the original work"	wikibase-item	130903
+P366	use	main use of the subject (includes current and former usage)	"function, role, mission, purpose"	wikibase-item	5015
+P37	official language	language designated as official by this item	language	wikibase-item	2973
+P371	presenter	someone who takes a main role in presenting a radio or television program	host	wikibase-item	1312
+P375	space launch vehicle	rocket or other vehicle for launching subject payload into space	"carrier rocket, launch vehicle"	wikibase-item	5276
+P376	located on astronomical body	astronomical body on which features or places are situated		wikibase-item	3029
+P38	currency	currency used by item	base currency	wikibase-item	980
+P39	position held	subject currently or formerly holds the object position or public office	"political office held, political seat, public office, office held, position occupied"	wikibase-item	229555
+P397	astronomical body	major astronomical body the item belongs to	parent body	wikibase-item	963
+P398	child astronomical body	the minor body that belongs to the item	child body	wikibase-item	727
+P399	companion of	two or more astronomic bodies of the same type relating to each other		wikibase-item	32
+P40	child	the subject has the object as their biological and/ or legal child	"son, daughter, kid, is parent of, has child, children, father of, mother of, parent of, is father of, is mother of"	wikibase-item	60309
+P400	platform	platform for which a work has been developed or released / specific platform version of a software developed	"platforms, computing platform, game platform"	wikibase-item	36422
+P403	mouth of the watercourse	the body of water to which the watercourse drains	"watercourse outflow, watercourse drain, tributary of, outflow, drain"	wikibase-item	25680
+P404	game mode	available playing mode(s) in a video game	"mode, gameplay"	wikibase-item	22916
+P406	soundtrack album	album that incorporates music directly recorded from the soundtrack of a film or video game		wikibase-item	141
+P407	language of work	for works (for original language use P364 and for persons P103 and P1412)	language	wikibase-item	186032
+P408	software engine	software engine employed by the subject item	"game engine, engine"	wikibase-item	2318
+P410	military rank	"military rank achieved by a person (should usually have a ""start date"" qualifier)"	rank	wikibase-item	6273
+P411	canonization status	stage in the process of attaining sainthood per the subject's religious organization.	sainthood status	wikibase-item	3624
+P412	voice type	"person's voice type. expected values: soprano, mezzo-soprano, contralto, countertenor, tenor, baritone, bass (and derivatives)"		wikibase-item	8890
+P413	position played on team	"position the player plays, e.g. Small Forward"	"player position, fielding position"	wikibase-item	13084
+P414	stock exchange	exchange on which this company is traded		wikibase-item	3436
+P415	radio format	describes the overall content broadcast on a radio station		wikibase-item	9
+P417	patron saint	patron saint adopted by the subject		wikibase-item	1363
+P418	seal description	description of a subject's seal		wikibase-item	16
+P421	located in time zone	time zone for this item	"timezone, tz, time zone"	wikibase-item	39556
+P423	shooting handedness	"whether the hockey, football, handball or tennis player etc. passes oŗ shoots left- or right-handed"		wikibase-item	8
+P425	field of this profession	activity corresponding to this occupation	"profession's field, activity corresponding to this occupation"	wikibase-item	1252
+P427	taxonomic type	"the type genus of this family (or subfamily, etc), or the type species of this genus (or subgenus, etc)"	"type species, type genus"	wikibase-item	527
+P43	stepfather	"husband of the subject's mother, who is not the subject's biological father"	"step father, step-father"	wikibase-item	73
+P437	distribution	method (or type) of distribution for the subject	media	wikibase-item	10506
+P44	stepmother	"wife of the subject's father, who is not the subject's biological mother"	step-mother	wikibase-item	36
+P447	score by	issuer of a review score	"reviewer, score issuer, publication, scorer, by"	wikibase-item	2
+P448	location of spacecraft launch	site or launch pad from where the spacecraft was launched	launch site	wikibase-item	5390
+P449	original network	network(s) the radio or television show was originally aired on. This does not include later re-runs or additional syndication.	"original channel, channel, TV channel, radio network, network, television channel, radio station"	wikibase-item	8998
+P450	astronaut mission	space mission that the subject is or has been a member of (do not include future missions)	cosmonaut mission	wikibase-item	327
+P451	cohabitant	"someone with whom the person is in a relationship without being married. Use ""spouse"" for married couples."	"partner, mistress, domestic partner, significant other, life partner, girlfriend, boyfriend, concubine, lover, common-law spouse"	wikibase-item	881
+P452	industry	industry of company or organization	"field of action, field of exercise"	wikibase-item	6408
+P457	foundational text	text through which an institution has been created	establishing document	wikibase-item	90
+P459	determination method	qualifier stating how a value has been determined	"determined by, method, methodology"	wikibase-item	16
+P460	said to be the same as	"this item is said to be the same as that item, but the statement is disputed"	same as	wikibase-item	18156
+P461	opposite of	item that is the opposite of this item	antonym	wikibase-item	1959
+P462	color	color of subject	colour	wikibase-item	862
+P463	member of	"part of a specific organization or club. Do not use for membership in ethnic or social groups, nor for holding a position such as a member of parliament (use P39 for that)."		wikibase-item	67774
+P466	occupant	person or organization occupying a building or facility	"occupied by, tenant"	wikibase-item	9684
+P467	legislated by	indicates that an act or bill was passed by a legislature.  The value can be a particular session of the legislature	"enacted by, passed by"	wikibase-item	188
+P468	dan/kyu rank	"rank system used in several board games (e.g. go, shogi, renju), martial arts (e.g. judo, kendo, wushu) and some other games"		wikibase-item	8
+P469	lakes on river	"lakes and reservoirs the river flows through, flows into or flows out of"		wikibase-item	102
+P47	shares border with	"countries or administrative subdivisions, of equal level, that this item borders, either by land or water"	"borders, bordered by, adjacent to, next to"	wikibase-item	204439
+P470	Eight Banner register	Manchu household register for people of the Qing Dynasty		wikibase-item	893
+P479	input device	input method or device used to interact with a software product	"input method, input, mouse, digitiser"	wikibase-item	4630
+P483	recorded at	studio where a musical composition was recorded	"studio, recording studio, recording venue"	wikibase-item	136
+P485	archives at	the institution holding the subject's archives		wikibase-item	462
+P488	chairperson	"presiding member of an organization, group or body"	"chairman, chairwoman, president, leader"	wikibase-item	3222
+P489	currency symbol description	item with description of currency symbol		wikibase-item	8
+P495	country of origin	country of origin of the creative work or subject item	place of origin	wikibase-item	107324
+P50	author	main creator(s) of a written work	"writer, written by"	wikibase-item	67916
+P500	exclave of	territory is legally or politically attached to a main territory with which it is not physically contiguous because of surrounding alien territory. It may also be an enclave.		wikibase-item	96
+P501	enclave within	territory is entirely surrounded by the other (enclaved)	enclaved by	wikibase-item	155
+P504	home port	"home port of the vessel (if different from ""ship registry""): For civilian ships, the primary port from which the ship operates. Port of registry (the one painted on the stern) should be listed in ""Ship registry"". For warships, this will be the ship's assigned naval base"	homeport	wikibase-item	116
+P505	general manager	general manager of a sports team		wikibase-item	5
+P509	cause of death	"underlying or immediate cause of death.  Underlying cause (e.g. car accident, stomach cancer) preferred.  Use 'manner of death' (P1196) for broadest category, e.g. natural causes, accident, homicide, suicide"	death cause	wikibase-item	24422
+P511	honorific prefix	"word or expression used before a name, in addressing or referring to a person"	"style prefix, pre-nominal"	wikibase-item	134
+P512	academic degree	academic degree that the person holds	"degree, diploma"	wikibase-item	21325
+P514	interleaves with	stratigraphic relation in which two units overlap each other marginally		wikibase-item	28
+P515	phase of matter	"state or phase of the matter at which the measure was made (gas, liquid, solid... See talk page)"		wikibase-item	1
+P516	powerplant	equipment or engine used to power the subject	"engine, power plant, turbine, rocket engine, reactor, propulsion, power station, powerstation"	wikibase-item	1676
+P517	interaction	"with which of the 4 fundamental forces does the particle interact? strong interaction Q11415, electromagnetic: Q849919, weak interaction: Q11418, gravitation: Q11412"		wikibase-item	62
+P518	applies to part	part of the item for which the claim is valid	valid for part	wikibase-item	17
+P520	armament	equippable weapon item for the subject	"armed with, weapon, Ship armament"	wikibase-item	2352
+P521	scheduled service destination	"airport or station connected by regular direct service to the subject, for the destination of a trip see P1444"		wikibase-item	86
+P522	type of orbit	orbit a satellite has around its central body	orbit	wikibase-item	302
+P523	temporal range start	the start of a process or appearance of a life form relative to the geologic time scale		wikibase-item	56
+P524	temporal range end	the end of a process or extinction of a life form relative to the geologic time scale		wikibase-item	56
+P527	has part	object that is part of this subject	"have part, composed of, contains, formed from, formed out of, assembled from, assembled out of, created from, created out of, amalgamation of, set of, consists of, has part, members, holonym of, includes, ingredient, member, include"	wikibase-item	40361
+P53	noble family	include dynasty and nobility houses	"royal house, dynasty, house"	wikibase-item	7021
+P530	diplomatic relation	diplomatic relations of the country		wikibase-item	583
+P531	diplomatic mission sent	"location of diplomatic mission, i.e. consulate of A in the capital city of B"	"embassy, resident mission"	wikibase-item	186
+P532	port of registry	"ship's port of registry. This is generally painted on the ship's stern (for the ""home port"", see Property:P504)"		wikibase-item	58
+P533	target	target of a terrorist attack or military operation		wikibase-item	23
+P534	streak color	color of a mineral or material when abraded 		wikibase-item	49
+P537	twinning	type of twins a crystal forms		wikibase-item	12
+P538	fracturing	type of fracture a crystal or mineral forms		wikibase-item	6
+P54	member of sports team	sports teams or clubs that the subject currently represents or formerly represented	"member of team, team, team played for, played for, plays for, teams played for, of team"	wikibase-item	349683
+P541	office contested	title of office which election will determine the next holder of		wikibase-item	20
+P542	officially opened by	person that officially opened the event		wikibase-item	144
+P543	oath made by	"person(s) that made the oath at an event, like the Olympic Games"		wikibase-item	68
+P545	torch lit by	"person that lit the torch at an event, like the Olympic Games"		wikibase-item	49
+P546	docking port	docking port for the dock		wikibase-item	1
+P547	commemorates	"what the place, monument, memorial, holiday, commemorates"	memorial to	wikibase-item	108
+P550	chivalric order	the chivalric order which a person belongs to		wikibase-item	1
+P551	residence	"the place where the person is, or has been, resident"	lived in	wikibase-item	4102
+P552	handedness	handedness of the person		wikibase-item	680
+P553	website account on	a website that the person or organization has an account on (use with P554) Note: only used with reliable source or if the person or organization disclosed it.	social media account on	wikibase-item	12200
+P556	crystal system	type of crystal for crystal coumpounds		wikibase-item	1128
+P559	terminus	"the feature (intersecting road, train station, etc.) at the terminus of a linear feature"	endpoint	wikibase-item	2778
+P560	direction	a directional identifier of something		wikibase-item	2
+P562	central bank/issuer	central bank or other issuing authority for the currency	issuer	wikibase-item	250
+P565	crystal habit	the proportions of a crystal or mineral		wikibase-item	6
+P566	basionym	"the legitimate, previously published name on which a new combination or name at new rank is based"		wikibase-item	1838
+P567	hangingwall	item that is in the hanging wall of this item	underlies	wikibase-item	113
+P568	footwall	item that is in the footwall of this item	overlies	wikibase-item	112
+P57	director	"director(s) of this motion picture, play, video game or similar"	directed by	wikibase-item	95257
+P579	IMA status and/or rank	status given to each mineral by the IMA (International Mineralogical Association)		wikibase-item	4555
+P58	screenwriter	author(s) of the screenplay or script for this work	"scriptwriter, screenplay by, writer, teleplay by"	wikibase-item	50160
+P588	coolant	substance used by the subject to dissipate excess thermal energy		wikibase-item	264
+P589	point group	crystal subdivision		wikibase-item	247
+P59	constellation	"the area of the celestial sphere of which the subject is a part (from a scientific standpoint, not an astrological one)"		wikibase-item	19949
+P598	commander of	"for persons who are notable as commanding officers, the units they commanded"	commands	wikibase-item	162
+P6	head of government	"head of the executive power of a town, city, municipality, state, country, or other governmental body"	"mayor, prime minister, premier, first minister, head of national government"	wikibase-item	11720
+P607	conflict	"battles, wars or engagements in which the person or item participated"	"war, battle"	wikibase-item	50762
+P608	exhibition history	exhibitions where the item was displayed		wikibase-item	1105
+P609	terminus location	location of the terminus of a linear feature	"destination, departure point"	wikibase-item	792
+P61	discoverer or inventor	discovered or invented by	"inventor, discovered by, invented by, discoverer"	wikibase-item	59847
+P610	highest point	"point with highest elevation in the country, region, city, town or area"	highest peak	wikibase-item	330
+P611	religious order	order of monks or nuns which the monastery housed		wikibase-item	2213
+P612	mother house	name of the mother house		wikibase-item	231
+P618	source of energy	describes the source of energy an animated object (machine or animal) uses	"fuel type, energy source"	wikibase-item	170
+P624	guidance system	guidance system of a missile		wikibase-item	178
+P629	edition or translation of	is an edition or translation of this text	"edition of, translation of"	wikibase-item	988
+P631	structural engineer	"person, group or organisation responsible for the structural engineering of a building or structure"		wikibase-item	258
+P634	captain	captain of this sports team		wikibase-item	18
+P636	route of administration	"path by which a drug, fluid, poison, or other substance is taken into the body"		wikibase-item	221
+P641	sport	sport or discipline in which the entity participates or belongs to		wikibase-item	177938
+P642	of	qualifiers stating that a statement applies within the scope of a particular item	scope	wikibase-item	34
+P647	drafted by	which team the player was drafted by		wikibase-item	62
+P65	site of astronomical discovery	"the place where an astronomical object was discovered (observatory, satellite)"		wikibase-item	45812
+P655	translator	people or organisation who translated this		wikibase-item	420
+P658	tracklist	songs contained in this item		wikibase-item	927
+P66	ancestral home	place of origin for ancestors of subject		wikibase-item	131
+P660	EC classification	the Enzyme Commission (EC)-based accepted name of any enzyme classifications of the protein or RNA molecule	Enzyme Commission classification name	wikibase-item	2
+P664	organizer	person or institution organizing an event		wikibase-item	650
+P669	located on street	"street, or road, where the item is located. To add the number, use Property:P670 ""street number"" as qualifier"	"is on, street"	wikibase-item	44205
+P674	characters	"characters which appear in this item (plays, operas, operettas, books...)"		wikibase-item	3643
+P676	lyrics by	author of song lyrics; also use P86 for music composer	"lyricist, lyracist, words by, writer"	wikibase-item	5271
+P680	molecular function	represents gene ontology function annotations		wikibase-item	11200
+P681	cell component	component of the cell in which this item is present		wikibase-item	10602
+P682	biological process	is involved in the biological process		wikibase-item	32246
+P684	ortholog	orthologous gene in another species (use with 'species' qualifier)		wikibase-item	1860
+P688	encodes	the product of a gene (protein or RNA)	codes for	wikibase-item	1915
+P689	afflicts	a type of organism which a condition or disease afflicts		wikibase-item	24
+P69	educated at	educational institution attended by the subject	"education, alumni of, alumnus of, alumna of, college attended, university attended, school attended, studied at, alma mater, graduate of"	wikibase-item	281109
+P690	space group	symmetry classification for 2 and 3 dimensional patterns or crystals		wikibase-item	919
+P693	cleavage	way that crystals or minerals cleave		wikibase-item	60
+P694	replaced synonym (for nom. nov.)	"previously published name on which a replacement name (avowed substitute, nomen novum) is based."		wikibase-item	33
+P7	brother	subject has the object as their brother	"has brother, sibling, bro"	wikibase-item	64381
+P702	encoded by	 the gene that encodes some gene product		wikibase-item	1955
+P703	found in taxon	the taxon in which the molecule or substance can be found	species	wikibase-item	109231
+P706	located on terrain feature	"located on the specified landform or body of water. Should not be used when the value is only political/administrative (provinces, states, countries, etc.)."	"takes place in, location, on geographical feature, on natural feature, is on, is in"	wikibase-item	8417
+P707	satellite bus	general model on which multiple-production satellite spacecraft is based		wikibase-item	7
+P708	diocese	administrative division of the church to which the element belongs		wikibase-item	4465
+P710	participant	"person, group of people or organization that actively takes/took part in the event"	"artist, artists, performer, performers, participants, athlete, athletes, attendee, player, team, competitor, candidate, party, event participant, agent"	wikibase-item	10715
+P720	asteroid spectral type	"spectral classifications of asteroids based on  spectral shape, color, and albedo"		wikibase-item	370
+P725	voice actor	"the person who dubbed a role of a creative work (like TV series, movie or video game)"	"voice dubber, dubbed by, VO, Seiyu, voiced by, CV"	wikibase-item	1217
+P726	candidate	person or party listed as an option for office in an election		wikibase-item	467
+P734	surname	surname or last name of a person	"last name, family name, has surname"	wikibase-item	110021
+P735	given name	first name or another given name of this person. Values used with the property shouldn't link disambiguations nor family names.	"forename, first name, personal name, christian name, middle name"	wikibase-item	1896107
+P736	cover artist	"name of person or team creating cover artwork for album, single, book, etc."		wikibase-item	194
+P737	influenced by	"this person, idea, etc. is informed by that other person, idea, etc., e.g. ""Heidegger has influence Aristotle"".  Inverse of 'influence of' (P738)."	"informed by, inspired by, has influence"	wikibase-item	362
+P738	influence of	"this person, idea, etc. informs that other person, idea, etc., e.g. ""Aristotle influence of Heidegger"".  Inverse of 'influenced by' (P737)."	"influences, informs, influenced, informed, inspired"	wikibase-item	218
+P739	ammunition	cartridge or other ammunition used by the subject weapon	cartridge	wikibase-item	1758
+P740	location of formation	location where a group or organization was formed	"originates from, comes from, source, place of foundation, founded in"	wikibase-item	741
+P741	playing hand	hand used to play tennis		wikibase-item	2264
+P744	asteroid family	population of asteroids that share similar proper orbital elements		wikibase-item	86
+P747	edition(s)	linking to an edition of this item	"has edition, editions"	wikibase-item	1275
+P748	appointed by	"who appointed the person to the office, can be used as a qualifier"		wikibase-item	315
+P749	parent company	"a parent company of an organisation, opposite of subsidiaries (P355)"	"subsidiary of, owned by"	wikibase-item	1164
+P750	distributor	distributor of a creative work	distributed by	wikibase-item	1394
+P751	introduced feature	which feature was introduced by this version of a product item		wikibase-item	25
+P756	removed feature	which feature was removed by this version of a product item		wikibase-item	1
+P765	surface played on	the surface on which the tournament is played		wikibase-item	998
+P767	contributor	person or organization that contributed in the creation of a creative work		wikibase-item	1046
+P768	electoral district	"For members of legislative bodies (local or national), the electoral district the person is representing"	"constituency, ward, riding"	wikibase-item	19
+P769	significant drug interaction	"a clinically significant interaction between two pharmacologically active substances (i.e., drugs and/or active metabolites) where concomitant intake can lead to altered effectiveness or adverse drug events."		wikibase-item	1837
+P770	cause of destruction	item which caused the destruction of the subject item		wikibase-item	75
+P78	top-level domain	Internet domain name system top-level code	TLD	wikibase-item	304
+P780	symptoms	the possible symptoms of a medical condition	signs	wikibase-item	94
+P784	mushroom cap shape			wikibase-item	2
+P785	hymenium attachment	how the hymenium of the mushroom attaches to the stem		wikibase-item	1
+P786	stipe character	indicates if a mushroom has a universal or partial veil		wikibase-item	1
+P787	spore print color	color of a mushroom spore print (see documentation for allowed values)		wikibase-item	2
+P788	mushroom ecological type			wikibase-item	3
+P789	edibility	whether something can be eaten or not	"Mushroom edibility, Palatiblity"	wikibase-item	1
+P790	approved by	item is approved by other item(s) [qualifier: statement is approved by other item(s)]		wikibase-item	17
+P793	significant event	significant or notable events associated with the subject	"key event, key incident, significant incident, notable event, notable incident, event"	wikibase-item	6740
+P795	distance along	distance from a defined datum point along a specified linear feature		wikibase-item	9
+P796	geo datum	zero point for measurement (qualifier for P795)		wikibase-item	3
+P797	executive authority	entity having executive power of decision in matters relating to the entity		wikibase-item	3
+P800	notable works	subject's notable scientific work or work of art	"literary works, bibliography, work, works"	wikibase-item	20118
+P802	student	notable student(s) of a person		wikibase-item	598
+P803	professorship	professorship position held by this academic person		wikibase-item	76
+P805	subject of	(qualifier only) item detailing the relation established by the statement	"dedicated item, article, artfor"	wikibase-item	334
+P807	separated from	subject was founded or started by separating from identified object	"forked from, schism from, seceded from"	wikibase-item	34
+P81	connecting line	railway or public transport line(s) subject is directly connected to	"railway line, rapid transit line"	wikibase-item	10846
+P811	academic minor	minor someone studied at college/university		wikibase-item	1
+P812	academic major	major someone studied at college/university		wikibase-item	34
+P814	IUCN protected areas category	protected areas category by the World Commission on Protected Areas. Used with dedicated items for each category.		wikibase-item	6708
+P816	decays to	what isotope does this radioactive isotope decay to		wikibase-item	4875
+P817	decay mode	"type of decay that a radioactive isotope undergoes (should be used as a qualifier for ""decays to"")"		wikibase-item	3
+P822	mascot	"mascot of an organization, e.g. a sports team or university"		wikibase-item	45
+P823	speaker	someone who takes a role as speaker in events like keynotes or presentations		wikibase-item	36
+P825	dedicated to	person or organization to whom the subject was dedicated		wikibase-item	255
+P826	tonality	key of a musical composition	"musical key, key of musical composition"	wikibase-item	370
+P828	has cause	"underlying cause, thing that ultimately resulted in this effect.  See 'Help:Modeling causes' for usage notes."	"causes, cause, has causes, has underlying cause, underlying cause, ultimate cause, ultimate causes, initial cause, effect of, outcome of, result of, has reason, reason, caused by"	wikibase-item	165
+P831	parent club	parent club of this team	"parent team, major league affiliate, affiliate of"	wikibase-item	79
+P832	public holiday	"official public holiday that occurs in this place, usually a non-working day"	"bank holiday, legal holiday, national holiday"	wikibase-item	347
+P833	interchange station	"station to which passengers can transfer to from this station, normally without extra expense"	"OSI, out of station interchange"	wikibase-item	79
+P834	train depot	"depot which serves this railway line, not public stations"	"railway depot, depot"	wikibase-item	6
+P837	day in year for periodic occurrence	when a specific holiday or periodic event occurs. Can be used as property or qualifier	"day of periodic occurrence, day in year, day, date"	wikibase-item	531
+P84	architect	person or architectural firm that designed this building		wikibase-item	5470
+P840	narrative set in	the narrative of this work is set in this location	setting location	wikibase-item	19372
+P841	feast day	saint's principal feast day		wikibase-item	682
+P85	anthem	name of the subject's anthem		wikibase-item	540
+P852	ESRB rating	North American video game content rating - appropriate values are on property's talk page	Entertainment Software Rating Board rating	wikibase-item	3472
+P853	CERO rating	Japanese video game rating system - see talk page for appropriate values	Computer Entertainment Rating Organization rating	wikibase-item	1372
+P859	sponsor	enterprise that sponsors this item		wikibase-item	103
+P86	composer	person(s) who wrote the music; also use P676 for lyricist	"songwriter, composed by, musical score by, music by"	wikibase-item	9407
+P868	foods traditionally associated	foods consumed during the ceremony or associated with a certain settlement		wikibase-item	12
+P87	librettist	author of the libretto (words) of an opera		wikibase-item	434
+P870	instrumentation	combination of musical instruments employed in a composition		wikibase-item	111
+P872	printed by	"organization that printed the creative work (if different from ""publisher"")"	printer	wikibase-item	14
+P873	phase point	phase point to describe critical point and triple point (see talk page for an example)		wikibase-item	4
+P878	avionics	"notable sensors, electronics, and other avionics installed in the subject aircraft"	"sensors, electronics"	wikibase-item	162
+P88	commissioned by	person or organization that commissioned this work	"client, commissioner, made for, built for"	wikibase-item	565
+P880	CPU	central processing unit found within the subject item	central processing unit	wikibase-item	563
+P881	type of variable star	type of variable star	variable type	wikibase-item	32
+P885	origin of the watercourse	main source of a river or stream	"source, river source, stream source"	wikibase-item	183
+P887	based on heuristic	indicates that the property value is determined based on some heuristic (Q201413).		wikibase-item	2
+P9	sister	subject has the object as their sister (female sibling)	"has sister, sibling"	wikibase-item	30332
+P908	PEGI rating	European video game rating system - see talk page for appropriate values		wikibase-item	2906
+P91	sexual orientation	"the sexual orientation of the person - use IF AND ONLY IF they have stated it themselves, unambiguously, or it has been widely agreed upon by historians after their death"		wikibase-item	3186
+P910	topic's main category	main category of this topic	"main category, category for this topic"	wikibase-item	319704
+P912	facility	"the subject item has this type of facility, e.g. toilet, car park"		wikibase-item	109
+P913	notation	mathematical notation or another symbol		wikibase-item	58
+P914	USK rating	German video game content rating - see talk page for appropriate values	Unterhaltungssoftware Selbstkontrolle rating	wikibase-item	1714
+P915	filming location	actual place where this scene/film was shot	"location of filming, location where filmed, studio where filmed, place of filming, place where filmed"	wikibase-item	14572
+P916	GSRR rating	Taiwanese video game content rating system	"CSRR rating, GSRMR rating"	wikibase-item	9
+P92	main regulatory text	text setting the main rules by which the subject is regulated	legally established by	wikibase-item	253
+P921	main subject	primary topic of a work	"index term, topic of work, main topic, aboutness, about, topic, subject, subject heading"	wikibase-item	20328
+P923	medical examinations	examinations that might be used to diagnose the medical condition	"possible examinations, examinations"	wikibase-item	51
+P924	medical treatment	treatment that might be used to heal the medical condition	"therapy, medical therapy, treatment"	wikibase-item	17
+P927	anatomical location	where in the body does this anatomical feature lie	Manoo	wikibase-item	1
+P930	type of electrification	electrification system scheme and/or voltage		wikibase-item	3
+P931	place served by airport	city or region served by this airport	"serves city, city served"	wikibase-item	97
+P937	location of creative working	location(s) where the creator was active	"workplace, work location"	wikibase-item	40632
+P941	inspired by	the work which inspired this creative work	source of inspiration	wikibase-item	425
+P942	theme music	"the theme music/song used under licence by the item (film, event, sport club/team, person, etc.)"		wikibase-item	22
+P943	programmer	coder for a piece of software or a digital creative work such as a video game		wikibase-item	96
+P944	Code of nomenclature	the Code that governs the scientific name of this taxon		wikibase-item	814
+P945	allegiance	"the country (or other power) that the person, or organization, served"		wikibase-item	239
+P97	noble title	royal or noble titles held by the person	"peerage, title"	wikibase-item	4556
+P970	neurological function	The function of a neurological structure		wikibase-item	1
+P971	category combines topics	this category combines these two or more topics	"Category intersects topics, Category topics, Category subjects, combines topics"	wikibase-item	78467
+P972	catalog	"catalogue for the item, or, as a qualifier of P528, catalogue for which the number is valid"	catalogue	wikibase-item	860
+P974	tributary	stream or river that flows into this main stem (or parent) river or a lake		wikibase-item	405
+P98	editor	editor of a compiled work such as a book or academic journal		wikibase-item	1314
+P991	successful candidate	person(s) elected after the election	elected person	wikibase-item	4109

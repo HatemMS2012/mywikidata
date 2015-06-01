@@ -7,7 +7,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class WikidataToRDB
 {
@@ -21,17 +25,41 @@ public class WikidataToRDB
 
     static final String insert_entity = "INSERT INTO entity (id,lang) VALUES (?,?)";
     static final String insert_label = "INSERT INTO label (entity_id,language,value) VALUES (?, ?, ?)";
+    
+    static final String insert_item = "INSERT INTO item (id,type) VALUES (?,?)";
+
     static final String insert_description = "INSERT INTO description (entity_id,language,value) VALUES (?, ?, ?)";
     static final String insert_alias = "INSERT INTO alias (entity_id,language,value) VALUES (?, ?, ?)";
     static final String insert_claims = "INSERT INTO claim(claim_id,entity_id,language,value,type)"+
                                         "VALUES (?,?,?,?,?);";
 
+    
+    static final String insert_claim_wiki_entity_type = "INSERT INTO wiki_claim(entity_id,claim_id,simple_value,wikidata_item_value,type) VALUES (?,?,null,?,?);";
+    static final String insert_claim_simple_type = "INSERT INTO wiki_claim(entity_id,claim_id,simple_value,wikidata_item_value,type) VALUES (?,?,?,null,?);";
+    
+    
     static final String check_entity_exist = "SELECT id FROM entity WHERE id = ? and lang = ?";
+    static final String check_claim_exist = "SELECT claim_id FROM wiki_claim WHERE claim_id = ? and entity_id = ?";
+
+    
+    static final String check_label_exist = "SELECT entity_id FROM label WHERE entity_id = ? and language = ?";
+    static final String check_label_entity_exist = "SELECT entity_id FROM label WHERE entity_id = ?";
+
 
     static final String check_relation_exist = "SELECT entity_id FROM claim WHERE entity_id =? and claim_id = ?  and language = ?";
+    static final String select_distinct_label_entity_ids= "select distinct entity_id from label" ;
+    static final String select_distinct_alias_entity_ids= "select distinct entity_id from alias" ;
+    static final String select_distinct_claims= "select entity_id,claim_id from alias" ;
 
 
+    static final String select_distinct_desc_entity_ids= "select distinct entity_id from description" ;
 
+
+    //Queries
+    
+    private static final String SELECT_CLAIM_ARGUMENTS = "SELECT entity_id as domain, wikidata_item_value as \"range\" FROM wikidata_20150420.wiki_claim where claim_id =?" ;
+    private static final String SELECT_ITEM_LABEL = "SELECT value FROM label where entity_id = ? and language =?";
+    
     static Connection conn = null;
     Statement stmt = null;
     static{
@@ -51,6 +79,157 @@ public class WikidataToRDB
             e.printStackTrace();
         }
     }
+    
+    
+    public static Map<String, String> getClaimArguments(String calimId, String lang){
+      
+    	Map<String, String> argList = new HashMap<String, String>();
+    	PreparedStatement st;
+		try {
+			st = conn.prepareStatement(SELECT_CLAIM_ARGUMENTS);
+			st.setString(1, calimId);
+			ResultSet result = st.executeQuery();
+	    	
+	    	while(result.next()){
+	    		
+	    		String domainID = result.getString("domain");
+	    		String rangeID = result.getString("range");
+	    		
+	    		
+	    		argList.put(getItemLabel(domainID, lang),getItemLabel(rangeID, lang));
+	    	}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	
+    	return argList;
+    	
+    }
+    
+    public static String getItemLabel(String itemId, String lang){
+        
+    	PreparedStatement st;
+		try {
+			st = conn.prepareStatement(SELECT_ITEM_LABEL);
+			st.setString(1, itemId);
+			st.setString(2, lang);
+			ResultSet result = st.executeQuery();
+	    	
+	    	if(result.next()){
+	    		
+	    		return result.getString("value");
+	    	}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	
+    	return null;
+    	
+    }
+    
+    
+    public static Set<String> getEntitiesWithLabels(){
+    	
+    	Set<String> ids = new HashSet<String>();
+    	
+    	Statement st;
+		try {
+			st = conn.createStatement();
+			ResultSet result = st.executeQuery(select_distinct_label_entity_ids);
+			
+			while(result.next()){
+				ids.add(result.getString("entity_id"));
+			}
+			result.close();
+			st.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	
+    	
+    	return ids;
+    	
+    }
+    
+    public static Set<String> getEntitiesWithAliases(){
+    	
+    	Set<String> ids = new HashSet<String>();
+    	
+    	Statement st;
+		try {
+			st = conn.createStatement();
+			ResultSet result = st.executeQuery(select_distinct_alias_entity_ids);
+			
+			while(result.next()){
+				ids.add(result.getString("entity_id"));
+			}
+			result.close();
+			st.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	
+    	
+    	return ids;
+    	
+    }
+//    public static Set<String> getInsertedClaims(){
+//    	
+//    	Set<String> ids = new HashSet<String>();
+//    	
+//    	Statement st;
+//		try {
+//			st = conn.createStatement();
+//			ResultSet result = st.executeQuery(select_distinct_claims);
+//			
+//			while(result.next()){
+//				ids.add(result.getString("entity_id"));
+//			}
+//		} catch (SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//    	
+//    	
+//    	
+//    	return ids;
+//    	
+//    }
+    
+    public static Set<String> getEntitiesWithDescription(){
+    	
+    	Set<String> ids = new HashSet<String>();
+    	
+    	Statement st;
+		try {
+			st = conn.createStatement();
+			ResultSet result = st.executeQuery(select_distinct_desc_entity_ids);
+			
+			while(result.next()){
+				ids.add(result.getString("entity_id"));
+			}
+			result.close();
+			st.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	
+    	
+    	return ids;
+    	
+    }
+    
+    
 
     public static void insert(String itemID, String lang) throws SQLException{
 
@@ -97,6 +276,36 @@ public class WikidataToRDB
 
 
     }
+    
+    public static boolean isLabelAlreadyInDB(String itemID, String lang) throws SQLException{
+
+        PreparedStatement checkSt = conn.prepareStatement(check_label_exist);
+        checkSt.setString(1, itemID);
+        checkSt.setString(2, lang);
+        ResultSet res = checkSt.executeQuery();
+        if(res.next()) {
+            return true;
+        }
+        return false;
+
+
+    }
+    
+    public static boolean isLabelEntityAlreadyInDB(String itemID) throws SQLException{
+
+        PreparedStatement checkSt = conn.prepareStatement(check_label_entity_exist);
+        checkSt.setString(1, itemID);
+        
+        ResultSet res = checkSt.executeQuery();
+        if(res.next()) {
+        	checkSt.close();
+            return true;
+        }
+    	checkSt.close();
+        return false;
+
+
+    }
 
     public static boolean isRelationAlreadyInDB(String itemID, String claimID, String lang) throws SQLException{
 
@@ -131,8 +340,30 @@ public class WikidataToRDB
 
         }
     }
+    
+    public static void insertClaim(String itemID,  String property, String propValue, String propType)
+            throws SQLException {
+            
+    	PreparedStatement insertPropSt = null;
 
-    private static void insertAliases(String itemID, String lang, List<String> entity_aliases)
+    	if(propType.equals("wikibase-item")){
+    		insertPropSt = conn.prepareStatement(insert_claim_wiki_entity_type);
+    	}
+    	else{
+    		insertPropSt = conn.prepareStatement(insert_claim_simple_type);
+    	}
+        
+   
+        insertPropSt.setString(1, itemID);
+     	insertPropSt.setString(2, property);
+    	insertPropSt.setString(3, propValue);
+    	insertPropSt.setString(4, propType);
+    	insertPropSt.execute();
+    	insertPropSt.close();
+        
+    }
+
+    public static void insertAliases(String itemID, String lang, List<String> entity_aliases)
         throws SQLException
     {
         for(String entityAlias : entity_aliases){
@@ -146,8 +377,22 @@ public class WikidataToRDB
 
         }
     }
+    
+   
+    public static void insertAlias(String itemID, String lang, String alias)
+            throws SQLException{
+    
 
-    private static void insertDescription(String itemID, String lang, String entity_desc)
+                PreparedStatement insertAliasSt = conn.prepareStatement(insert_alias);
+                insertAliasSt.setString(1, itemID);
+                insertAliasSt.setString(2, lang);
+                insertAliasSt.setString(3, alias);
+                insertAliasSt.execute();
+                insertAliasSt.close();
+    
+        }
+
+    public static void insertDescription(String itemID, String lang, String entity_desc)
         throws SQLException
     {
         PreparedStatement insertDescSt = conn.prepareStatement(insert_description);
@@ -156,17 +401,26 @@ public class WikidataToRDB
         insertDescSt.setString(3, entity_desc);
 
         insertDescSt.execute();
+        insertDescSt.close();
     }
+    
+    
 
-    private static void insertLabel(String itemID, String lang, String entity_lable)
-        throws SQLException
-    {
-        PreparedStatement insertLabelSt = conn.prepareStatement(insert_label);
-        insertLabelSt.setString(1, itemID);
-        insertLabelSt.setString(2, lang);
-        insertLabelSt.setString(3, entity_lable);
-        insertLabelSt.execute();
+    public static void insertLabel(String itemID, String lang, String entity_lable) throws SQLException{
+       
+    
+        PreparedStatement insertLabelSt;
+		
+			insertLabelSt = conn.prepareStatement(insert_label);
+			insertLabelSt.setString(1, itemID);
+	        insertLabelSt.setString(2, lang);
+	        insertLabelSt.setString(3, entity_lable);
+	        insertLabelSt.execute();
+	        insertLabelSt.close();
+	    
+	
     }
+        
 
     private static void insertEntity(String itemID, String lang)
         throws SQLException
@@ -176,11 +430,21 @@ public class WikidataToRDB
         insertEntitySt.setString(2, lang);
         insertEntitySt.execute();
     }
+    public static void insertItem(String itemID, String type)
+            throws SQLException
+        {
+            PreparedStatement insertEntitySt = conn.prepareStatement(insert_item);
+            insertEntitySt.setString(1, itemID);
+            
+            insertEntitySt.setString(2, type);
+            insertEntitySt.execute();
+            insertEntitySt.close();
+        }
 
     public static void main(String[] args) throws SQLException
     {
 
-        String itemId = "Q5891";
+        String itemId = "Q937";
         insert(itemId,"en");
         insert(itemId,"de");
         insert(itemId,"fr");

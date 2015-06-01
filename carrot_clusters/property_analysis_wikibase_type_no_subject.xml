@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="UTF-8"?><searchresult>
+   <query/>
+   <group id="0" size="88" score="31.29373611459697">
+      <title>
+         <phrase>Person</phrase>
+      </title>
+      <document refid="P1000"/>
+      <document refid="P101"/>
+      <document refid="P1027"/>
+      <document refid="P1028"/>
+      <document refid="P1029"/>
+      <document refid="P103"/>
+      <document refid="P1035"/>
+      <document refid="P1037"/>
+      <document refid="P1040"/>
+      <document refid="P106"/>
+      <document refid="P1066"/>
+      <document refid="P1136"/>
+      <document refid="P119"/>
+      <document refid="P1196"/>
+      <document refid="P1283"/>
+      <document refid="P1290"/>
+      <document refid="P1303"/>
+      <document refid="P1308"/>
+      <document refid="P1318"/>
+      <document refid="P1327"/>
+      <document refid="P1340"/>
+      <document refid="P1344"/>
+      <document refid="P135"/>
+      <document refid="P1363"/>
+      <document refid="P1365"/>
+      <document refid="P1366"/>
+      <document refid="P1393"/>
+      <document refid="P1399"/>
+      <document refid="P140"/>
+      <document refid="P1411"/>
+      <document refid="P1412"/>
+      <document refid="P1416"/>
+      <document refid="P1429"/>
+      <document refid="P1455"/>
+      <document refid="P1532"/>
+      <document refid="P1535"/>
+      <document refid="P157"/>
+      <document refid="P1591"/>
+      <document refid="P1592"/>
+      <document refid="P1593"/>
+      <document refid="P1656"/>
+      <document refid="P166"/>
+      <document refid="P178"/>
+      <document refid="P1809"/>
+      <document refid="P1817"/>
+      <document refid="P184"/>
+      <document refid="P241"/>
+      <document refid="P344"/>
+      <document refid="P407"/>
+      <document refid="P410"/>
+      <document refid="P412"/>
+      <document refid="P451"/>
+      <document refid="P466"/>
+      <document refid="P511"/>
+      <document refid="P512"/>
+      <document refid="P542"/>
+      <document refid="P543"/>
+      <document refid="P545"/>
+      <document refid="P550"/>
+      <document refid="P551"/>
+      <document refid="P552"/>
+      <document refid="P553"/>
+      <document refid="P598"/>
+      <document refid="P607"/>
+      <document refid="P631"/>
+      <document refid="P664"/>
+      <document refid="P710"/>
+      <document refid="P725"/>
+      <document refid="P726"/>
+      <document refid="P734"/>
+      <document refid="P735"/>
+      <document refid="P736"/>
+      <document refid="P737"/>
+      <document refid="P738"/>
+      <document refid="P748"/>
+      <document refid="P767"/>
+      <document refid="P768"/>
+      <document refid="P802"/>
+      <document refid="P803"/>
+      <document refid="P825"/>
+      <document refid="P84"/>
+      <document refid="P86"/>
+      <document refid="P88"/>
+      <document refid="P91"/>
+      <document refid="P942"/>
+      <document refid="P945"/>
+      <document refid="P97"/>
+      <document refid="P991"/>
+   </group>
+   <group id="1" size="43" score="49.31434384720645">
+      <title>
+         <phrase>Organization</phrase>
+      </title>
+      <document refid="P1027"/>
+      <document refid="P1028"/>
+      <document refid="P1034"/>
+      <document refid="P1079"/>
+      <document refid="P108"/>
+      <document refid="P112"/>
+      <document refid="P1142"/>
+      <document refid="P115"/>
+      <document refid="P123"/>
+      <document refid="P126"/>
+      <document refid="P1268"/>
+      <document refid="P137"/>
+      <document refid="P140"/>
+      <document refid="P1416"/>
+      <document refid="P1454"/>
+      <document refid="P1462"/>
+      <document refid="P1535"/>
+      <document refid="P159"/>
+      <document refid="P1591"/>
+      <document refid="P169"/>
+      <document refid="P1789"/>
+      <document refid="P1817"/>
+      <document refid="P193"/>
+      <document refid="P199"/>
+      <document refid="P209"/>
+      <document refid="P355"/>
+      <document refid="P411"/>
+      <document refid="P452"/>
+      <document refid="P463"/>
+      <document refid="P466"/>
+      <document refid="P488"/>
+      <document refid="P553"/>
+      <document refid="P664"/>
+      <document refid="P689"/>
+      <document refid="P710"/>
+      <document refid="P740"/>
+      <document refid="P767"/>
+      <document refid="P822"/>
+      <document refid="P825"/>
+      <document refid="P853"/>
+      <document refid="P872"/>
+      <document refid="P88"/>
+      <document refid="P945"/>
+   </group>
+   <group id="2" size="31" score="45.19981889302789">
+      <title>
+         <phrase>Location</phrase>
+      </title>
+      <document refid="P1071"/>
+      <document refid="P1134"/>
+      <document refid="P1158"/>
+      <document refid="P119"/>
+      <document refid="P131"/>
+      <document refid="P1398"/>
+      <document refid="P1427"/>
+      <document refid="P1465"/>
+      <document refid="P159"/>
+      <document refid="P167"/>
+      <document refid="P1740"/>
+      <document refid="P183"/>
+      <document refid="P189"/>
+      <document refid="P19"/>
+      <document refid="P20"/>
+      <document refid="P206"/>
+      <document refid="P276"/>
+      <document refid="P30"/>
+      <document refid="P36"/>
+      <document refid="P376"/>
+      <document refid="P421"/>
+      <document refid="P448"/>
+      <document refid="P531"/>
+      <document refid="P609"/>
+      <document refid="P669"/>
+      <document refid="P706"/>
+      <document refid="P740"/>
+      <document refid="P840"/>
+      <document refid="P915"/>
+      <document refid="P927"/>
+      <document refid="P937"/>
+   </group>
+   <group id="3" size="28" score="46.14191917264672">
+      <title>
+         <phrase>Place</phrase>
+      </title>
+      <document refid="P1071"/>
+      <document refid="P112"/>
+      <document refid="P1134"/>
+      <document refid="P119"/>
+      <document refid="P1321"/>
+      <document refid="P1408"/>
+      <document refid="P1427"/>
+      <document refid="P1456"/>
+      <document refid="P1464"/>
+      <document refid="P1792"/>
+      <document refid="P189"/>
+      <document refid="P19"/>
+      <document refid="P20"/>
+      <document refid="P200"/>
+      <document refid="P201"/>
+      <document refid="P291"/>
+      <document refid="P36"/>
+      <document refid="P376"/>
+      <document refid="P495"/>
+      <document refid="P547"/>
+      <document refid="P551"/>
+      <document refid="P65"/>
+      <document refid="P66"/>
+      <document refid="P706"/>
+      <document refid="P740"/>
+      <document refid="P832"/>
+      <document refid="P915"/>
+      <document refid="P931"/>
+   </group>
+   <group id="4" size="28" score="39.91592442598133">
+      <title>
+         <phrase>Type</phrase>
+      </title>
+      <document refid="P1038"/>
+      <document refid="P105"/>
+      <document refid="P107"/>
+      <document refid="P1170"/>
+      <document refid="P1196"/>
+      <document refid="P122"/>
+      <document refid="P1221"/>
+      <document refid="P1597"/>
+      <document refid="P1637"/>
+      <document refid="P183"/>
+      <document refid="P279"/>
+      <document refid="P31"/>
+      <document refid="P399"/>
+      <document refid="P412"/>
+      <document refid="P427"/>
+      <document refid="P437"/>
+      <document refid="P522"/>
+      <document refid="P537"/>
+      <document refid="P538"/>
+      <document refid="P556"/>
+      <document refid="P618"/>
+      <document refid="P689"/>
+      <document refid="P720"/>
+      <document refid="P788"/>
+      <document refid="P817"/>
+      <document refid="P881"/>
+      <document refid="P912"/>
+      <document refid="P930"/>
+   </group>
+   <group id="5" size="22" score="40.07666246700413">
+      <title>
+         <phrase>Country</phrase>
+      </title>
+      <document refid="P1001"/>
+      <document refid="P1304"/>
+      <document refid="P1376"/>
+      <document refid="P1532"/>
+      <document refid="P1589"/>
+      <document refid="P1622"/>
+      <document refid="P17"/>
+      <document refid="P19"/>
+      <document refid="P20"/>
+      <document refid="P205"/>
+      <document refid="P209"/>
+      <document refid="P27"/>
+      <document refid="P30"/>
+      <document refid="P35"/>
+      <document refid="P36"/>
+      <document refid="P47"/>
+      <document refid="P495"/>
+      <document refid="P530"/>
+      <document refid="P6"/>
+      <document refid="P610"/>
+      <document refid="P706"/>
+      <document refid="P945"/>
+   </group>
+   <group id="6" size="21" score="50.727457806171664">
+      <title>
+         <phrase>Qualifier</phrase>
+      </title>
+      <document refid="P1000"/>
+      <document refid="P1012"/>
+      <document refid="P1013"/>
+      <document refid="P1038"/>
+      <document refid="P1389"/>
+      <document refid="P1534"/>
+      <document refid="P161"/>
+      <document refid="P1750"/>
+      <document refid="P210"/>
+      <document refid="P410"/>
+      <document refid="P459"/>
+      <document refid="P642"/>
+      <document refid="P669"/>
+      <document refid="P684"/>
+      <document refid="P748"/>
+      <document refid="P790"/>
+      <document refid="P796"/>
+      <document refid="P805"/>
+      <document refid="P817"/>
+      <document refid="P837"/>
+      <document refid="P972"/>
+   </group>
+   <group id="7" size="17" score="0.9429240647401497">
+      <title>
+         <phrase>Game</phrase>
+      </title>
+      <document refid="P123"/>
+      <document refid="P1363"/>
+      <document refid="P400"/>
+      <document refid="P404"/>
+      <document refid="P406"/>
+      <document refid="P408"/>
+      <document refid="P468"/>
+      <document refid="P543"/>
+      <document refid="P545"/>
+      <document refid="P57"/>
+      <document refid="P725"/>
+      <document refid="P852"/>
+      <document refid="P853"/>
+      <document refid="P908"/>
+      <document refid="P914"/>
+      <document refid="P916"/>
+      <document refid="P943"/>
+   </group>
+   <group id="8" size="17" score="33.40484974156267">
+      <title>
+         <phrase>State</phrase>
+      </title>
+      <document refid="P1001"/>
+      <document refid="P131"/>
+      <document refid="P1365"/>
+      <document refid="P1366"/>
+      <document refid="P1376"/>
+      <document refid="P155"/>
+      <document refid="P156"/>
+      <document refid="P17"/>
+      <document refid="P208"/>
+      <document refid="P248"/>
+      <document refid="P35"/>
+      <document refid="P459"/>
+      <document refid="P515"/>
+      <document refid="P6"/>
+      <document refid="P642"/>
+      <document refid="P706"/>
+      <document refid="P91"/>
+   </group>
+   <group id="9" size="16" score="31.574278940874606">
+      <title>
+         <phrase>Administrative</phrase>
+      </title>
+      <document refid="P1134"/>
+      <document refid="P131"/>
+      <document refid="P1336"/>
+      <document refid="P137"/>
+      <document refid="P1376"/>
+      <document refid="P1383"/>
+      <document refid="P150"/>
+      <document refid="P208"/>
+      <document refid="P209"/>
+      <document refid="P210"/>
+      <document refid="P276"/>
+      <document refid="P36"/>
+      <document refid="P47"/>
+      <document refid="P636"/>
+      <document refid="P706"/>
+      <document refid="P708"/>
+   </group>
+   <group id="10" size="16" score="35.34822991352676">
+      <title>
+         <phrase>City</phrase>
+      </title>
+      <document refid="P119"/>
+      <document refid="P1302"/>
+      <document refid="P131"/>
+      <document refid="P1408"/>
+      <document refid="P150"/>
+      <document refid="P1589"/>
+      <document refid="P19"/>
+      <document refid="P190"/>
+      <document refid="P194"/>
+      <document refid="P20"/>
+      <document refid="P30"/>
+      <document refid="P36"/>
+      <document refid="P531"/>
+      <document refid="P6"/>
+      <document refid="P610"/>
+      <document refid="P931"/>
+   </group>
+   <group id="11" size="15" score="38.871237302285266">
+      <title>
+         <phrase>Event</phrase>
+      </title>
+      <document refid="P1196"/>
+      <document refid="P1344"/>
+      <document refid="P1346"/>
+      <document refid="P138"/>
+      <document refid="P276"/>
+      <document refid="P542"/>
+      <document refid="P543"/>
+      <document refid="P545"/>
+      <document refid="P664"/>
+      <document refid="P710"/>
+      <document refid="P769"/>
+      <document refid="P793"/>
+      <document refid="P823"/>
+      <document refid="P837"/>
+      <document refid="P942"/>
+   </group>
+   <group id="12" size="15" score="39.407967065694876">
+      <title>
+         <phrase>Person or Organization</phrase>
+      </title>
+      <document refid="P1027"/>
+      <document refid="P1028"/>
+      <document refid="P140"/>
+      <document refid="P1416"/>
+      <document refid="P1535"/>
+      <document refid="P1591"/>
+      <document refid="P1817"/>
+      <document refid="P466"/>
+      <document refid="P553"/>
+      <document refid="P664"/>
+      <document refid="P710"/>
+      <document refid="P767"/>
+      <document refid="P825"/>
+      <document refid="P88"/>
+      <document refid="P945"/>
+   </group>
+   <group id="13" size="15" score="36.122261855531804">
+      <title>
+         <phrase>Value</phrase>
+      </title>
+      <document refid="P1001"/>
+      <document refid="P1196"/>
+      <document refid="P143"/>
+      <document refid="P1568"/>
+      <document refid="P412"/>
+      <document refid="P459"/>
+      <document refid="P467"/>
+      <document refid="P706"/>
+      <document refid="P735"/>
+      <document refid="P787"/>
+      <document refid="P852"/>
+      <document refid="P853"/>
+      <document refid="P887"/>
+      <document refid="P908"/>
+      <document refid="P914"/>
+   </group>
+   <group id="14" size="14" score="37.3753793624218">
+      <title>
+         <phrase>Office</phrase>
+      </title>
+      <document refid="P1308"/>
+      <document refid="P1313"/>
+      <document refid="P1365"/>
+      <document refid="P1366"/>
+      <document refid="P155"/>
+      <document refid="P156"/>
+      <document refid="P159"/>
+      <document refid="P169"/>
+      <document refid="P1789"/>
+      <document refid="P39"/>
+      <document refid="P541"/>
+      <document refid="P598"/>
+      <document refid="P726"/>
+      <document refid="P748"/>
+   </group>
+   <group id="15" size="14" score="40.69067525902573">
+      <title>
+         <phrase>Source</phrase>
+      </title>
+      <document refid="P1034"/>
+      <document refid="P1343"/>
+      <document refid="P140"/>
+      <document refid="P143"/>
+      <document refid="P1582"/>
+      <document refid="P1672"/>
+      <document refid="P1704"/>
+      <document refid="P200"/>
+      <document refid="P248"/>
+      <document refid="P553"/>
+      <document refid="P618"/>
+      <document refid="P740"/>
+      <document refid="P885"/>
+      <document refid="P941"/>
+   </group>
+   <group id="16" size="13" score="36.03076432740913">
+      <title>
+         <phrase>Category</phrase>
+      </title>
+      <document refid="P1200"/>
+      <document refid="P1464"/>
+      <document refid="P1465"/>
+      <document refid="P1740"/>
+      <document refid="P1753"/>
+      <document refid="P1754"/>
+      <document refid="P1791"/>
+      <document refid="P1792"/>
+      <document refid="P301"/>
+      <document refid="P509"/>
+      <document refid="P814"/>
+      <document refid="P910"/>
+      <document refid="P971"/>
+   </group>
+   <group id="17" size="13" score="55.916360003282435">
+      <title>
+         <phrase>Creative Work</phrase>
+      </title>
+      <document refid="P1074"/>
+      <document refid="P136"/>
+      <document refid="P1411"/>
+      <document refid="P166"/>
+      <document refid="P170"/>
+      <document refid="P495"/>
+      <document refid="P725"/>
+      <document refid="P750"/>
+      <document refid="P767"/>
+      <document refid="P872"/>
+      <document refid="P937"/>
+      <document refid="P941"/>
+      <document refid="P943"/>
+   </group>
+   <group id="18" size="13" score="1.9636406044691098E-8">
+      <title>
+         <phrase>Team</phrase>
+      </title>
+      <document refid="P115"/>
+      <document refid="P118"/>
+      <document refid="P286"/>
+      <document refid="P413"/>
+      <document refid="P505"/>
+      <document refid="P54"/>
+      <document refid="P634"/>
+      <document refid="P647"/>
+      <document refid="P710"/>
+      <document refid="P736"/>
+      <document refid="P822"/>
+      <document refid="P831"/>
+      <document refid="P942"/>
+   </group>
+   <group id="19" size="12" score="40.7126998488381">
+      <title>
+         <phrase>Language</phrase>
+      </title>
+      <document refid="P1018"/>
+      <document refid="P103"/>
+      <document refid="P134"/>
+      <document refid="P1372"/>
+      <document refid="P138"/>
+      <document refid="P1412"/>
+      <document refid="P1560"/>
+      <document refid="P277"/>
+      <document refid="P282"/>
+      <document refid="P364"/>
+      <document refid="P37"/>
+      <document refid="P407"/>
+   </group>
+   <group id="20" size="12" score="39.5970353832002">
+      <title>
+         <phrase>Music</phrase>
+      </title>
+      <document refid="P136"/>
+      <document refid="P1558"/>
+      <document refid="P162"/>
+      <document refid="P175"/>
+      <document refid="P264"/>
+      <document refid="P406"/>
+      <document refid="P483"/>
+      <document refid="P676"/>
+      <document refid="P826"/>
+      <document refid="P86"/>
+      <document refid="P870"/>
+      <document refid="P942"/>
+   </group>
+   <group id="21" size="11" score="31.916667144057705">
+      <title>
+         <phrase>Film</phrase>
+      </title>
+      <document refid="P1040"/>
+      <document refid="P1283"/>
+      <document refid="P136"/>
+      <document refid="P161"/>
+      <document refid="P162"/>
+      <document refid="P1657"/>
+      <document refid="P1740"/>
+      <document refid="P272"/>
+      <document refid="P406"/>
+      <document refid="P915"/>
+      <document refid="P942"/>
+   </group>
+   <group id="22" size="11" score="39.723077416473735">
+      <title>
+         <phrase>Member</phrase>
+      </title>
+      <document refid="P102"/>
+      <document refid="P1029"/>
+      <document refid="P1038"/>
+      <document refid="P161"/>
+      <document refid="P31"/>
+      <document refid="P450"/>
+      <document refid="P463"/>
+      <document refid="P488"/>
+      <document refid="P527"/>
+      <document refid="P54"/>
+      <document refid="P768"/>
+   </group>
+   <group id="23" size="11" score="57.1681301907325">
+      <title>
+         <phrase>Video Game</phrase>
+      </title>
+      <document refid="P123"/>
+      <document refid="P404"/>
+      <document refid="P406"/>
+      <document refid="P57"/>
+      <document refid="P725"/>
+      <document refid="P852"/>
+      <document refid="P853"/>
+      <document refid="P908"/>
+      <document refid="P914"/>
+      <document refid="P916"/>
+      <document refid="P943"/>
+   </group>
+   <group id="24" size="10" score="0.032045786408174355">
+      <title>
+         <phrase>Area</phrase>
+      </title>
+      <document refid="P101"/>
+      <document refid="P131"/>
+      <document refid="P1336"/>
+      <document refid="P1456"/>
+      <document refid="P150"/>
+      <document refid="P1589"/>
+      <document refid="P1791"/>
+      <document refid="P59"/>
+      <document refid="P610"/>
+      <document refid="P814"/>
+   </group>
+   <group id="25" size="10" score="36.5071157064428">
+      <title>
+         <phrase>Authority</phrase>
+      </title>
+      <document refid="P1393"/>
+      <document refid="P1592"/>
+      <document refid="P209"/>
+      <document refid="P35"/>
+      <document refid="P50"/>
+      <document refid="P562"/>
+      <document refid="P58"/>
+      <document refid="P676"/>
+      <document refid="P797"/>
+      <document refid="P87"/>
+   </group>
+   <group id="26" size="10" score="35.32004394945871">
+      <title>
+         <phrase>Cause</phrase>
+      </title>
+      <document refid="P1196"/>
+      <document refid="P1478"/>
+      <document refid="P1479"/>
+      <document refid="P1534"/>
+      <document refid="P1536"/>
+      <document refid="P1537"/>
+      <document refid="P1542"/>
+      <document refid="P509"/>
+      <document refid="P770"/>
+      <document refid="P828"/>
+   </group>
+   <group id="27" size="10" score="39.91981244028848">
+      <title>
+         <phrase>Item is Located</phrase>
+      </title>
+      <document refid="P1071"/>
+      <document refid="P1134"/>
+      <document refid="P131"/>
+      <document refid="P1465"/>
+      <document refid="P167"/>
+      <document refid="P189"/>
+      <document refid="P276"/>
+      <document refid="P30"/>
+      <document refid="P421"/>
+      <document refid="P669"/>
+   </group>
+   <group id="28" size="10" score="32.80329948816488">
+      <title>
+         <phrase>Origin</phrase>
+      </title>
+      <document refid="P1321"/>
+      <document refid="P1403"/>
+      <document refid="P1427"/>
+      <document refid="P364"/>
+      <document refid="P407"/>
+      <document refid="P449"/>
+      <document refid="P495"/>
+      <document refid="P66"/>
+      <document refid="P740"/>
+      <document refid="P885"/>
+   </group>
+   <group id="29" size="10" score="37.666936907553605">
+      <title>
+         <phrase>Parent</phrase>
+      </title>
+      <document refid="P1531"/>
+      <document refid="P171"/>
+      <document refid="P22"/>
+      <document refid="P25"/>
+      <document refid="P355"/>
+      <document refid="P397"/>
+      <document refid="P40"/>
+      <document refid="P749"/>
+      <document refid="P831"/>
+      <document refid="P974"/>
+   </group>
+   <group id="30" size="10" score="32.718692671040806">
+      <title>
+         <phrase>Political</phrase>
+      </title>
+      <document refid="P102"/>
+      <document refid="P1142"/>
+      <document refid="P1313"/>
+      <document refid="P1387"/>
+      <document refid="P155"/>
+      <document refid="P156"/>
+      <document refid="P194"/>
+      <document refid="P39"/>
+      <document refid="P500"/>
+      <document refid="P706"/>
+   </group>
+   <group id="31" size="10" score="33.27737538617349">
+      <title>
+         <phrase>Software</phrase>
+      </title>
+      <document refid="P123"/>
+      <document refid="P1372"/>
+      <document refid="P1547"/>
+      <document refid="P277"/>
+      <document refid="P306"/>
+      <document refid="P400"/>
+      <document refid="P408"/>
+      <document refid="P479"/>
+      <document refid="P852"/>
+      <document refid="P943"/>
+   </group>
+   <group id="32" size="10" score="40.604920817221696">
+      <title>
+         <phrase>Sports Team</phrase>
+      </title>
+      <document refid="P115"/>
+      <document refid="P1327"/>
+      <document refid="P1532"/>
+      <document refid="P286"/>
+      <document refid="P505"/>
+      <document refid="P54"/>
+      <document refid="P634"/>
+      <document refid="P641"/>
+      <document refid="P822"/>
+      <document refid="P942"/>
+   </group>
+   <group id="33" size="10" score="35.11073568221461">
+      <title>
+         <phrase>Station</phrase>
+      </title>
+      <document refid="P1192"/>
+      <document refid="P1408"/>
+      <document refid="P197"/>
+      <document refid="P415"/>
+      <document refid="P449"/>
+      <document refid="P516"/>
+      <document refid="P521"/>
+      <document refid="P559"/>
+      <document refid="P833"/>
+      <document refid="P834"/>
+   </group>
+   <group id="34" size="10" score="29.060490689175136">
+      <title>
+         <phrase>Topic</phrase>
+      </title>
+      <document refid="P1151"/>
+      <document refid="P1204"/>
+      <document refid="P1269"/>
+      <document refid="P1423"/>
+      <document refid="P1424"/>
+      <document refid="P301"/>
+      <document refid="P360"/>
+      <document refid="P910"/>
+      <document refid="P921"/>
+      <document refid="P971"/>
+   </group>
+   <group id="35" size="9" score="28.721365207278033">
+      <title>
+         <phrase>Form</phrase>
+      </title>
+      <document refid="P122"/>
+      <document refid="P1454"/>
+      <document refid="P186"/>
+      <document refid="P523"/>
+      <document refid="P524"/>
+      <document refid="P527"/>
+      <document refid="P537"/>
+      <document refid="P538"/>
+      <document refid="P740"/>
+   </group>
+   <group id="36" size="9" score="1.8180633132241102E-11">
+      <title>
+         <phrase>Government</phrase>
+      </title>
+      <document refid="P122"/>
+      <document refid="P131"/>
+      <document refid="P1313"/>
+      <document refid="P150"/>
+      <document refid="P194"/>
+      <document refid="P208"/>
+      <document refid="P263"/>
+      <document refid="P6"/>
+      <document refid="P944"/>
+   </group>
+   <group id="37" size="9" score="34.59723430999017">
+      <title>
+         <phrase>Point</phrase>
+      </title>
+      <document refid="P1145"/>
+      <document refid="P1363"/>
+      <document refid="P1589"/>
+      <document refid="P589"/>
+      <document refid="P609"/>
+      <document refid="P610"/>
+      <document refid="P795"/>
+      <document refid="P796"/>
+      <document refid="P873"/>
+   </group>
+   <group id="38" size="9" score="6.573272860186523">
+      <title>
+         <phrase>Position</phrase>
+      </title>
+      <document refid="P1313"/>
+      <document refid="P1365"/>
+      <document refid="P1366"/>
+      <document refid="P1387"/>
+      <document refid="P286"/>
+      <document refid="P39"/>
+      <document refid="P413"/>
+      <document refid="P463"/>
+      <document refid="P803"/>
+   </group>
+   <group id="39" size="9" score="9.053225998380033E-51">
+      <title>
+         <phrase>Primary</phrase>
+      </title>
+      <document refid="P1204"/>
+      <document refid="P1302"/>
+      <document refid="P1423"/>
+      <document refid="P1424"/>
+      <document refid="P1660"/>
+      <document refid="P1677"/>
+      <document refid="P301"/>
+      <document refid="P504"/>
+      <document refid="P921"/>
+   </group>
+   <group id="40" size="9" score="34.91171941390455">
+      <title>
+         <phrase>Process</phrase>
+      </title>
+      <document refid="P1056"/>
+      <document refid="P1060"/>
+      <document refid="P128"/>
+      <document refid="P1703"/>
+      <document refid="P411"/>
+      <document refid="P523"/>
+      <document refid="P524"/>
+      <document refid="P682"/>
+      <document refid="P880"/>
+   </group>
+   <group id="41" size="9" score="33.78394570044875">
+      <title>
+         <phrase>Taxon</phrase>
+      </title>
+      <document refid="P105"/>
+      <document refid="P1403"/>
+      <document refid="P1420"/>
+      <document refid="P1582"/>
+      <document refid="P1672"/>
+      <document refid="P171"/>
+      <document refid="P183"/>
+      <document refid="P703"/>
+      <document refid="P944"/>
+   </group>
+   <group id="42" size="9" score="34.231688797600576">
+      <title>
+         <phrase>Unit</phrase>
+      </title>
+      <document refid="P111"/>
+      <document refid="P1137"/>
+      <document refid="P131"/>
+      <document refid="P155"/>
+      <document refid="P210"/>
+      <document refid="P241"/>
+      <document refid="P514"/>
+      <document refid="P598"/>
+      <document refid="P880"/>
+   </group>
+   <group id="43" size="9" score="35.72621239410838">
+      <title>
+         <phrase>Universe</phrase>
+      </title>
+      <document refid="P1075"/>
+      <document refid="P1080"/>
+      <document refid="P1434"/>
+      <document refid="P1445"/>
+      <document refid="P69"/>
+      <document refid="P786"/>
+      <document refid="P811"/>
+      <document refid="P812"/>
+      <document refid="P822"/>
+   </group>
+   <group id="44" size="8" score="30.278711277083378">
+      <title>
+         <phrase>Artist</phrase>
+      </title>
+      <document refid="P135"/>
+      <document refid="P136"/>
+      <document refid="P170"/>
+      <document refid="P175"/>
+      <document refid="P1774"/>
+      <document refid="P358"/>
+      <document refid="P710"/>
+      <document refid="P736"/>
+   </group>
+   <group id="45" size="8" score="3.7990807636112558E-6">
+      <title>
+         <phrase>Division</phrase>
+      </title>
+      <document refid="P118"/>
+      <document refid="P1336"/>
+      <document refid="P1376"/>
+      <document refid="P1383"/>
+      <document refid="P150"/>
+      <document refid="P199"/>
+      <document refid="P209"/>
+      <document refid="P708"/>
+   </group>
+   <group id="46" size="8" score="32.49372456931336">
+      <title>
+         <phrase>Family</phrase>
+      </title>
+      <document refid="P1034"/>
+      <document refid="P1038"/>
+      <document refid="P1533"/>
+      <document refid="P427"/>
+      <document refid="P53"/>
+      <document refid="P734"/>
+      <document refid="P735"/>
+      <document refid="P744"/>
+   </group>
+   <group id="47" size="8" score="33.43647276871625">
+      <title>
+         <phrase>Field</phrase>
+      </title>
+      <document refid="P101"/>
+      <document refid="P106"/>
+      <document refid="P115"/>
+      <document refid="P172"/>
+      <document refid="P248"/>
+      <document refid="P413"/>
+      <document refid="P425"/>
+      <document refid="P452"/>
+   </group>
+   <group id="48" size="8" score="24.494455655304385">
+      <title>
+         <phrase>Head</phrase>
+      </title>
+      <document refid="P1313"/>
+      <document refid="P159"/>
+      <document refid="P180"/>
+      <document refid="P263"/>
+      <document refid="P286"/>
+      <document refid="P35"/>
+      <document refid="P6"/>
+      <document refid="P921"/>
+   </group>
+   <group id="49" size="8" score="4.630023186530153E-8">
+      <title>
+         <phrase>Municipality</phrase>
+      </title>
+      <document refid="P1001"/>
+      <document refid="P131"/>
+      <document refid="P1376"/>
+      <document refid="P150"/>
+      <document refid="P190"/>
+      <document refid="P194"/>
+      <document refid="P36"/>
+      <document refid="P6"/>
+   </group>
+   <group id="50" size="8" score="31.59233894183075">
+      <title>
+         <phrase>Natural</phrase>
+      </title>
+      <document refid="P1196"/>
+      <document refid="P141"/>
+      <document refid="P1582"/>
+      <document refid="P1605"/>
+      <document refid="P1606"/>
+      <document refid="P1672"/>
+      <document refid="P509"/>
+      <document refid="P706"/>
+   </group>
+   <group id="51" size="8" score="31.020710556850926">
+      <title>
+         <phrase>Organisation</phrase>
+      </title>
+      <document refid="P1268"/>
+      <document refid="P1411"/>
+      <document refid="P1462"/>
+      <document refid="P166"/>
+      <document refid="P178"/>
+      <document refid="P631"/>
+      <document refid="P655"/>
+      <document refid="P749"/>
+   </group>
+   <group id="52" size="8" score="33.133063531128066">
+      <title>
+         <phrase>Published</phrase>
+      </title>
+      <document refid="P123"/>
+      <document refid="P1403"/>
+      <document refid="P1412"/>
+      <document refid="P1433"/>
+      <document refid="P291"/>
+      <document refid="P566"/>
+      <document refid="P694"/>
+      <document refid="P872"/>
+   </group>
+   <group id="53" size="8" score="33.84936023798043">
+      <title>
+         <phrase>Set</phrase>
+      </title>
+      <document refid="P1068"/>
+      <document refid="P1462"/>
+      <document refid="P1568"/>
+      <document refid="P282"/>
+      <document refid="P361"/>
+      <document refid="P527"/>
+      <document refid="P840"/>
+      <document refid="P92"/>
+   </group>
+   <group id="54" size="7" score="33.04028799643821">
+      <title>
+         <phrase>Biological</phrase>
+      </title>
+      <document refid="P128"/>
+      <document refid="P1604"/>
+      <document refid="P21"/>
+      <document refid="P40"/>
+      <document refid="P43"/>
+      <document refid="P44"/>
+      <document refid="P682"/>
+   </group>
+   <group id="55" size="7" score="31.802073088123695">
+      <title>
+         <phrase>Building</phrase>
+      </title>
+      <document refid="P1398"/>
+      <document refid="P1535"/>
+      <document refid="P167"/>
+      <document refid="P193"/>
+      <document refid="P466"/>
+      <document refid="P631"/>
+      <document refid="P84"/>
+   </group>
+   <group id="56" size="7" score="12.394693201687925">
+      <title>
+         <phrase>Created</phrase>
+      </title>
+      <document refid="P1040"/>
+      <document refid="P1073"/>
+      <document refid="P170"/>
+      <document refid="P364"/>
+      <document refid="P457"/>
+      <document refid="P527"/>
+      <document refid="P736"/>
+   </group>
+   <group id="57" size="7" score="31.01341011258708">
+      <title>
+         <phrase>Crystal</phrase>
+      </title>
+      <document refid="P537"/>
+      <document refid="P538"/>
+      <document refid="P556"/>
+      <document refid="P565"/>
+      <document refid="P589"/>
+      <document refid="P690"/>
+      <document refid="P693"/>
+   </group>
+   <group id="58" size="7" score="31.09597039678316">
+      <title>
+         <phrase>Engine</phrase>
+      </title>
+      <document refid="P1002"/>
+      <document refid="P1078"/>
+      <document refid="P1210"/>
+      <document refid="P1211"/>
+      <document refid="P408"/>
+      <document refid="P516"/>
+      <document refid="P631"/>
+   </group>
+   <group id="59" size="7" score="30.610304132719367">
+      <title>
+         <phrase>Executive</phrase>
+      </title>
+      <document refid="P1431"/>
+      <document refid="P157"/>
+      <document refid="P162"/>
+      <document refid="P169"/>
+      <document refid="P208"/>
+      <document refid="P6"/>
+      <document refid="P797"/>
+   </group>
+   <group id="60" size="7" score="4.325733461149972E-6">
+      <title>
+         <phrase>Fictional</phrase>
+      </title>
+      <document refid="P1074"/>
+      <document refid="P1080"/>
+      <document refid="P1165"/>
+      <document refid="P1434"/>
+      <document refid="P1441"/>
+      <document refid="P1445"/>
+      <document refid="P172"/>
+   </group>
+   <group id="61" size="7" score="26.472883926076296">
+      <title>
+         <phrase>Following</phrase>
+      </title>
+      <document refid="P131"/>
+      <document refid="P1365"/>
+      <document refid="P1366"/>
+      <document refid="P155"/>
+      <document refid="P156"/>
+      <document refid="P1625"/>
+      <document refid="P360"/>
+   </group>
+   <group id="62" size="7" score="6.330456184252044">
+      <title>
+         <phrase>Institution</phrase>
+      </title>
+      <document refid="P1001"/>
+      <document refid="P194"/>
+      <document refid="P210"/>
+      <document refid="P457"/>
+      <document refid="P485"/>
+      <document refid="P664"/>
+      <document refid="P69"/>
+   </group>
+   <group id="63" size="7" score="28.504471017568054">
+      <title>
+         <phrase>National</phrase>
+      </title>
+      <document refid="P1321"/>
+      <document refid="P1532"/>
+      <document refid="P17"/>
+      <document refid="P27"/>
+      <document refid="P6"/>
+      <document refid="P768"/>
+      <document refid="P832"/>
+   </group>
+   <group id="64" size="7" score="0.008264336164260684">
+      <title>
+         <phrase>People</phrase>
+      </title>
+      <document refid="P1464"/>
+      <document refid="P1465"/>
+      <document refid="P1791"/>
+      <document refid="P1792"/>
+      <document refid="P470"/>
+      <document refid="P655"/>
+      <document refid="P710"/>
+   </group>
+   <group id="65" size="7" score="29.703407980103034">
+      <title>
+         <phrase>Structure</phrase>
+      </title>
+      <document refid="P1365"/>
+      <document refid="P1398"/>
+      <document refid="P149"/>
+      <document refid="P167"/>
+      <document refid="P193"/>
+      <document refid="P631"/>
+      <document refid="P970"/>
+   </group>
+   <group id="66" size="140" score="0.0">
+      <title>
+         <phrase>Other Topics</phrase>
+      </title>
+      <attribute key="other-topics">
+         <value type="java.lang.Boolean" value="true"/>
+      </attribute>
+      <document refid="P1026"/>
+      <document refid="P1033"/>
+      <document refid="P1041"/>
+      <document refid="P1046"/>
+      <document refid="P1049"/>
+      <document refid="P1050"/>
+      <document refid="P1057"/>
+      <document refid="P1064"/>
+      <document refid="P1072"/>
+      <document refid="P110"/>
+      <document refid="P113"/>
+      <document refid="P114"/>
+      <document refid="P1171"/>
+      <document refid="P1194"/>
+      <document refid="P1199"/>
+      <document refid="P1201"/>
+      <document refid="P1202"/>
+      <document refid="P121"/>
+      <document refid="P1264"/>
+      <document refid="P127"/>
+      <document refid="P129"/>
+      <document refid="P1299"/>
+      <document refid="P1312"/>
+      <document refid="P1322"/>
+      <document refid="P1347"/>
+      <document refid="P1349"/>
+      <document refid="P1382"/>
+      <document refid="P1406"/>
+      <document refid="P1414"/>
+      <document refid="P1419"/>
+      <document refid="P1425"/>
+      <document refid="P1432"/>
+      <document refid="P1435"/>
+      <document refid="P144"/>
+      <document refid="P1444"/>
+      <document refid="P1546"/>
+      <document refid="P1552"/>
+      <document refid="P1557"/>
+      <document refid="P1571"/>
+      <document refid="P1574"/>
+      <document refid="P1576"/>
+      <document refid="P1594"/>
+      <document refid="P1595"/>
+      <document refid="P1596"/>
+      <document refid="P1598"/>
+      <document refid="P16"/>
+      <document refid="P1611"/>
+      <document refid="P1620"/>
+      <document refid="P1629"/>
+      <document refid="P163"/>
+      <document refid="P1639"/>
+      <document refid="P1640"/>
+      <document refid="P1652"/>
+      <document refid="P1654"/>
+      <document refid="P1678"/>
+      <document refid="P1716"/>
+      <document refid="P1731"/>
+      <document refid="P176"/>
+      <document refid="P177"/>
+      <document refid="P1773"/>
+      <document refid="P179"/>
+      <document refid="P1811"/>
+      <document refid="P1830"/>
+      <document refid="P185"/>
+      <document refid="P195"/>
+      <document refid="P196"/>
+      <document refid="P237"/>
+      <document refid="P26"/>
+      <document refid="P275"/>
+      <document refid="P287"/>
+      <document refid="P289"/>
+      <document refid="P366"/>
+      <document refid="P371"/>
+      <document refid="P375"/>
+      <document refid="P38"/>
+      <document refid="P398"/>
+      <document refid="P403"/>
+      <document refid="P414"/>
+      <document refid="P417"/>
+      <document refid="P418"/>
+      <document refid="P423"/>
+      <document refid="P447"/>
+      <document refid="P460"/>
+      <document refid="P461"/>
+      <document refid="P462"/>
+      <document refid="P469"/>
+      <document refid="P489"/>
+      <document refid="P501"/>
+      <document refid="P517"/>
+      <document refid="P518"/>
+      <document refid="P520"/>
+      <document refid="P532"/>
+      <document refid="P533"/>
+      <document refid="P534"/>
+      <document refid="P546"/>
+      <document refid="P560"/>
+      <document refid="P567"/>
+      <document refid="P568"/>
+      <document refid="P579"/>
+      <document refid="P588"/>
+      <document refid="P608"/>
+      <document refid="P61"/>
+      <document refid="P611"/>
+      <document refid="P612"/>
+      <document refid="P624"/>
+      <document refid="P629"/>
+      <document refid="P658"/>
+      <document refid="P660"/>
+      <document refid="P674"/>
+      <document refid="P680"/>
+      <document refid="P681"/>
+      <document refid="P688"/>
+      <document refid="P7"/>
+      <document refid="P702"/>
+      <document refid="P707"/>
+      <document refid="P739"/>
+      <document refid="P741"/>
+      <document refid="P747"/>
+      <document refid="P751"/>
+      <document refid="P756"/>
+      <document refid="P765"/>
+      <document refid="P78"/>
+      <document refid="P780"/>
+      <document refid="P784"/>
+      <document refid="P785"/>
+      <document refid="P789"/>
+      <document refid="P800"/>
+      <document refid="P807"/>
+      <document refid="P81"/>
+      <document refid="P816"/>
+      <document refid="P841"/>
+      <document refid="P85"/>
+      <document refid="P859"/>
+      <document refid="P868"/>
+      <document refid="P878"/>
+      <document refid="P9"/>
+      <document refid="P913"/>
+      <document refid="P923"/>
+      <document refid="P924"/>
+      <document refid="P98"/>
+   </group>
+</searchresult>

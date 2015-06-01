@@ -22,7 +22,7 @@ public class WikiDataQueryTool
     static {
 
         r = RethinkDB.r;
-        con = r.connect();
+        con = r.connect("130.83.167.161",28015);
 
         con.use(db_name);
     }
@@ -235,7 +235,7 @@ public class WikiDataQueryTool
     public static void main(String[] args)
     {
 
-        queryWikiData("Q2", "en");
+        queryWikiData("Q2", "ar");
 
         System.out.println();
     }

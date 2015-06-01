@@ -1,0 +1,1484 @@
+propId, label, description, count,type
+P1659,see also,used to indicate a property that might provide additional information about the subject,155,wikibase-property
+P1687,Wikidata property,main Wikidata property for this item,127,wikibase-property
+P1647,subproperty of,all resources related by this property are also related that property.,52,wikibase-property
+P1696,inverse of,links a property to its inverse property,52,wikibase-property
+P1646,mandatory qualifier,qualifier(s) that must be associated to statements using this property,45,wikibase-property
+P1013,criterion used,usually used as a qualifier,6,wikibase-item
+P101,field of work,"fields of work related to this item (physics, history). For occupation like physicist, historian see P106. Note: Can be used in any item besides person",8877,wikibase-item
+P1060,pathogen transmission process,process by which a pathogen is transmitted,5,wikibase-item
+P105,taxon rank,level in a taxonomic hierarchy,1923141,wikibase-item
+P106,occupation,occupation of a person; see also field of work,1913712,wikibase-item
+P102,member of political party,the political party of which this politician is or has been a member,182969,wikibase-item
+P1057,chromosome,chromosome on which an entity is localized,50600,wikibase-item
+P1080,from fictional universe,subject's fictional entity is in the object narrative. See also P1441 and P1445,8142,wikibase-item
+P103,native language,language that a person learned natively,4288,wikibase-item
+P1001,applies to jurisdiction,"the item (an institution, law, ...) belongs to or applies to the value (a jurisdiction: a country, state, municipality, ...)",4192,wikibase-item
+P1050,medical condition,disease or other health problem affecting an individual human or other animal,3846,wikibase-item
+P1066,student of,person who has taught this person,2004,wikibase-item
+P110,illustrator,illustrator of a book,1977,wikibase-item
+P1038,relative,"family member (qualify with type of kinship""P1039; for direct family member please use specific property)""P1039; for direct family member please use specific property)""",1626,wikibase-item
+P1071,location of final assembly,place where the item was made; location of final assembly,1085,wikibase-item
+P1037,manager/director,person who manages any kind of group,766,wikibase-item
+P1049,deity of,religion or group/civilization that worships a given deity,356,wikibase-item
+P1002,engine configuration,configuration of an engine's cylinders,347,wikibase-item
+P1074,fictional analog of,used to link a class of items appearing in a creative work with the analogous class of objects in the real world,234,wikibase-item
+P1018,language regulatory body,regulatory body of a language,98,wikibase-item
+P1068,instruction set,instruction set on which the processor architecture is based,46,wikibase-item
+P1073,writable file format,file format a program can create and/or write to,42,wikibase-item
+P1046,discovery method,way an exoplanet was discovered,28,wikibase-item
+P1026,doctoral thesis,thesis that someone wrote to obtain a PhD degree,23,wikibase-item
+P1033,GHS signal word,"please use with items warning"" (Q15350847) and ""danger"" (Q15221217)""",14,wikibase-item
+P1035,honorific suffix,"word or expression with connotations conveying esteem or respect when used, after a name, in addressing or referring to a person",4,wikibase-item
+P1079,launch contractor,organization contracted to launch the rocket,4,wikibase-item
+P1000,record held,"notable record achieved by a person or entity, include qualifiers for dates held",3,wikibase-item
+P108,employer,organization for which the subject works or worked,88183,wikibase-item
+P1064,track gauge,spacing of the rails on a railway track,5009,wikibase-item
+P1029,crew member,person that participated operating or serving aboard this vehicle,1857,wikibase-item
+P1040,film editor,"person who worked with the raw footage, selecting shots and combining them into sequences to create a finished motion picture",831,wikibase-item
+P1027,conferred by,person or organization who awards a prize to or bestows an honor upon a recipient,776,wikibase-item
+P1056,produces,"the material produced by a mine, an industrial site or a production process",505,wikibase-item
+P1075,rector,rector of a university,229,wikibase-item
+P111,measured physical quantity,physical property measured by a unit,134,wikibase-item
+P1028,donated by,person or organization who donated the object,127,wikibase-item
+P1072,readable file format,file format a program can open and read,50,wikibase-item
+P1012,including,usually used as a qualifier,11,wikibase-item
+P1041,sockets supported,socket for which the electronic part was made,7,wikibase-item
+P1034,main food source,"the species, genus or family that an organism depends on for nutrition",3,wikibase-item
+P1078,valvetrain configuration,configuration of the valvetrain utilized by this engine,3,wikibase-item
+P31,instance of,this item is a specific example and a member of that class,13324704,wikibase-item
+P17,country,sovereign state of this item,3064161,wikibase-item
+P21,sex or gender,"Sexual identity of  subject. Main: male (Q6581097), female (Q6581072), transgender female (Q1052281),  transgender male (Q2449503). For animals, use male animal (Q44148), female animal (Q43445). For groups of  same gender, use subclass of"" (P279)""",2611401,wikibase-item
+P131,located in the administrative territorial entity,the item is located on the territory of the following administrative entity,2369539,wikibase-item
+P735,given name,first name or another given name of this person. Values used with the property shouldn't link disambiguations nor family names.,1896107,wikibase-item
+P171,parent taxon,closest parent taxon of the taxon in question,1859849,wikibase-item
+P27,country of citizenship,the object is a country that recognizes the subject as its citizen,1463056,wikibase-item
+P150,contains administrative territorial entity,(list of) direct subdivisions of an administrative entity,860305,wikibase-item
+P19,place of birth,"the most specific known (e.g. city instead of country, or hospital instead of city)",737895,wikibase-item
+P161,cast member,"production's cast members; to add the roles, use character role"" (P453) as qualifier""",572590,wikibase-item
+P301,category's main topic,primary topic of the subject category,363188,wikibase-item
+P54,member of sports team,sports teams or clubs that the subject currently represents or formerly represented,349683,wikibase-item
+P20,place of death,"the most specific known (e.g. city instead of country, or hospital instead of city)",339545,wikibase-item
+P910,topic's main category,main category of this topic,319704,wikibase-item
+P166,award received,"award or recognition received by a person, organisation or creative work",282664,wikibase-item
+P69,educated at,educational institution attended by the subject,281109,wikibase-item
+P136,genre,genre of a creative work or genre in which an artist works,251784,wikibase-item
+P39,position held,subject currently or formerly holds the object position or public office,229555,wikibase-item
+P276,location,"location the item, physical object or event is within.  In case of an administrative entity use P131. In case of a distinct terrain feature use P706.",217406,wikibase-item
+P279,subclass of,all of these items are instances of those items; this item is a class of that item,215089,wikibase-item
+P47,shares border with,"countries or administrative subdivisions, of equal level, that this item borders, either by land or water",204439,wikibase-item
+P155,follows,"The immediately prior item in some series of which the subject is part. Use P1365 (replaces) if the preceding item was replaced, e.g. political offices, states and there is no identity between precedent and following geographic unit",199210,wikibase-item
+P156,followed by,"The immediately following item in some series of which the subject is part. Use P1366 (succeeded by) if the item is replaced, e.g. political offices, states",198917,wikibase-item
+P407,language of work,for works (for original language use P364 and for persons P103 and P1412),186032,wikibase-item
+P641,sport,sport or discipline in which the entity participates or belongs to,177938,wikibase-item
+P1435,heritage status,the heritage status of a historical site,168464,wikibase-item
+P1344,participant of,"event a person was a participant in, inverse of P710",145683,wikibase-item
+P175,performer,"musician, music group, or other performer associated with this work, actor portraying a character",142689,wikibase-item
+P364,original language of work,language in which a work was originally created,130903,wikibase-item
+P360,is a list of,this is a list of the following items,118773,wikibase-item
+P264,record label,brand and trademark associated with the marketing of subject music recordings and music videos,110151,wikibase-item
+P734,surname,surname or last name of a person,110021,wikibase-item
+P703,found in taxon,the taxon in which the molecule or substance can be found,109231,wikibase-item
+P495,country of origin,country of origin of the creative work or subject item,107324,wikibase-item
+P361,part of,subject is a part of that object,106394,wikibase-item
+P57,director,"director(s) of this motion picture, play, video game or similar",95257,wikibase-item
+P971,category combines topics,this category combines these two or more topics,78467,wikibase-item
+P141,IUCN conservation status,conservation status assigned by the International Union for Conservation of Nature,73328,wikibase-item
+P50,author,main creator(s) of a written work,67916,wikibase-item
+P463,member of,"part of a specific organization or club. Do not use for membership in ethnic or social groups, nor for holding a position such as a member of parliament (use P39 for that).",67774,wikibase-item
+P7,brother,subject has the object as their brother,64381,wikibase-item
+P1412,languages spoken or published,language(s) that a person speaks or writes. Can include native languages,61028,wikibase-item
+P40,child,the subject has the object as their biological and/ or legal child,60309,wikibase-item
+P61,discoverer or inventor,discovered or invented by,59847,wikibase-item
+P180,depicts,depicted entity (see also P921: subject heading),52289,wikibase-item
+P607,conflict,"battles, wars or engagements in which the person or item participated",50762,wikibase-item
+P196,minor planet group,is in grouping of minor planets according to similar orbital characteristics,50391,wikibase-item
+P58,screenwriter,author(s) of the screenplay or script for this work,50160,wikibase-item
+P65,site of astronomical discovery,"the place where an astronomical object was discovered (observatory, satellite)",45812,wikibase-item
+P186,material used,material the subject is made of,44497,wikibase-item
+P669,located on street,"street, or road, where the item is located. To add the number, use Property:P670 street number"" as qualifier""",44205,wikibase-item
+P162,producer,"producer(s) of this film or music work (film: not executive producers, associate producers, etc.)",43630,wikibase-item
+P22,father,male parent,43525,wikibase-item
+P123,publisher,"organization responsible for publishing books, periodicals or software",41005,wikibase-item
+P937,location of creative working,location(s) where the creator was active,40632,wikibase-item
+P527,has part,object that is part of this subject,40361,wikibase-item
+P195,collection,"art, museum or bibliographic collection the subject is part of",40197,wikibase-item
+P421,located in time zone,time zone for this item,39556,wikibase-item
+P190,sister city,"twin towns, sister cities, twinned municipalities and other localities",38470,wikibase-item
+P138,named after,"entity or event that inspired the subject's name, or namesake (in at least one language)",38419,wikibase-item
+P170,creator,maker of a creative work or other object (where no more specific property exists),37502,wikibase-item
+P137,operator,"organization that operates the service, facility, ship, aircraft, missile",36949,wikibase-item
+P400,platform,platform for which a work has been developed or released / specific platform version of a software developed,36422,wikibase-item
+P119,location of burial,"location of grave, resting place, place of ash-scattering, etc, (e.g. city or cemetery) for a person. There may be several places: e.g. re-burials, cenotaphs, parts of body buried separately.",34583,wikibase-item
+P1343,described by source,dictionary or encyclopaedia where this item is described,33109,wikibase-item
+P682,biological process,is involved in the biological process,32246,wikibase-item
+P179,series,"the subject is part of a series, whose sum constitutes the object",31754,wikibase-item
+P26,spouse,"the subject has the object as their spouse (husband, wife, partner, etc.). Use cohabitant"" for non-married companions""",31651,wikibase-item
+P9,sister,subject has the object as their sister (female sibling),30332,wikibase-item
+P140,religion,religion of a person or organization (MUST be claimed by the subject or documented by historical sources),28815,wikibase-item
+P241,military branch,"the branch to which this military unit, award, or person belongs, e.g. Royal Navy",27526,wikibase-item
+P344,director of photography,"person responsible for the framing, lighting and filtration of the subject work",27484,wikibase-item
+P272,production company,"company that produced this film, audio or performing arts work",27287,wikibase-item
+P127,owned by,owner of the subject,26689,wikibase-item
+P403,mouth of the watercourse,the body of water to which the watercourse drains,25680,wikibase-item
+P1303,instrument,instrument that a person plays,25238,wikibase-item
+P197,adjacent station,"the stations next to this station, sharing the same line(s)",25025,wikibase-item
+P509,cause of death,"underlying or immediate cause of death.  Underlying cause (e.g. car accident, stomach cancer) preferred.  Use 'manner of death' (P1196) for broadest category, e.g. natural causes, accident, homicide, suicide",24422,wikibase-item
+P404,game mode,available playing mode(s) in a video game,22916,wikibase-item
+P30,continent,"continent of which the subject is a part. Use for countries, locations in Antarctica, and items located in countries that belong to more than one continent, e.g. Russian cities.",21610,wikibase-item
+P512,academic degree,academic degree that the person holds,21325,wikibase-item
+P176,manufacturer,main manufacturer of this product (excluding sub-contracted manufacturers),20769,wikibase-item
+P921,main subject,primary topic of a work,20328,wikibase-item
+P800,notable works,subject's notable scientific work or work of art,20118,wikibase-item
+P59,constellation,"the area of the celestial sphere of which the subject is a part (from a scientific standpoint, not an astrological one)",19949,wikibase-item
+P840,narrative set in,the narrative of this work is set in this location,19372,wikibase-item
+P1383,contains settlement,settlement which an administrative division contains,19189,wikibase-item
+P16,highway system,system of which the highway is a part,18856,wikibase-item
+P460,said to be the same as,"this item is said to be the same as that item, but the statement is disputed",18156,wikibase-item
+P149,architectural style,architectural style of a structure or architect,17753,wikibase-item
+P25,mother,female parent,16945,wikibase-item
+P1464,category for people born here,category item that groups people born in this place,16324,wikibase-item
+P36,capital,"location (city, municipality) of governmental seat of the country, or administrative territorial entity",16205,wikibase-item
+P178,developer,organisation or person that developed this item,15908,wikibase-item
+P159,headquarters location,specific location where an organization's HQ is or has been situated,15039,wikibase-item
+P915,filming location,actual place where this scene/film was shot,14572,wikibase-item
+P126,maintained by,organization in charge of keeping the subject (for instance an infrastructure) in functioning order,13264,wikibase-item
+P413,position played on team,"position the player plays, e.g. Small Forward",13084,wikibase-item
+P553,website account on,a website that the person or organization has an account on (use with P554) Note: only used with reliable source or if the person or organization disclosed it.,12200,wikibase-item
+P6,head of government,"head of the executive power of a town, city, municipality, state, country, or other governmental body",11720,wikibase-item
+P118,league,league in which the team plays or has played in,11335,wikibase-item
+P680,molecular function,represents gene ontology function annotations,11200,wikibase-item
+P81,connecting line,railway or public transport line(s) subject is directly connected to,10846,wikibase-item
+P710,participant,"person, group of people or organization that actively takes/took part in the event",10715,wikibase-item
+P681,cell component,component of the cell in which this item is present,10602,wikibase-item
+P437,distribution,method (or type) of distribution for the subject,10506,wikibase-item
+P1269,facet of,the main aspect of this topic,9919,wikibase-item
+P172,ethnic group,"subject's ethnicity (consensus is that a VERY high standard of proof is needed for this field to be used. In general this means 1) the subject claims it him/herself, or 2) it is widely agreed on by scholars, or 3) is fictional and portrayed as such).",9757,wikibase-item
+P135,movement,"literary, artistic or philosophical movement associated with this person or work",9713,wikibase-item
+P466,occupant,person or organization occupying a building or facility,9684,wikibase-item
+P86,composer,person(s) who wrote the music; also use P676 for lyricist,9407,wikibase-item
+P449,original network,network(s) the radio or television show was originally aired on. This does not include later re-runs or additional syndication.,8998,wikibase-item
+P412,voice type,"person's voice type. expected values: soprano, mezzo-soprano, contralto, countertenor, tenor, baritone, bass (and derivatives)",8890,wikibase-item
+P706,located on terrain feature,"located on the specified landform or body of water. Should not be used when the value is only political/administrative (provinces, states, countries, etc.).",8417,wikibase-item
+P1465,category for people who died here,category item for people who died in this location,8119,wikibase-item
+P144,based on,the work(s) used as basis for subject,7815,wikibase-item
+P53,noble family,include dynasty and nobility houses,7021,wikibase-item
+P793,significant event,significant or notable events associated with the subject,6740,wikibase-item
+P814,IUCN protected areas category,protected areas category by the World Commission on Protected Areas. Used with dedicated items for each category.,6708,wikibase-item
+P1142,political ideology,political ideology of this organization,6446,wikibase-item
+P452,industry,industry of company or organization,6408,wikibase-item
+P112,founder,"founder or co-founder of the organization, religion or place",6360,wikibase-item
+P410,military rank,"military rank achieved by a person (should usually have a start date"" qualifier)""",6273,wikibase-item
+P1792,category of associated people,Wikipedia category for people associated with this place,5812,wikibase-item
+P1441,present in work,work in which this fictional entity (Q14897293) is present. See also P:1080 for in-universe information,5766,wikibase-item
+P1433,published in,larger work that a given work was published in,5722,wikibase-item
+P84,architect,person or architectural firm that designed this building,5470,wikibase-item
+P115,home venue,home stadium or venue of a sports team or applicable performing arts organization,5407,wikibase-item
+P448,location of spacecraft launch,site or launch pad from where the spacecraft was launched,5390,wikibase-item
+P375,space launch vehicle,rocket or other vehicle for launching subject payload into space,5276,wikibase-item
+P676,lyrics by,author of song lyrics; also use P86 for music composer,5271,wikibase-item
+P289,ship class,ship classification (e.g. Nelson-class battleship),5175,wikibase-item
+P366,use,main use of the subject (includes current and former usage),5015,wikibase-item
+P816,decays to,what isotope does this radioactive isotope decay to,4875,wikibase-item
+P479,input device,input method or device used to interact with a software product,4630,wikibase-item
+P97,noble title,royal or noble titles held by the person,4556,wikibase-item
+P579,IMA status and/or rank,status given to each mineral by the IMA (International Mineralogical Association),4555,wikibase-item
+P708,diocese,administrative division of the church to which the element belongs,4465,wikibase-item
+P1456,list of monuments,link to the list of heritage monuments in the place/area,4212,wikibase-item
+P287,designer,designer of this item,4187,wikibase-item
+P991,successful candidate,person(s) elected after the election,4109,wikibase-item
+P551,residence,"the place where the person is, or has been, resident",4102,wikibase-item
+P1196,manner of death,"circumstances of a person's death; one of: natural causes, accident, suicide, homicide, pending investigation or special 'unknown value'.  Use 'cause of death' (P509) for more immediate or underlying causes and events, e.g. heart attack, car accident",3873,wikibase-item
+P674,characters,"characters which appear in this item (plays, operas, operettas, books...)",3643,wikibase-item
+P411,canonization status,stage in the process of attaining sainthood per the subject's religious organization.,3624,wikibase-item
+P852,ESRB rating,North American video game content rating - appropriate values are on property's talk page,3472,wikibase-item
+P414,stock exchange,exchange on which this company is traded,3436,wikibase-item
+P275,license,license under which this copyrighted work is released,3324,wikibase-item
+P121,equipment operated,equipment currently or formerly used by subject,3274,wikibase-item
+P358,discography,link to discography in artist or band page,3223,wikibase-item
+P488,chairperson,"presiding member of an organization, group or body",3222,wikibase-item
+P91,sexual orientation,"the sexual orientation of the person - use IF AND ONLY IF they have stated it themselves, unambiguously, or it has been widely agreed upon by historians after their death",3186,wikibase-item
+P177,crosses,"obstacle (body of water, road, ...) which this bridge crosses over or this tunnel goes under",3109,wikibase-item
+P376,located on astronomical body,astronomical body on which features or places are situated,3029,wikibase-item
+P37,official language,language designated as official by this item,2973,wikibase-item
+P908,PEGI rating,European video game rating system - see talk page for appropriate values,2906,wikibase-item
+P559,terminus,"the feature (intersecting road, train station, etc.) at the terminus of a linear feature",2778,wikibase-item
+P1389,product certification,"certification for a product, qualify with P1001 (applies to jurisdiction"") if needed""",2536,wikibase-item
+P1399,convicted of,crime a person was convicted of,2440,wikibase-item
+P286,team manager,"on-field manager or head coach of this sports club (not to be confused with a general manager, which is not a coaching position)",2435,wikibase-item
+P520,armament,equippable weapon item for the subject,2352,wikibase-item
+P408,software engine,software engine employed by the subject item,2318,wikibase-item
+P741,playing hand,hand used to play tennis,2264,wikibase-item
+P611,religious order,order of monks or nuns which the monastery housed,2213,wikibase-item
+P1313,office held by head of government,political office that is fulfilled by the head of the government of this item,2162,wikibase-item
+P113,airline hub,airport that serves as a hub for an airline,2047,wikibase-item
+P1200,bodies of water basin category,the category associated with the basin of a bodies of water,1980,wikibase-item
+P461,opposite of,item that is the opposite of this item,1959,wikibase-item
+P702,encoded by, the gene that encodes some gene product,1955,wikibase-item
+P688,encodes,the product of a gene (protein or RNA),1915,wikibase-item
+P163,flag,subject's flag,1885,wikibase-item
+P684,ortholog,orthologous gene in another species (use with 'species' qualifier),1860,wikibase-item
+P566,basionym,"the legitimate, previously published name on which a new combination or name at new rank is based",1838,wikibase-item
+P769,significant drug interaction,"a clinically significant interaction between two pharmacologically active substances (i.e., drugs and/or active metabolites) where concomitant intake can lead to altered effectiveness or adverse drug events.",1837,wikibase-item
+P739,ammunition,cartridge or other ammunition used by the subject weapon,1758,wikibase-item
+P914,USK rating,German video game content rating - see talk page for appropriate values,1714,wikibase-item
+P1321,place of origin (Switzerland),lieu d'origine of a Swiss national. Not be confused with place of birth or place of residence,1687,wikibase-item
+P237,coat of arms,subject's coat of arms,1677,wikibase-item
+P516,powerplant,equipment or engine used to power the subject,1676,wikibase-item
+P1597,Slovene Cultural Heritage designation,type of cultural heritage as designated by the Slovene Cultural Heritage Registry (RKD),1454,wikibase-item
+P1411,nominated for,"award nomination received by a person, organisation or creative work (inspired from award received)""",1438,wikibase-item
+P306,operating system,operating system (OS) on which a software works; OS installed on hardware,1407,wikibase-item
+P750,distributor,distributor of a creative work,1394,wikibase-item
+P853,CERO rating,Japanese video game rating system - see talk page for appropriate values,1372,wikibase-item
+P1750,name day,"day of the year associated with a first/given name. A qualifier should be used to identify the calendar that is being used. Distinguish from feast day"" (P:P841)""",1363,wikibase-item
+P417,patron saint,patron saint adopted by the subject,1363,wikibase-item
+P98,editor,editor of a compiled work such as a book or academic journal,1314,wikibase-item
+P371,presenter,someone who takes a main role in presenting a radio or television program,1312,wikibase-item
+P747,edition(s),linking to an edition of this item,1275,wikibase-item
+P425,field of this profession,activity corresponding to this occupation,1252,wikibase-item
+P277,programming language,the programming language(s) in which the software is developed,1241,wikibase-item
+P725,voice actor,"the person who dubbed a role of a creative work (like TV series, movie or video game)",1217,wikibase-item
+P291,place of publication,geographical place of publication of the edition (use 1st edition when referring to works),1198,wikibase-item
+P1740,category for films shot at this location,the object is a category for films shot at/in the subject,1188,wikibase-item
+P749,parent company,"a parent company of an organisation, opposite of subsidiaries (P355)",1164,wikibase-item
+P556,crystal system,type of crystal for crystal coumpounds,1128,wikibase-item
+P608,exhibition history,exhibitions where the item was displayed,1105,wikibase-item
+P206,located next to body of water,lake or river,1066,wikibase-item
+P1346,winner,winner of an event,1047,wikibase-item
+P767,contributor,person or organization that contributed in the creation of a creative work,1046,wikibase-item
+P765,surface played on,the surface on which the tournament is played,998,wikibase-item
+P629,edition or translation of,is an edition or translation of this text,988,wikibase-item
+P1204,portal's main topic,primary topic of this portal,986,wikibase-item
+P38,currency,currency used by item,980,wikibase-item
+P1192,connecting service,service stopping at a station,969,wikibase-item
+P397,astronomical body,major astronomical body the item belongs to,963,wikibase-item
+P1366,succeeded by,"Person or state or item who replaces another in an office, position, etc. Use P156 (followed by) if the item is not replaced, e.g. books in a series",930,wikibase-item
+P1312,has facet polytope,"facet of a polytope, in the next-lower dimension",928,wikibase-item
+P658,tracklist,songs contained in this item,927,wikibase-item
+P690,space group,symmetry classification for 2 and 3 dimensional patterns or crystals,919,wikibase-item
+P1151,topic's main portal,Wikimedia portal associated with this topic,902,wikibase-item
+P470,Eight Banner register,Manchu household register for people of the Qing Dynasty,893,wikibase-item
+P282,writing system,"alphabet, character set or other system of writing used by subject language",891,wikibase-item
+P451,cohabitant,"someone with whom the person is in a relationship without being married. Use spouse"" for married couples.""",881,wikibase-item
+P462,color,color of subject,862,wikibase-item
+P972,catalog,"catalogue for the item, or, as a qualifier of P528, catalogue for which the number is valid",860,wikibase-item
+P944,Code of nomenclature,the Code that governs the scientific name of this taxon,814,wikibase-item
+P194,legislative body,"legislative body governing this entity; political institution with elected representatives, such as a parliament/legislature or council",807,wikibase-item
+P609,terminus location,location of the terminus of a linear feature,792,wikibase-item
+P1340,eye color,color of the irises of a person's eyes,783,wikibase-item
+P143,imported from,source of this claim's value (use only in References section),765,wikibase-item
+P740,location of formation,location where a group or organization was formed,741,wikibase-item
+P398,child astronomical body,the minor body that belongs to the item,727,wikibase-item
+P35,head of state,official with the highest formal authority in a country,703,wikibase-item
+P355,subsidiaries,"subsidiary of a company or organization, opposite of parent company (P749)",703,wikibase-item
+P841,feast day,saint's principal feast day,682,wikibase-item
+P552,handedness,handedness of the person,680,wikibase-item
+P664,organizer,person or institution organizing an event,650,wikibase-item
+P1365,replaces,"Person, state or other item who was replaced in an office, position, etc.. Use P167 (structure replaced by) for structures. Use P155 (follows) if the previous item was not replaced and predecessor and successor are identical.",636,wikibase-item
+P184,doctoral advisor,person who supervised the doctorate or PhD thesis of the subject,632,wikibase-item
+P122,basic form of government,the subject's government,628,wikibase-item
+P183,endemic to,sole location or habitat type where the taxon lives,616,wikibase-item
+P802,student,notable student(s) of a person,598,wikibase-item
+P530,diplomatic relation,diplomatic relations of the country,583,wikibase-item
+P1576,lifestyle,"typical way of life of an individual, group, or culture",580,wikibase-item
+P1382,coincident with,"an object that is partially part of, but not fully part of (P361), the subject",572,wikibase-item
+P88,commissioned by,person or organization that commissioned this work,565,wikibase-item
+P880,CPU,central processing unit found within the subject item,563,wikibase-item
+P85,anthem,name of the subject's anthem,540,wikibase-item
+P837,day in year for periodic occurrence,when a specific holiday or periodic event occurs. Can be used as property or qualifier,531,wikibase-item
+P427,taxonomic type,"the type genus of this family (or subfamily, etc), or the type species of this genus (or subgenus, etc)",527,wikibase-item
+P1654,wing configuration,configuration of wing(s) used by an aircraft,509,wikibase-item
+P1533,family name identical to this first name,last name that is the same as a given first name. Use on items for given names.,501,wikibase-item
+P199,business division,divisions of this organization,467,wikibase-item
+P726,candidate,person or party listed as an option for office in an election,467,wikibase-item
+P485,archives at,the institution holding the subject's archives,462,wikibase-item
+P1434,describes the fictional universe,"the subject is a work describing a fictional universe, ie where the plot occurs in this universe.",441,wikibase-item
+P200,lake inflows,"major inflow sources — rivers, aquifers, glacial runoff, etc. Some terms may not be place names, e.g. none",436,wikibase-item
+P87,librettist,author of the libretto (words) of an opera,434,wikibase-item
+P941,inspired by,the work which inspired this creative work,425,wikibase-item
+P655,translator,people or organisation who translated this,420,wikibase-item
+P1629,subject item of this property,item corresponding exactly to the concept represented by the property (use in statements on properties),415,wikibase-item
+P1454,legal form,legal form of an organization,405,wikibase-item
+P974,tributary,stream or river that flows into this main stem (or parent) river or a lake,405,wikibase-item
+P720,asteroid spectral type,"spectral classifications of asteroids based on  spectral shape, color, and albedo",370,wikibase-item
+P826,tonality,key of a musical composition,370,wikibase-item
+P1201,space tug,"spacecraft vehicle designed to move the payload from a reference orbit to the target orbit, or direct it to an interplanetary trajectory",365,wikibase-item
+P737,influenced by,"this person, idea, etc. is informed by that other person, idea, etc., e.g. Heidegger has influence Aristotle"".  Inverse of 'influence of' (P738).""",362,wikibase-item
+P193,main building contractor,the main organization responsible for construction of this structure or building,358,wikibase-item
+P201,lake outflow,"rivers and other outflows waterway names. If evaporation or seepage are notable outflows, they may be included. Some terms may not be place names, e.g. evaporation",353,wikibase-item
+P832,public holiday,"official public holiday that occurs in this place, usually a non-working day",347,wikibase-item
+P169,chief executive officer,highest-ranking corporate officer appointed as the CEO within an organization,338,wikibase-item
+P805,subject of,(qualifier only) item detailing the relation established by the statement,334,wikibase-item
+P610,highest point,"point with highest elevation in the country, region, city, town or area",330,wikibase-item
+P157,killed by,person who killed the subject,329,wikibase-item
+P450,astronaut mission,space mission that the subject is or has been a member of (do not include future missions),327,wikibase-item
+P748,appointed by,"who appointed the person to the office, can be used as a qualifier",315,wikibase-item
+P189,location of discovery,where the item was located when discovered,306,wikibase-item
+P263,official residence,the residence at which heads of government and other senior figures officially reside,305,wikibase-item
+P78,top-level domain,Internet domain name system top-level code,304,wikibase-item
+P522,type of orbit,orbit a satellite has around its central body,302,wikibase-item
+P1322,dual to,"dual of a polytope, graph or curve",273,wikibase-item
+P1560,given name version for other gender,"equivalent name (with respect to the meaning of the name) in the same language: female version of a male first name, male version of a female first name. Add primarily the closest matching one",264,wikibase-item
+P588,coolant,substance used by the subject to dissipate excess thermal energy,264,wikibase-item
+P631,structural engineer,"person, group or organisation responsible for the structural engineering of a building or structure",258,wikibase-item
+P825,dedicated to,person or organization to whom the subject was dedicated,255,wikibase-item
+P92,main regulatory text,text setting the main rules by which the subject is regulated,253,wikibase-item
+P562,central bank/issuer,central bank or other issuing authority for the currency,250,wikibase-item
+P185,doctoral student,doctoral student(s) of a professor,249,wikibase-item
+P589,point group,crystal subdivision,247,wikibase-item
+P1403,original combination,for animals: the combination (binomen or trinomen) where the species-group name used in this taxon name was first published,246,wikibase-item
+P114,airline alliance,the alliance the airline belongs to,244,wikibase-item
+P945,allegiance,"the country (or other power) that the person, or organization, served",239,wikibase-item
+P1420,taxon synonym,synonym(s) of the taxon name,231,wikibase-item
+P612,mother house,name of the mother house,231,wikibase-item
+P1462,standards body,body or organisation responsible for publication and maintenance of standard,221,wikibase-item
+P636,route of administration,"path by which a drug, fluid, poison, or other substance is taken into the body",221,wikibase-item
+P738,influence of,"this person, idea, etc. informs that other person, idea, etc., e.g. Aristotle influence of Heidegger"".  Inverse of 'influenced by' (P737).""",218,wikibase-item
+P134,has dialect,dialects of this language (a single language may be linked to many dialects),217,wikibase-item
+P1731,Fach,describes the special ablilites of an operatic singers voice,214,wikibase-item
+P1791,category of people buried here,Wikipedia category for people with a burial site within this area,202,wikibase-item
+P736,cover artist,"name of person or team creating cover artwork for album, single, book, etc.",194,wikibase-item
+P467,legislated by,indicates that an act or bill was passed by a legislature.  The value can be a particular session of the legislature,188,wikibase-item
+P1376,capital of,"country, state, department, canton or other administrative division of which the municipality is the governmental seat",187,wikibase-item
+P531,diplomatic mission sent,"location of diplomatic mission, i.e. consulate of A in the capital city of B",186,wikibase-item
+P885,origin of the watercourse,main source of a river or stream,183,wikibase-item
+P624,guidance system,guidance system of a missile,178,wikibase-item
+P618,source of energy,describes the source of energy an animated object (machine or animal) uses,170,wikibase-item
+P828,has cause,"underlying cause, thing that ultimately resulted in this effect.  See 'Help:Modeling causes' for usage notes.",165,wikibase-item
+P1753,list related to category,Wikimedia list equivalent to a Wikimedia category,164,wikibase-item
+P1754,category related to list,Wikimedia category equivalent to a Wikimedia list,163,wikibase-item
+P598,commander of,"for persons who are notable as commanding officers, the units they commanded",162,wikibase-item
+P878,avionics,"notable sensors, electronics, and other avionics installed in the subject aircraft",162,wikibase-item
+P1639,pendant of,"other work in a pair of opposing artworks, such as wedding portraits, commissioned together, but not always",161,wikibase-item
+P205,basin country,countries that have drainage to/from or border the lake,161,wikibase-item
+P1431,executive producer,executive producer of a movie or TV show,158,wikibase-item
+P1423,template's main topic,primary topic of the subject template or infobox,157,wikibase-item
+P501,enclave within,territory is entirely surrounded by the other (enclaved),155,wikibase-item
+P1716,brand,brand of a product,149,wikibase-item
+P542,officially opened by,person that officially opened the event,144,wikibase-item
+P406,soundtrack album,album that incorporates music directly recorded from the soundtrack of a film or video game,141,wikibase-item
+P1308,officeholder,person who holds an office,136,wikibase-item
+P483,recorded at,studio where a musical composition was recorded,136,wikibase-item
+P511,honorific prefix,"word or expression used before a name, in addressing or referring to a person",134,wikibase-item
+P66,ancestral home,place of origin for ancestors of subject,131,wikibase-item
+P1283,filmography,list of films a person has contributed to,128,wikibase-item
+P1414,GUI toolkit or framework,framework or toolkit a program uses to display the graphical user interface,127,wikibase-item
+P1427,journey origin,"starting place of this journey, flight, voyage, trek, etc. (excl. spaceflight launch)",121,wikibase-item
+P1419,shape,geometric shape of an object,118,wikibase-item
+P504,home port,"home port of the vessel (if different from ship registry""): For civilian ships the primary port from which the ship operates. Port of registry (the one painted on the stern) should be listed in ""Ship registry"". For warships  this will be the ship's assigned naval base""",116,wikibase-item
+P567,hangingwall,item that is in the hanging wall of this item,113,wikibase-item
+P568,footwall,item that is in the footwall of this item,112,wikibase-item
+P870,instrumentation,combination of musical instruments employed in a composition,111,wikibase-item
+P912,facility,"the subject item has this type of facility, e.g. toilet, car park",109,wikibase-item
+P547,commemorates,"what the place, monument, memorial, holiday, commemorates",108,wikibase-item
+P1444,journey destination,"intended destination for this journey, flight, sailing, exploration, etc.",107,wikibase-item
+P859,sponsor,enterprise that sponsors this item,103,wikibase-item
+P469,lakes on river,"lakes and reservoirs the river flows through, flows into or flows out of",102,wikibase-item
+P1424,topic's main template,primary infobox or navigational template of this subject,100,wikibase-item
+P931,place served by airport,city or region served by this airport,97,wikibase-item
+P500,exclave of,territory is legally or politically attached to a main territory with which it is not physically contiguous because of surrounding alien territory. It may also be an enclave.,96,wikibase-item
+P943,programmer,coder for a piece of software or a digital creative work such as a video game,96,wikibase-item
+P780,symptoms,the possible symptoms of a medical condition,94,wikibase-item
+P1445,fictional universe described in,"to link a fictional universe with a work that describes it: <universe> described in the work:"" <work>""",93,wikibase-item
+P457,foundational text,text through which an institution has been created,90,wikibase-item
+P521,scheduled service destination,"airport or station connected by regular direct service to the subject, for the destination of a trip see P1444",86,wikibase-item
+P744,asteroid family,population of asteroids that share similar proper orbital elements,86,wikibase-item
+P1598,consecrator,bishop who presided as consecrator or co-consecrator of this bishop,84,wikibase-item
+P1637,undercarriage,type of aircraft landing gear the item is equipped with,81,wikibase-item
+P831,parent club,parent club of this team,79,wikibase-item
+P833,interchange station,"station to which passengers can transfer to from this station, normally without extra expense",79,wikibase-item
+P1574,exemplar of,"property for manuscripts, autographs, incunabula, distinct printed copies",76,wikibase-item
+P803,professorship,professorship position held by this academic person,76,wikibase-item
+P1363,points/goal scored by,person who scored a point or goal in a game,75,wikibase-item
+P1582,natural product of taxon,"links a natural product with its source (animal, plant, fungal, algal, etc)",75,wikibase-item
+P770,cause of destruction,item which caused the destruction of the subject item,75,wikibase-item
+P43,stepfather,"husband of the subject's mother, who is not the subject's biological father",73,wikibase-item
+P1672,this taxon is source of,"links a taxon to natural products it produces. Note that it does not say this taxon is the source of"" or ""this taxon is a source of"" as this may vary. Some products may be yielded by more than one taxon.""",72,wikibase-item
+P208,executive body,branch of government for the daily administration of the state,71,wikibase-item
+P1302,primary destinations,major cities that a road serves,68,wikibase-item
+P1416,affiliation,organization that a person is affiliated with,68,wikibase-item
+P543,oath made by,"person(s) that made the oath at an event, like the Olympic Games",68,wikibase-item
+P248,stated in,"to be used in the source field, to indicate where a claim is made",62,wikibase-item
+P517,interaction,"with which of the 4 fundamental forces does the particle interact? strong interaction Q11415, electromagnetic: Q849919, weak interaction: Q11418, gravitation: Q11412",62,wikibase-item
+P647,drafted by,which team the player was drafted by,62,wikibase-item
+P209,highest judicial authority,"supreme judicial body within a country, administrative division, or other organization",60,wikibase-item
+P693,cleavage,way that crystals or minerals cleave,60,wikibase-item
+P532,port of registry,"ship's port of registry. This is generally painted on the ship's stern (for the home port""see Property:P504)""",58,wikibase-item
+P913,notation,mathematical notation or another symbol,58,wikibase-item
+P167,structure replaced by,"the item which replaced this building or structure, at the same geographic location",57,wikibase-item
+P523,temporal range start,the start of a process or appearance of a life form relative to the geologic time scale,56,wikibase-item
+P524,temporal range end,the end of a process or extinction of a life form relative to the geologic time scale,56,wikibase-item
+P1552,has quality,the entity has an inherent or distinguishing non-material characteristic that cannot be migrated,55,wikibase-item
+P923,medical examinations,examinations that might be used to diagnose the medical condition,51,wikibase-item
+P534,streak color,color of a mineral or material when abraded ,49,wikibase-item
+P545,torch lit by,"person that lit the torch at an event, like the Olympic Games",49,wikibase-item
+P1299,depicted by,object depicting this subject,48,wikibase-item
+P1387,political alignment,political position within the political spectrum,48,wikibase-item
+P822,mascot,"mascot of an organization, e.g. a sports team or university",45,wikibase-item
+P1455,list of works,link to the article with the works of a person,42,wikibase-item
+P1336,territory claimed by,administrative divisions that claim control of a given area,40,wikibase-item
+P1478,has immediate cause,"nearest, proximate thing that directly resulted in this outcome or effect. Used in conjunction with 'has cause' (i.e. underlying cause) and 'has contributing factor'. See 'Help:Modeling causes'.",39,wikibase-item
+P44,stepmother,"wife of the subject's father, who is not the subject's biological mother",36,wikibase-item
+P823,speaker,someone who takes a role as speaker in events like keynotes or presentations,36,wikibase-item
+P1535,used by,"person or organization that uses a given object, for buildings use P466",34,wikibase-item
+P1542,cause of,effect of this cause; inverse of has cause (P828). See 'Help:Modeling causes' for examples and discussion.,34,wikibase-item
+P642,of,qualifiers stating that a statement applies within the scope of a particular item,34,wikibase-item
+P807,separated from,subject was founded or started by separating from identified object,34,wikibase-item
+P812,academic major,major someone studied at college/university,34,wikibase-item
+P694,replaced synonym (for nom. nov.),"previously published name on which a replacement name (avowed substitute, nomen novum) is based.",33,wikibase-item
+P399,companion of,two or more astronomic bodies of the same type relating to each other,32,wikibase-item
+P881,type of variable star,type of variable star,32,wikibase-item
+P210,party chief representative,chief representative of a party in an institution or an administrative unit (use qualifier to identify the party),28,wikibase-item
+P514,interleaves with,stratigraphic relation in which two units overlap each other marginally,28,wikibase-item
+P1408,licensed to broadcast to,place that a radio/TV station is licensed/required to broadcast to,27,wikibase-item
+P1611,NATO code for grade,NATO Code for Grades of Military Personnel,27,wikibase-item
+P1145,Lagrangian point,libration point of an object (default: object-sun-earth),25,wikibase-item
+P751,introduced feature,which feature was introduced by this version of a product item,25,wikibase-item
+P1479,has contributing factor,"thing that significantly influenced, but did not directly cause, this outcome or effect.  Used in conjunction with 'has cause' and 'has immediate cause'.  See 'Help:Modeling causes'.",24,wikibase-item
+P689,afflicts,a type of organism which a condition or disease afflicts,24,wikibase-item
+P1165,home world,home world/planet of a fictional race or character,23,wikibase-item
+P533,target,target of a terrorist attack or military operation,23,wikibase-item
+P1290,godparent,person who is the godparent of a given person,22,wikibase-item
+P942,theme music,"the theme music/song used under licence by the item (film, event, sport club/team, person, etc.)",22,wikibase-item
+P1318,proved by,person who proved something,20,wikibase-item
+P541,office contested,title of office which election will determine the next holder of,20,wikibase-item
+P1137,fossil found in this unit,fossils that are found in this stratigraphic unit,19,wikibase-item
+P768,electoral district,"For members of legislative bodies (local or national), the electoral district the person is representing",19,wikibase-item
+P1532,country for sport,country a person represents when playing a sport,18,wikibase-item
+P634,captain,captain of this sports team,18,wikibase-item
+P1264,valid in period,time period when a statement is valid,17,wikibase-item
+P1558,tempo marking,indication about the speed or pace of a given musical piece,17,wikibase-item
+P518,applies to part,part of the item for which the claim is valid,17,wikibase-item
+P790,approved by,item is approved by other item(s) [qualifier: statement is approved by other item(s)],17,wikibase-item
+P924,medical treatment,treatment that might be used to heal the medical condition,17,wikibase-item
+P1429,pet,pet that a person owns,16,wikibase-item
+P418,seal description,description of a subject's seal,16,wikibase-item
+P459,determination method,qualifier stating how a value has been determined,16,wikibase-item
+P1202,carries scientific instrument,"scientific instruments carried by a vessel, satellite, or device that are not required for propelling or navigating",15,wikibase-item
+P1158,location of landing,location where the craft landed,14,wikibase-item
+P1557,manifestation of,this is the physical embodiment of a given concept,14,wikibase-item
+P872,printed by,"organization that printed the creative work (if different from publisher"")""",14,wikibase-item
+P129,physically interacts with,physical entity that the subject interacts with,13,wikibase-item
+P537,twinning,type of twins a crystal forms,12,wikibase-item
+P868,foods traditionally associated,foods consumed during the ceremony or associated with a certain settlement,12,wikibase-item
+P1398,replaced by structure,building/structure which replaced the subject building or structure at the same location,11,wikibase-item
+P1546,motto,description of the motto of the subject,11,wikibase-item
+P1657,MPAA film rating,US film-rating system,11,wikibase-item
+P1817,addressee,person or organization to whom a letter or note is addressed,11,wikibase-item
+P1393,proxy,person authorized to act for another,10,wikibase-item
+P1811,list of episodes,link to the article with the list of episodes for this series,9,wikibase-item
+P415,radio format,describes the overall content broadcast on a radio station,9,wikibase-item
+P795,distance along,distance from a defined datum point along a specified linear feature,9,wikibase-item
+P916,GSRR rating,Taiwanese video game content rating system,9,wikibase-item
+P1268,represents organisation,organization that an entity represents,8,wikibase-item
+P1347,military casualty classification,,8,wikibase-item
+P1406,script directionality,direction that a writing system goes in,8,wikibase-item
+P1531,parents of hybrids,,8,wikibase-item
+P1652,referee,referee or umpire of a match,8,wikibase-item
+P423,shooting handedness,"whether the hockey, football, handball or tennis player etc. passes oŗ shoots left- or right-handed",8,wikibase-item
+P468,dan/kyu rank,"rank system used in several board games (e.g. go, shogi, renju), martial arts (e.g. judo, kendo, wushu) and some other games",8,wikibase-item
+P489,currency symbol description,item with description of currency symbol,8,wikibase-item
+P1304,central bank,country's central bank,7,wikibase-item
+P1571,codomain,codomain of a function,7,wikibase-item
+P1622,drives on the,the direction that cars drive in a given country,7,wikibase-item
+P707,satellite bus,general model on which multiple-production satellite spacecraft is based,7,wikibase-item
+P538,fracturing,type of fracture a crystal or mineral forms,6,wikibase-item
+P565,crystal habit,the proportions of a crystal or mineral,6,wikibase-item
+P834,train depot,"depot which serves this railway line, not public stations",6,wikibase-item
+P1327,professional or sports partner,person a professional or athlete works with,5,wikibase-item
+P1568,domain,subset of the input set of a function for which every value has an image,5,wikibase-item
+P1809,choreographer,person(s) who did the choreography,5,wikibase-item
+P505,general manager,general manager of a sports team,5,wikibase-item
+P1136,solved by,person that solved a scientific question,4,wikibase-item
+P1199,mode of inheritance,the manner in which a particular genetic trait or disorder is passed from one generation to the next,4,wikibase-item
+P1372,binding of software library,software library in another programming language provided by the subject software binding,4,wikibase-item
+P1547,depends on,subject software depends on object software,4,wikibase-item
+P1591,defendant,"person or organization accused, at a trial",4,wikibase-item
+P1592,prosecutor,"person representing the prosecuting authority, at a trial",4,wikibase-item
+P1595,charge,"offence with which someone is charged, at a trial",4,wikibase-item
+P1620,plaintiff,the party who initiates a lawsuit,4,wikibase-item
+P1789,chief operating officer,the chief operating officer of an organization,4,wikibase-item
+P873,phase point,phase point to describe critical point and triple point (see talk page for an example),4,wikibase-item
+P1534,end cause,qualifier for the end date property (P582),3,wikibase-item
+P1537,contributing factor of,"thing that is significantly influenced by this cause, but does not directly result from it.  See 'Help:Modeling causes' for examples and discussion.",3,wikibase-item
+P1596,penalty,"penalty passed, at a trial",3,wikibase-item
+P1678,has vertex figure,the figure exposed when a corner of a polytope is sliced off,3,wikibase-item
+P788,mushroom ecological type,,3,wikibase-item
+P796,geo datum,zero point for measurement (qualifier for P795),3,wikibase-item
+P797,executive authority,entity having executive power of decision in matters relating to the entity,3,wikibase-item
+P817,decay mode,"type of decay that a radioactive isotope undergoes (should be used as a qualifier for decays to"")""",3,wikibase-item
+P930,type of electrification,electrification system scheme and/or voltage,3,wikibase-item
+P1211,fuel system,fuel system that an engine uses,2,wikibase-item
+P1221,compressor type,,2,wikibase-item
+P1349,ploidy,ploidy of a genome,2,wikibase-item
+P1432,b-side,song/track which is the b-side of this single,2,wikibase-item
+P1589,deepest point,"point with lowest elevation in the country, region, city or area",2,wikibase-item
+P1605,has natural reservoir,host species for the pathogen in which it is endemic,2,wikibase-item
+P1656,unveiled by,"person who unveils a statue, sculpture, memorial or plaque, etc.",2,wikibase-item
+P1703,pollination,process that moves pollen from the male anthers of a flower to the female stigma of a flower to accomplish fertilization,2,wikibase-item
+P1830,owner of,entities owned by the subject,2,wikibase-item
+P447,score by,issuer of a review score,2,wikibase-item
+P560,direction,a directional identifier of something,2,wikibase-item
+P660,EC classification,the Enzyme Commission (EC)-based accepted name of any enzyme classifications of the protein or RNA molecule,2,wikibase-item
+P784,mushroom cap shape,,2,wikibase-item
+P787,spore print color,color of a mushroom spore print (see documentation for allowed values),2,wikibase-item
+P887,based on heuristic,indicates that the property value is determined based on some heuristic (Q201413).,2,wikibase-item
+P1170,transmitted signal,type of signal transmitted by a device,1,wikibase-item
+P1171,approximation algorithm,method used to approximate a number,1,wikibase-item
+P1194,received signal,signals detected by a machine,1,wikibase-item
+P1210,supercharger,supercharger or turbocharger used by an engine,1,wikibase-item
+P128,regulates (molecular biology),process regulated by a protein in molecular biology,1,wikibase-item
+P1425,ecoregion (WWF),ecoregion of the item (choose from WWF's list),1,wikibase-item
+P1536,immediate cause of,immediate cause of this effect,1,wikibase-item
+P1593,defender,"Person representing the defendant, at a trial",1,wikibase-item
+P1594,judge,"Judge, magistrate or equivalent, presiding at a trial",1,wikibase-item
+P1604,biosafety level,level of the biocontainment precautions required to isolate dangerous biological agents,1,wikibase-item
+P1606,natural reservoir of,pathogen of which this species is a long-term host,1,wikibase-item
+P1625,has melody,this work has the melody of the following work,1,wikibase-item
+P1640,curator,content specialist responsible for this collection,1,wikibase-item
+P1660,has index case,"primary case, patient zero: initial patient in the population of an epidemiological investigation",1,wikibase-item
+P1677,index case of,"primary case, patient zero: initial patient in the population of an epidemiological investigation",1,wikibase-item
+P1704,pollenizer,source of pollen for an animal,1,wikibase-item
+P1773,attributed to,uncertain but likely creator of an artwork,1,wikibase-item
+P1774,workshop of,artist whose work group are the likely creator of an artwork,1,wikibase-item
+P515,phase of matter,"state or phase of the matter at which the measure was made (gas, liquid, solid... See talk page)",1,wikibase-item
+P546,docking port,docking port for the dock,1,wikibase-item
+P550,chivalric order,the chivalric order which a person belongs to,1,wikibase-item
+P756,removed feature,which feature was removed by this version of a product item,1,wikibase-item
+P785,hymenium attachment,how the hymenium of the mushroom attaches to the stem,1,wikibase-item
+P786,stipe character,indicates if a mushroom has a universal or partial veil,1,wikibase-item
+P789,edibility,whether something can be eaten or not,1,wikibase-item
+P811,academic minor,minor someone studied at college/university,1,wikibase-item
+P927,anatomical location,where in the body does this anatomical feature lie,1,wikibase-item
+P970,neurological function,The function of a neurological structure,1,wikibase-item
+P1065,archive URL,URL to the archived web page specified with URL property,80,url
+P1019,feed URL,"newsfeed (rss, atom etc.) of this person/organisation/project",54,url
+P856,official website,URL to the website of this item,145017,url
+P1421,GRIN URL,URL for the website GRIN,57087,url
+P973,described at URL,the element is described at the following URL,7547,url
+P854,reference URL,should be used for internet URLs as references,2237,url
+P1482,Stack Exchange tag,tag on the Stack Exchange websites,1798,url
+P1713,biography at the Bundestag of Germany,link to the biography pages of the German parliament,1616,url
+P1324,source code repository,public source code repository,321,url
+P953,full text available at,URL of a web page containing the full text for this item,246,url
+P1401,bug tracking system,"bug report page where bugs, issues, and feature requests are filed for a particular software",143,url
+P1613,IRC channel,official IRC channel of an institution or project,93,url
+P1348,AlgaeBase URL,URL for the website AlgaeBase,57,url
+P963,streaming media URL,a URL where the subject's media stream exists,41,url
+P1628,equivalent property,"equivalent property in other ontologies (use in statements on properties, use property URI)",32,url
+P1709,equivalent class,equivalent class in other ontologies (use property URI),14,url
+P1325,external data available at,site where external data on a subject can be found,8,url
+P1581,official blog,URL to the blog of this person or organization,7,url
+P855,Sandbox-URL,,2,url
+P968,e-mail,e-mail address,1,url
+P569,date of birth,date on which the subject was born,1832898,time
+P570,date of death,date on which the subject died,909740,time
+P577,publication,date or point in time when this work was first published (don't replace old values),182946,time
+P571,inception,date or point in time when the organization/object was founded/created,80610,time
+P575,time of discovery,date or point in time when the item was discovered,50990,time
+P585,point in time,"time and date something took place, existed or a statement was true",15251,time
+P580,start time,"indicates the time an item begins to exist or a statement starts being valid, usually used as a qualifier",6896,time
+P576,dissolved or abolished,date or point in time on which the organisation was dissolved,6891,time
+P582,end time,indicates the time an item ceases to exist or a statement stops being valid,6609,time
+P1619,time of official opening,"date or point in time an event, museum, theater etc. officially opened",5711,time
+P619,time of spacecraft launch,date and time of spacecraft launch in UTC,5468,time
+P729,service entry,date or point in time on which a piece or class of equipment entered operational service,3802,time
+P730,service retirement,date or point in time on which a piece or class of equipment was retired from operational service,1491,time
+P1317,floruit,"When the person was known to be active or alive, when birth or death not documented (contrast with P585 and P746). Enter two values if the subject has produced works during a range of years",477,time
+P606,first flight,date or point in time on which aircraft first flew,301,time
+P1191,first performance,date a work was first performed,196,time
+P1636,date of baptism in early childhood,"date when a person was baptized. For times when only baptism records were available, this can be a good substitute for date of birth.",192,time
+P1249,time of earliest written record,first time a subject was mentioned in writing,183,time
+P746,date of disappearance,date or point of time a missing person was seen or otherwise known to be alive for the last time,31,time
+P574,date of taxon name publication,date of publication of the scientific name of a taxon,25,time
+P620,time of spacecraft landing,date and time of spacecraft landing in UTC,20,time
+P813,retrieved,date or point in time that information was retrieved from a database or website (For use in online Sources),6,time
+P1326,latest date,latest possible time that something could have occurred,3,time
+P1319,earliest date,earliest date at which an event could have happened,2,time
+P621,time of spacecraft orbit decay,date and time of spacecraft orbit decay in UTC,1,time
+P622,spacecraft docking/undocking,,1,time
+P1077,KOATUU identifier,identifier for each of the Ukrainian administrative units,27975,string
+P1043,IDEO Job ID,occupation ID on IDEO,10,string
+P1006,NTA identifier (Netherlands),National Thesaurus for Author names (Dutch author-name thesaurus),129367,string
+P1058,ERA Journal ID,identifier for academic journals,22502,string
+P1045,Sycomore ID,"ID of a person in the Sycomore database, by the French National Assembly",9354,string
+P1067,Thailand central administrative unit code,identifier for each of the Thai central administrative units,6967,string
+P1015,BIBSYS identifier,ID for Norwegian information systems BIBSYS,6662,string
+P1005,PTBNP identifier,identifier for the Portuguese National Library,4664,string
+P1047,Catholic Hierarchy ID,ID of the person on catholic-hierarchy.org,4031,string
+P1004,MusicBrainz place ID,place identifier in the MusicBrainz open music encyclopedia,2468,string
+P1014,AAT identifier,ID in the Art & Architecture Thesaurus by the Getty Research Institute,991,string
+P1051,PSH ID,Identifier in the authority database of the Czech Technical Library,819,string
+P1042,ZDB identifier,identifier for serials,656,string
+P1076,ICTV virus ID,"ID in the International Committee on Taxonomy of Viruses""-database""",367,string
+P1031,legal citation of this text,legal citation of legislation or a court decision,295,string
+P1003,NLR (Romania) identifier,authority control identifier used at the National Library of Romania,83,string
+P1085,LibraryThing work identifier,LibraryThing (LT) control number,73,string
+P1010,Iran statistics ID,ID given to places on Iran,8,string
+P1007,Lattes Platform number,number for the Lattes Platform entry on the person or group. Relationship between entry and subject must be supported by a source,7,string
+P1055,NLM ID,identifier in the catalog of the National Library of Medicine,6,string
+P1052,Portuguese Job Code CPP-2010,,4,string
+P1069,Danemark Job Code (DISCO-08),Danemark Job Code DISCO-08 maintained by the DST and derived from ISCO,4,string
+P1023,SBC-2010 occupation code," Dutch classification of occupations SBC maintained by the Dutch CBS (Centraal Bureau voor de Statistiek), 2010 version",3,string
+P1024,SBFI occupation code,Swiss classification of occupations SBFI/SEFRI maintained by the Swiss SBFI/SEFRI,2,string
+P1070,PlantList-ID,ID in the database of 'The Plant List',331190,string
+P1036,Dewey Decimal Classification,"use with qualifier edition (p747)"" with item value ""DDC 23"" or create new item to represent the corresponding DDC edition""",13775,string
+P1017,BAV (Vatican Library) identifier,authority control identifier used at the Vatican Library,8016,string
+P1044,SWB editions,union catalog of the South-West German Library Network (SWB),138,string
+P1059,CVR,The Central Business Register identifier. Number for the official database of Danish companies/organizations,98,string
+P1025,SUDOC editions,item number in the French union catalog (see also P269),79,string
+P1030,light characteristic of a lighthouse,description of a navigational light sequence or colour displayed on a nautical chart,53,string
+P1053,ResearcherID,an identifying system for scientific authors,42,string
+P1054,NDL editions,ID in the National Diet Library (see also P349),13,string
+P1048,NCL identifier,authority control number of the National Central Library in Taiwan,10,string
+P1084,EUL editions,catalogue number for books (editions) in the Egyptian union catalog,4,string
+P1022,CNO-11 occupation code, Spanish classification of occupations CNO-11 maintained by the Spanish INE (Instituto Nacional de Estadística),2,string
+P1021,KldB-2010 occupation code,German classification of occupations 2010,1,string
+P225,taxon name,the currently correct scientific name of a taxon (according to the reference given),1925158,string
+P646,Freebase identifier,ID specifying an equivalent page in the Freebase open knowledge graph,1154072,string
+P373,Commons category,"name of the Wikimedia Commons category containing files related to this item (without the prefix Category"")""",1035226,string
+P442,China administrative division code,identifier for administrative divisions of People's Republic of China (with spaces),742239,string
+P281,postal code,identifier assigned by postal authorities for the subject area,612873,string
+P214,VIAF identifier,Virtual International Authority File identifier,555214,string
+P1566,GeoNames ID,identifier in the GeoNames geographical database,490929,string
+P227,GND identifier,"international authority file of names, subjects, and organizations (please don't use type n = name, disambiguation)",348260,string
+P815,ITIS TSN,unique Taxonomic Serial Number defined by Integrated Taxonomic Information System,334068,string
+P960,Tropicos taxon name identifier,identification number in Tropicos database,319848,string
+P345,IMDb identifier,"identification code from the Internet Movie Database (IMDb) with prefix (tt-, nm-, ch-, co-, ev-)",289276,string
+P969,located at street address,street address that the subject is located at,287547,string
+P961,IPNI taxon name identifier,International Plant Names Index is a database that provides an authoritative and comprehensive list of names of plants. It is different from Property:P586 which is for authors not taxon. But it is related to Property:P428.,276572,string
+P685,NCBI Taxonomy ID,ID of a taxon in the Taxonomy Database by the National Center for Biotechnology Information,253787,string
+P704,Ensembl Transcript ID,transcript ID issued by Ensembl database,227468,string
+P244,LCNAF identifier,Library of Congress Name Authority File (only for authority control; for single books see P1144),227452,string
+P213,ISNI (ISO 27729),"International Standard Name Identifier. 16 digits dumb identifier. Example: 0000 0001 0886 1508. (When displayed only it is preceded by the letters ISNI, separated from the identifier by a space, and the 16 digits are displayed as four blocks of four digits, with each block separated from the next by a space.)",226443,string
+P850,World Register of Marine Species identifier,,211805,string
+P639,RefSeq RNA ID,RNA Identifier,186706,string
+P830,Encyclopedia of Life ID,eol.org item reference number,156271,string
+P268,BnF identifier,control number for the subject issued by BNF (Bibliothèque nationale de France),154663,string
+P490,provisional designation,designation of an astronomical body after its discovery and before its official name,120149,string
+P434,MusicBrainz artist ID,artist identifier per the MusicBrainz open music encyclopedia,114972,string
+P269,SUDOC authorities,authority control number in the French collaborative library catalog (see also P1025),112299,string
+P528,catalog code,"catalogue name of an object, use with qualifier P972",98763,string
+P351,Entrez Gene ID,gene identifier per the NCBI Entrez database,91337,string
+P353,gene symbol,official gene symbol,91097,string
+P436,MusicBrainz release group ID,release group identifier per the MusicBrainz open music encyclopedia (album),81952,string
+P727,Europeana ID,"interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe",75421,string
+P721,OKATO identifier,identifier for every administrative unit in Russia,72016,string
+P359,Rijksmonument identifier,monument identifier assigned by the Rijksdienst voor het Cultureel Erfgoed,66886,string
+P764,OKTMO identifier,identifier in Classification on Objects territory of municipal formations (Russia),63131,string
+P1415,Oxford Biography Index Number,"Authority control number used by Oxford University Press for online biographical resources, predominantly the Oxford Dictionary of National Biography",57534,string
+P1216,English Heritage list number,number of the English Heritage list of buildings,53796,string
+P349,NDL identifier,authority control number per the National Diet Library of Japan,49659,string
+P236,ISSN,International Standard Serial Number (print or electronic),44401,string
+P594,Ensembl Gene ID,gene identifier as per the Ensembl (European Bioinformatics Institute and the Wellcome Trust Sanger Institute)  database,43756,string
+P709,Historic Scotland ID,Building ID for items in the Historic Scotland database,41431,string
+P245,ULAN identifier,Getty Union List of Artist Names ID,40369,string
+P593,HomoloGene ID,identification,40192,string
+P649,NRHP reference number,National Register of Historic Places reference number assigned by the National Park Service of the USA,37903,string
+P473,local dialing code,identifier dedicated to subject city by the area communication network,37776,string
+P374,INSEE municipality code,identifier for a municipality per the National Institute of Statistics and Economic Studies in France,36904,string
+P1447,Sports Reference ID,ID on the website sports-reference.com,35746,string
+P354,HGNC ID,Gene identifier from the HGNC database,34245,string
+P1772,USDA PLANTS ID,ID in United States Department of Agriculture PLANTS Database,33683,string
+P217,inventory number,string identifying a physical object or a set of physical objects in a collection,28951,string
+P650,RKDartists,ID in the RKDartists database (Rijksbureau voor Kunsthistorische Documentatie),27591,string
+P243,OCLC control number,Online Computer Library Center control number,24977,string
+P1562,allmovie identifier,ID for a movie on the site allmovie,24141,string
+P884,State Water Register Code (Russia),Body water identification code,22334,string
+P691,NKC identifier,ID in National authority file of the Czech Republic (National Library of CR),22152,string
+P1273,CANTIC,Catalan authority control identifier managed by the National Library of Catalonia (BNC),21757,string
+P1369,Iranian National Heritage registration number,registration number in the Iranian National Heritage database,21299,string
+P274,chemical formula,description of chemical compound based on element symbols,18724,string
+P380,Mérimée identifier,monument identifier per the Mérimée database of French cultural heritage,18229,string
+P535,Find a Grave ID,the subject's ID in the Find a Grave database,17314,string
+P843,SIRUTA code,National Institute of Statistics code for an area of Romania,16937,string
+P233,SMILES,Simplified Molecular Input Line Entry Specification ,16927,string
+P231,CAS registry number,chemical compound identification number per CAS registry,16739,string
+P435,MusicBrainz work ID,work identifier per the MusicBrainz open music encyclopedia,16649,string
+P1816,National Portrait Gallery (London) person identifier,"Identifier for sitters and artists represented in the National Portrait Gallery, London",16381,string
+P1472,Commons Creator page,"name of the person's creator page on Wikimedia Commons (without the prefix Creator"")""",16216,string
+P1284,Munzinger IBA,ID on the Munzinger Archiv,16196,string
+P235,InChIKey,A hashed version of the full standard InChI - designed to create an identifier that encodes structural information and a can also be practically used in web searching.,15389,string
+P716,JPL Small-Body Database identifier,astronomy database of small Solar System bodies,15366,string
+P662,PubChem ID (CID),database of chemical molecules and their activities in biological assays (only CID number),15236,string
+P234,InChI,International Chemical Identifier,14308,string
+P1250,Danish Bibliometric Research Indicator (BFI) SNO/CNO,serial & conference identifier,13750,string
+P1240,Danish Bibliometric Research Indicator level,,13748,string
+P1156,Scopus Source ID,"Scopus uses a unique identifier for each source/publication venue (journal, conference, etc)",12664,string
+P1258,Rotten Tomatoes identifier,"ID on Rotten Tomatoes: must use prefix m/"" for movies ""tv/"" for TV series (remove /s number on end unless the item is a specific season)  ""celebrity/"" for celebrities ""critic/"" for film critics ""source-"" for review sources""",12549,string
+P402,OpenStreetMap Relation identifier,the ID of the relation of this place/object in OpenStreetMap,12542,string
+P1747,Flora of China,TaxonId in Flora of the People's Republic of China,12153,string
+P1727,Flora of North America ID,taxonId in Flora of North America,11941,string
+P982,MusicBrainz area ID,area identifier per the MusicBrainz open music encyclopedia,11245,string
+P439,German municipality key,identifier for municipalities and independent towns in Germany,11230,string
+P957,ISBN-10,"International Standard Book Number, ten digit variant",11084,string
+P652,UNII,Unique Ingredient Identifier,10846,string
+P1469,FIFA player code,FIFA ID for a soccer player,10792,string
+P661,ChemSpider ID,"free chemical database, owned by the Royal Society of Chemistry",10356,string
+P1711,British Museum person-institution,identifier in the British Museum person-institution thesaurus,10246,string
+P508,BNCF Thesaurus,identifier in the subject indexing tool of the National Central Library of Florence,9929,string
+P409,NLA identifier,control number issued by the National Library of Australia (see also P1315 for the newer People Australia identifier),9829,string
+P902,HDS,"identifier in HDS/HLS/DHS/DSS: Historical Dictionary of Switzerland (Q642074), a national encyclopedia",9422,string
+P428,botanist author abbreviation,"standard form (official abbreviation) of a personal name for use in an author citation (only for names of algae, fungi and plants)",9341,string
+P395,licence plate code,distinguishing signs or parts of license plate associated with the subject. For countries: international licence plate country code or distinguishing sign of vehicles,9255,string
+P866,Perlentaucher ID,identifier in Perlentaucher (Q2071388),8963,string
+P699,Disease Ontology ID,ID in the Disease Ontology database,8869,string
+P638,PDB ID,gene entry for 3D structural data as per the PDB(Protein Data Bank) database,8851,string
+P212,ISBN-13,"International Standard Book Number, thirteen digit variant.",8730,string
+P935,Commons gallery,name of the Wikimedia Commons gallery page(s) related to this item (is suitable to allow multiple link to more gallery pages),8587,string
+P842,Fossilworks ID,"identifier for fossil animals, plants, and microorganisms",8390,string
+P1745,VASCAN ID,identifiant of the Database of Vascular Plants of Canada,8196,string
+P772,INE municipality code,"identifier for Spanish municipalities, by the Spanish Statistical Office (INE)",8192,string
+P635,ISTAT ID,identifier for municipalities in Italy,8110,string
+P806,Italian cadastre code,identifier for Italian comunes in the cadastre,8094,string
+P705,Ensembl Protein ID,protein ID issued by Ensembl database,7899,string
+P1367,BBC Your Paintings artist identifier,authority control identifier for artists (creators of publicly owned oil paintings in the UK),7898,string
+P215,spectral class,spectral class of an astronomical object,7831,string
+P239,ICAO airport code,"four-character alphanumeric code for designating airports (for airlines, see P:230)",7822,string
+P493,ICD-9,ICD catalogue codes for diseases – Version 9,7703,string
+P651,Biografisch Portaal number,ID at Biografisch Portaal van Nederland,7552,string
+P686,Gene Ontology ID,ID in the Gene Ontology,7366,string
+P644,genomic start,genomic starting coordinate of the biological sequence (e.g. a gene),7331,string
+P645,genomic end,genomic ending coordinate of the biological sequence (e.g. a gene),7328,string
+P1207,NUKAT authorities,authority control number in the Center of Warsaw University Library catalog,7185,string
+P723,DBNL ID,reference to the DBNL-website for Dutch language authors,7055,string
+P238,IATA airport code,"three-letter code for designating airports (for airlines, see P229)",6915,string
+P494,ICD-10,ICD catalogue codes for diseases - Version 10,6832,string
+P906,SELIBR,Libris library catalog ID number,6744,string
+P998,dmoz,Open Directory Project,6740,string
+P1296,Gran Enciclopèdia Catalana ID,Gran Enciclopèdia Catalana identifier,6736,string
+P220,ISO 639-3 code,identifier for a language defined in ISO 639-3,6659,string
+P782,LAU,"local administrative unit, renamed from NUTS 4 and NUTS 5",6628,string
+P1146,IAAF ID,identifier for athletes in International Association of Athletics Federations (IAAF) database and website,6562,string
+P949,NLI (Israel) identifier,authority control identifier used at the National Library of Israel,6522,string
+P492,OMIM ID,"Online Mendelian Inheritance in Man"" catalogue codes for diseases""",5563,string
+P630,Paris city digital code,digital identifier for streets in Paris,5474,string
+P865,BMLO,Bayerisches Musiker-Lexikon Online (Q47191),5373,string
+P247,COSPAR ID,"international satellite designation , administered by the UN Committee on Space Research (COSPAR) and the US National Space Science Data Center (NSSDC)",5306,string
+P377,SCN,"Satellite Catalog Number, 5-digit-number including leading zeros (e.g. '00266')",5302,string
+P959,MSW species identifier,Mammal Species of the World: a database that claims to provide an authoritative and comprehensive list of names of mammals (but the ICZN does not agree),5256,string
+P1184,handle,"Handle System identifier, which is a superset of the DOI",5184,string
+P549,Mathematics Genealogy Project identifier,identifier for mathematicians and computer scientists at the Mathematics Genealogy Project,5180,string
+P1140,EHAK id,Estonian Administrative and Settlement Classification,4905,string
+P300,ISO 3166-2,identifier for a country subdivision per ISO 3166-2 (include country code),4861,string
+P592,ChEMBL ID,chemical database of bioactive molecules with drug-like properties,4813,string
+P722,UIC station code,"UIC ids are used by railway operators to refer to railway stations in Europe, CIS-countries, China, Mongolia, north Africa and Middle-east.",4799,string
+P1748,NCI Thesaurus ID,"ID in United States National Cancer Institute Thesaurus, vocabulary for clinical care, translational and basic research, etc",4770,string
+P1644,EgliseInfo ID,,4727,string
+P950,BNE identifier,authority file of the Biblioteca Nacional de España,4672,string
+P1263,NNDB people ID,"ID in the Notable Names Database, a biographical database: only for people entries",4593,string
+P1695,NLP identifier,authority control number per the National Library of Poland,4486,string
+P1802,EMLO person identifier,identifier in the Early Modern Letters Online project run by the Bodleian Library,4249,string
+P901,FIPS 10-4 (countries and regions),identifier for countries and regions per former Federal Information Processing Standard FIPS 10-4,4201,string
+P1430,OpenPlaques identifier,Identifier for a person in the OpenPlaques database - http://openplaques.org/,4103,string
+P637,RefSeq Protein ID,protein Identifier,4091,string
+P396,SBN identifier,control number issued by National Library Service (SBN) of Italy,4079,string
+P966,MusicBrainz label ID,label identifier in the MusicBrainz open music encyclopedia,4019,string
+P590,GNIS ID,"official identification code for geographic objects in the US. For Antarctica, use Property:P804",3906,string
+P1265,AlloCiné movie ID,,3846,string
+P599,ITF ID,ITF tennis player identifier,3824,string
+P486,MeSH ID,"unique ID for diseases, in the MeSH descriptor database",3780,string
+P713,Nickel-Strunz 10th (pending) edition,mineral classification Nickel-Strunz version 10 (mindat.org),3665,string
+P858,ESPN SCRUM ID,"identifier for any international rugby union player, from the site www.espnscrum.com",3646,string
+P1391,Index Fungorum ID,Identifier in Index Fungorum (see Q1860469),3634,string
+P683,ChEBI ID,database and ontology of molecular entities focused on 'small' chemical compounds,3616,string
+P1186,MEP directory identifier,"directory of all members of the European Parliament, unique identifiers of all past and present MEPs",3595,string
+P665,KEGG ID,"databases dealing with genomes, enzymatic pathways, and biological chemicals",3549,string
+P1819,genealogics.org personID,Identifier for a person at genealogics.org,3545,string
+P480,FilmAffinity identifier,FilmAffinity identification number of a creative work,3406,string
+P882,FIPS 6-4 (US counties),identifier for US counties per former Federal Information Processing Standard FIPS 6-4. Use two-digit state code followed by three digit county code,3296,string
+P1741,GTAA id,"Thesaurus used in audiovisual archives (NISV, EYE)",3294,string
+P1323,Terminologia Anatomica 98,Terminologia Anatomica (1998 edition) human anatomical terminology identifier,3288,string
+P1615,CLARA-ID,Database about women visual artists,3270,string
+P1233,ISFDB author ID,ID number of a person in the Internet Speculative Fiction Database,3268,string
+P712,Nickel-Strunz 9th edition (updated 2009),"mineral classification Nickel-Strunz version 9 (updated 2009), a PDF format file",3266,string
+P1422,Sandrart.net person ID,"identifier in the web-based edition of Joachim von Sandrart’s Teutscher Academie der Edlen Bau Bild- und Mahlerey-Künste"" (1675–80)""",3245,string
+P939,KSH code,identifier for every municipality (town and commune) in Hungary issued by the Hungarian Central Statistical Office,3176,string
+P711,Strunz 8th edition (series ID),"mineral classification 8th edition, series identifier, silicate classification modified by Athena",3101,string
+P564,singles record,win/lose balance for a player in singles tournaments,3079,string
+P555,doubles record,win/lose balance for a player in doubles tournaments,3077,string
+P232,EINECS number,chemical compound identification number per EINECS,3064,string
+P348,version,stable version of the software,3060,string
+P484,"IMA Number, broad sense",mineral identifier per the International Mineralogical Association,3030,string
+P1402,Foundational Model of Anatomy ID,unique identifier for human anatomical terminology,3015,string
+P905,PORT identifier,the PORT-network identifier of film or television program,2886,string
+P1440,Fide ID,ID on the FIDE database for chess players,2791,string
+P557,DiseasesDB,identifier sourced on the Diseases Database,2791,string
+P1599,Cambridge Alumni Database ID,ID in the Cambridge Alumni Database/Alumni Cantabrigienses (ACAD),2775,string
+P1749,Parlement & Politiek ID,"entry of described object on Parlement & Politiek, website describing Dutch politic",2753,string
+P1698,Gray's Anatomy 1918 subject,number of this article's respective entry in the 1918 edition of Gray's Anatomy,2737,string
+P305,IETF language tag,language identification code per the Internet Engineering Task Force,2649,string
+P677,ÚSOP code,"identifier in drusop.nature.cz, a national database of protected areas and trees",2611,string
+P771,Swiss municipality code,id for municipalities in Switzerland,2604,string
+P1459,Cadw Building ID,ID number for listed buildings in Wales,2589,string
+P640,Léonore ID,ID of a person in the Léonore database,2559,string
+P381,PCP reference number,identifier for cultural properties in Switzerland,2545,string
+P981,BAG-code for Dutch towns,"BAG (woonplaatscode) for Dutch towns, see Q1852859",2505,string
+P1612,Commons Institution page,"name of the institutions's page on Wikimedia Commons (without the prefix Institution"")""",2477,string
+P809,WDPA id,identifier in World Database on Protected Areas,2441,string
+P230,ICAO airline designator,"three letter code for identifying airlines (for airports, see P239)",2439,string
+P223,galaxy morphological type,galaxy morphological classification code,2394,string
+P964,Austrian municipality key,identifier for municipalities in Austria,2389,string
+P673,eMedicine,online clinical medical knowledge base,2333,string
+P432,callsign of airline,identifier used in radio transmissions to refer to the subject airline,2325,string
+P1563,MacTutor id (biographies),id of the person's biography in the MacTutor History of Mathematics archive,2315,string
+P1368,LNB identifier,National Library of Latvia code,2298,string
+P347,Joconde ID,ID in the Joconde database of the French Ministry of Culture,2293,string
+P775,Swedish urban area code,urban area code in Sweden,2229,string
+P846,Global Biodiversity Information Facility ID,,2225,string
+P1614,History of Parliament ID,identifier on the History of Parliament website,2172,string
+P352,UniProt ID,protein identifier per the UniProt database.,2145,string
+P758,Kulturminne identifier,Norwegian heritage property identification number of Riksantikvaren (the Directorate for Cultural Heritage),2118,string
+P715,Drugbank ID,bioinformatics and cheminformatics database from the University of Alberta,2069,string
+P229,IATA airline designator,"two-character code for identifying airlines (for airports, see P:238)",2052,string
+P240,FAA airport code,three-letter or four-letter alphanumeric code identifying United States airports,2040,string
+P429,dantai code,identifier for administrative division in 6-digit format assigned by the interior ministry of Japan,1965,string
+P1804,Danish National Filmography ID,ID for films in the Danish National Filmography,1958,string
+P1144,LCOC LCCN (bibliographic),Library of Congress ID for bibliographic records (for names use P244/LCNAF),1936,string
+P536,ATP ID,ATP tennis male player identifier,1823,string
+P1185,Rodovid ID,ID of the person on rodovid.org,1820,string
+P433,issue,"issue of a newspaper, a scientific journal or magazine for reference purpose",1803,string
+P1577,Gregory–Aland–Number,Identifier for Greek manuskripts of the New Testament,1776,string
+P1795,Smithsonian American Art Museum: person/institution thesaurus id,"identifier for a person or institution, in the Smithsonian American Art Museum: person/institution thesaurus",1700,string
+P597,WTA ID,WTA tennis female player identifier,1679,string
+P1138,Kunstindeks Danmark,,1636,string
+P1286,Munzinger Pop,ID on the Munzinger Archiv,1622,string
+P1212,Atlas ID,ID in the Atlas database of the Louvre Museum,1590,string
+P1483,kulturnoe-nasledie.ru identifier,russian cultural heritage register identifier,1539,string
+P781,Sikart,"identifier in SIKART, a biographical dictionary and a database on visual art in Switzerland and Liechtenstein",1537,string
+P296,station code,identification code assigned to the railway station,1509,string
+P1375,NSK identifier,ID for the National and University Library in Zagreb,1453,string
+P477,Canadian Register of Historic Places identifier,identifier in the Canadian Register of Historic Places,1452,string
+P1587,Slovene Cultural Heritage Register ID,reference number of cultural monument of Slovenia,1441,string
+P604,MedlinePlus ID,"health information from U.S. government agencies, and health-related organizations",1434,string
+P487,Unicode character,Unicode character representing the item,1425,string
+P1648,Dictionary of Welsh Biography ID,Identifier for the Dictionary of Welsh Biography,1355,string
+P1438,Jewish Encyclopedia ID (Russian),ID on the Electronic Jewish Encyclopedia (Elektronnaja Evrejskaja Entsiklopedia),1350,string
+P1285,Munzinger Sport,ID on the Munzinger Archiv,1331,string
+P714,Dana 8th edition,mineral classification Dana 8th edition,1288,string
+P657,RTECS number,chemical identifier from the Registry of Toxic Effects of Chemical Substances,1229,string
+P742,pseudonym,alias used by someone or by which this person is universally known,1217,string
+P757,World Heritage Site id,"site reference number as assigned by UNESCO. Use on one item per site, link parts with property has part"" (P527)""",1180,string
+P1159,CODEN,CODEN bibliographic code,1166,string
+P1685,Pokémon browser number,a Pokémon identification number,1010,string
+P1362,Theaterlexikon der Schweiz,online edition ID of the Theater Dictionary of Switzerland,987,string
+P458,IMO ship number,ship identifier per IMO,930,string
+P1788,DVN identifier,"Identifier in the Dutch Digitaal Vrouwenlexicon van Nederland (Online Dictionary of Dutch Women), a biography portal of prominent women in Dutch history.",922,string
+P798,military designation,officially assigned designation for a vehicle in military service,915,string
+P454,Structurae ID (structure),"identifier for a building in the Structurae database (s"" or 'p' + 7 digits)""",858,string
+P1710,Sächsische Biografie,biographical dictionary of people from Saxony,842,string
+P1288,KLG Kritisches Lexikon der Gegenwartsliteratur,ID on the Munzinger Archiv,807,string
+P1460,NIEA building ID,ID number for listed buildings in Northern Ireland,802,string
+P1670,LAC identifier,Canadiana Authorities control Number per the Library and Archives Canada,802,string
+P350,RKDimages,identification number per RKDimages of the Netherlands Institute for Art History,781,string
+P1461,Patientplus ID,Identifier of disease at Patient UK,772,string
+P539,Museofile,ID of a museum in the Museofile database of the French ministry of culture,759,string
+P1287,KDG Komponisten der Gegenwart,ID on the Munzinger Archiv,744,string
+P393,edition number,"number of edition (first, second,... as 1, 2 ...) for a book or event",713,string
+P1248,KulturNav-id,"authority posts for people, places, events, etc. used by some  Nordic museums",694,string
+P1115,ATVK ID,"identifier for each of the Latvian administrative units, i.e. municipality, parish, city under state jurisdiction and city under municipality jurisdiction. Based on the {{Q|15621843}}.",683,string
+P1291,Association Authors of Switzerland ID,ID in a Swiss database of modern writers,680,string
+P1307,Swiss parliament identifier,IDs for members of the Swiss Parliament since 1848,659,string
+P1289,KLfG Kritisches Lexikon der fremdsprachigen Gegenwartsliteratur,,653,string
+P1282,OpenStreetMap tag or key,OpenStreetMap tagging schema (a Key:key or Tag:key=value) for classes of things,645,string
+P1320,OpenCorporates ID,"identifier for a corporation, in the OpenCorporates database",632,string
+P1330,MusicBrainz instrument ID,identifier for an instrument on the music encyclopedia MusicBrainz,630,string
+P1439,Norsk filmografi ID,"ID from Norsk filmografi, published by the National Library of Norway",626,string
+P879,pennant number,"the number or designation associated with individual warships, often painted on the hull.",607,string
+P1567,NIS/INS code,,591,string
+P424,Wikimedia language code,language code as used by Wikimedia projects,564,string
+P1732,Naturbase ID,ID in the Naturbase database published by the Norwegian Environment Agency,553,string
+P1245,OmegaWiki Defined Meaning,"Defined Meaning"" on the site OmegaWiki""",550,string
+P1761,Watson & Dallwitz family ID,familyID in Watson & Dallwitz: The families of flowering plants,543,string
+P1229,Openpolis ID,"page on Openpolis, a database of Italian politicians",538,string
+P1309,EGAXA identifier,ID in Bibliotheca Alexandrina,526,string
+P1556,zbMATH author ID,identifier of a person in the Zentralblatt MATH database,521,string
+P628,E number,number for food additives that are legal in the European Union,511,string
+P1631,China Vitae ID,Person's ID in the China Vitae database,504,string
+P219,ISO 639-2 code,"3-letter technical or bibliographical identifier for a language or macrolanguage or family language, defined in ISO 639-2 standard",481,string
+P558,unit symbol,symbol of a unit of measurement,460,string
+P478,volume,"volume of a book in a collection/series, for reference",449,string
+P561,NATO reporting name,official reporting name assigned by the ASCC for NATO use,441,string
+P1195,file extension,"suffix to the file name, that indicates the file format (e.g. txt for a text file), don't use dot at start",437,string
+P717,Minor Planet Center observatory code,observational data for minor planets (asteroids) and comets,437,string
+P304,page,page number of source referenced for statement,426,string
+P695,UN number,"four-digit numbers that identify hazardous substances, and articles (such as explosives, flammable liquids, toxic substances, etc.) in the framework of international transport",417,string
+P1463,PRDL Author ID,identifier from Post-Reformation Digital Library,415,string
+P1630,formatter URL,"URL-like string, such as http://viaf.org/viaf/$1/"" from which ""$1"" can be automatically replaced with the effective property value on items (use in statements on properties)""",410,string
+P525,Swedish municipality code,"identifier for a municipality in Sweden kommunkod"" (four-digit)""",410,string
+P271,CiNii author identifier,"CiNii (Scholarly and Academic Information Navigator) authority control number of authors (DA"" + 8 digits)""",409,string
+P382,CBS municipality code,identifier for a Dutch municipality as defined by Statistics Netherlands (CBS),398,string
+P1650,BBF identifier,"archive database of the German Research Library for the History of Education"" (personal data of the teachers of Prussia)""",391,string
+P791,ISIL ID,International Standard Identifier for Libraries and Related Organizations,379,string
+P1667,TGN identifier,Getty Thesaurus of Geographic Names ID,353,string
+P563,ICD-O,International Classification of Diseases for Oncology,345,string
+P861,premiershiprugby.com ID,unique identifier for each rugby union player who plays - or played - the English Premiership,343,string
+P774,FIPS 55-3 (locations in the US),identifier for places in the United States per former Federal Information Processing Standard FIPS 55-3,342,string
+P1133,DGO4 identifier,Direction générale opérationelle identifier (Wallonia),340,string
+P1253,BCU Ecrivainsvd,identifier in the database of writers from the canton of Vaud,338,string
+P1808,senat.fr ID,identifier on the website of the French senate,333,string
+P633,Répertoire du patrimoine culturel du Québec identifier,Identification number in the directory of the cultural heritage of Quebec,330,string
+P954,IBNR identifier,international station number for railway stations (Internationale Bahnhofsnummer),328,string
+P1565,Enciclopedia de la Literatura en México ID,,322,string
+P1214,Riksdagen person-id,id-number at data.riksdagen.se,311,string
+P1371,ASI Monument ID,identifier assigned to monuments catalogued by the Archaeological Survey of India,304,string
+P440,German district key,identifier for districts (Landkreise) and independent towns in Germany,303,string
+P1800,Wikimedia database name,Wikimedia project database identifier,297,string
+P911,South African municipality code,ID for municipalities in South Africa,278,string
+P1712,Metacritic ID,indentifier for Metacritic,276,string
+P474,country calling code,dialed on phone for a country after the international dialing prefix (precede value by +),273,string
+P444,review score,review score received by a creative work,264,string
+P529,runway,name (direction) of runway at airport/airfield/airstrip,256,string
+P1769,denkXweb identifier,identifier in the  online database for cultural heritage monuments in the German state of Hesse,254,string
+P297,ISO 3166-1 alpha-2,country code in two-letter format per ISO 3166-1,250,string
+P298,ISO 3166-1 alpha-3,country code in three-letter format per ISO 3166-1,250,string
+P299,ISO 3166-1 numeric,country code in numeric format per ISO 3166-1,250,string
+P303,EE breed number,breed identification number per the EE list of the breeds of fancy pigeons (ELFP),250,string
+P947,RSL identifier,identifier of the Russian State Library,239,string
+P761,VISS ID,identifier in the Swedish National Water Information Database (VISS),236,string
+P984,IOC country code,three-letter abbreviation country code by the International Olympic Committee,234,string
+P1714,Journalisted ID,"Identifier on Journalisted, an independent, not-for-profit website (by Media Standards Trust) listing the published writing of journalists and politicians",231,string
+P455,Emporis ID,identifier for a building in the Emporis database,231,string
+P605,NUTS code,NUTS-Code of a region,227,string
+P867,ROME Occupation Code (v3),"ROME Code for a given occupation in France (V3, 1 letter, 4 digits)",227,string
+P839,IMSLP ID,title of page on the International Music Score Library Project,222,string
+P613,OS grid reference,grid location reference from the Ordnance Survey National Grid reference system used in Great Britain,213,string
+P1417,Encyclopædia Britannica Online ID,ID of an article in the online version of Encyclopædia Britannica,209,string
+P1163,Internet media type,IANA-registered identifier for a file type,201,string
+P724,Internet Archive ID,globally unique ID of a given item on archive.org,194,string
+P687,BHL Page Id,identifier in the Biodiversity Heritage Library (BHL),192,string
+P1280,CONOR identifier,ID in the CONOR.SI database,191,string
+P267,ATC code,therapeutic chemical identification code per ATC,186,string
+P1627,Ethnologue.com code,,185,string
+P218,ISO 639-1 code,two-letter identifier for a language or family of languages defined in ISO 639-1 standard,185,string
+P356,DOI,Digital Object Identifier,185,string
+P496,ORCID,Open Research Contributor ID for a person,185,string
+P1364,ITTF ID,ITTF table tennis player identifier,184,string
+P951,NSZL identifier,authority file of the National Széchényi Library,181,string
+P762,Czech cultural heritage ID ,identifier for cultural heritage properties in the Czech Republic,180,string
+P498,ISO 4217 code,ISO 4217 code of currency,179,string
+P898,IPA,spelling in the International Phonetic Alphabet,179,string
+P1473,Nupill Literatura Digital - Author,author identifier from Nupill Literatura Digital,177,string
+P1116,Kallikratis geographical code,identifier for administrative regions of Greece (starting 2010),176,string
+P940,GHS precautionary statements,code referring to a phrase giving advice about the correct handling of chemical substances and mixtures,167,string
+P988,Philippine Standard Geographic Code,systematic classification and coding of geographic areas of the Philippines.,164,string
+P668,GeneReviews ID,collection of peer-reviewed articles that describe specific gene-releated diseases,157,string
+P946,ISIN,International Securities Identification Number,157,string
+P952,ISCO occupation code,International Standard Classification of Occupations code,157,string
+P1733,Steam ID,"identification number for an application, in Steam",156,string
+P1618,sport number,number worn on a player's uniform,154,string
+P776,Swedish minor urban area code,urban area code for Sweden,154,string
+P246,element symbol,chemical element symbol,153,string
+P497,CBDB ID,ID of a person in the China Biographical Database,145,string
+P838,BioLib ID,ID in the biological encyclopedia BioLib,138,string
+P1292,DNB editions,ID in the German National Library catalogue (see also authority data P227),134,string
+P481,Palissy identifier,identifier in the Palissy database of moveable objects of French cultural heritage,134,string
+P728,GHS hazard statement,globally harmonized system of assessment and labeling of chemicals,132,string
+P1529,Glad identifier,cultural property identifier per the Glad database of French cultural heritage,131,string
+P829,OEIS ID,ID on the On-Line Encyclopedia of Integer Sequences,131,string
+P883,FIPS 5-2 (code for US states),identifier for US states and other associated areas (numeric or alpha) per Federal Information Processing Standard FIPS 5-2,129,string
+P465,sRGB color hex triplet,sRGB hex triplet format for subject color (e.g. 7FFFD4),128,string
+P1266,AlloCiné person ID,,120,string
+P648,Open Library identifier,"numeric identifier for works, editions and authors",120,string
+P804,GNIS Antarctica ID,"identification code for geographic objects in Antarctica, used in the US Geological Survey's Geographic Names Information System. For U.S. IDs, use Property:P590",120,string
+P1601,Esperantist ID,number in the address book of early Esperanto speakers by Zamenhof,119,string
+P821,CGNDB Unique Identifier,identifier the geographical feature of the Geographical Names Board of Canada,115,string
+P675,Google Books identifier,this identifier gives access to the books that Google has scanned,114,string
+P917,GRAU index,index of Russian (and Soviet) weapons and rockets,111,string
+P938,FishBase species identifier,,104,string
+P1254,Slovenska biografija ID,"ID in the Slovenska biografija"" reference project""",103,string
+P270,CALIS,authority control number per CALIS (China Academic Library & Information System),102,string
+P503,ISO standard,number of the ISO standard which normalizes the object,101,string
+P1276,Dictionnaire du Jura ID,identifier in the encyclopedia Dictionnaire du Jura,100,string
+P1168,municipality code (Denmark),identifier for municipalities in Denmark,98,string
+P698,PubMed ID,ID for journal articles/abstracts in PubMed,96,string
+P827,BBC program identifier,identifier for the corresponding item on the BBC website and internal systems,93,string
+P1584,Pleiades identifier,"Pleiades identifier for a place, hosted at pleiades.stoa.org",92,string
+P1150,Regensburg Classification,identifier used for this class in the Regensburg Classification system,91,string
+P1315,People Australia identifier,National Library of Australia party identifier (see also P409 for the older Libraries Australia identifier),90,string
+P1694,Terminologia Histologica (TH),controlled vocabulary for use in cytology and histology,90,string
+P278,GOST 7.75-97 code,language identification code according to GOST 7.75-97,88,string
+P1190,Universal Decimal Classification,type of library classification,86,string
+P506,ISO 15924,code for writing systems,81,string
+P835,author citation (zoology),citation of those involved in the publication of a zoological name,75,string
+P1600,code Inventari del Patrimoni Arquitectònic de Catalunya,architectural property identifier in Catalonia. max. 5-digit numeric,73,string
+P1153,Scopus Author ID,unique author identifier assigned in Scopus bibliographic database,72,string
+P1818,Kaiserhof ID,Identifier in the personnel database of the courtiers of the Austrian Habsburg imperial line and the branch lines,72,string
+P1669,CONA  identifier,Cultural Objects Name Authority ID,70,string
+P1256,Iconclass notation,"Iconclass code that corresponds with an artistic theme or concept. For artworks, use P1257 (depicts Iconclass notation).",69,string
+P426,aircraft registration,registration identifier assigned to an individual aircraft,69,string
+P1237,Box Office Mojo film ID,ID for a movie at the website Box Office Mojo,68,string
+P808,code Bien de Interés Cultural,Spanish heritage register. Format is RI-XX-nnnnnnn-n?n?n?nnnn,62,string
+P1293,Royal Aero Club Aviator's Certificate ID,,61,string
+P1360,Monte Carlo Particle Number,number given to each elementary particle,61,string
+P962,MycoBank taxon name identifier,MycoBank is a database that provides an authoritative and comprehensive list of names of fungi.,60,string
+P249,ticker symbol,abbreviation used to uniquely identify publicly traded shares of a particular stock on a particular stock market,59,string
+P587,MMSI,Maritime Mobile Service Identity of a ship station,58,string
+P1551,Exceptional heritage of Wallonia identifier,"The unique identifier of the Patrimoine immobilier exceptionnel de la Région wallonne""""",57,string
+P1241,Swiss Football Association Club Number,,56,string
+P1394,Glottolog code,language code in the Glottolog database,56,string
+P632,cultural properties of Belarus reference number,,56,string
+P672,MeSH Code,Medical Subject Headings (MeSH) codes are an index and thesaurus for the life sciences (≠ MeSH ID),56,string
+P1409,Cycling Archives Cyclist ID,ID in the Cycling Archives,50,string
+P759,Alberta Register of Historic Places identifier,identification number of historic resources in the Alberta Register of Historic Places,50,string
+P1329,phone number,property for phone number with String datatype until the URL datatype will support phone numbers (P1244),47,string
+P1149,Library of Congress Classification,identifier used for this class in the Library of Congress Classification system,45,string
+P1220,Internet Broadway Database person ID,ID for personnel on Broadway,45,string
+P1331,PACE member ID,ID for a member of the Parliamentary Assembly of the Council of Europe,44,string
+P1255,Helveticarchives ID,ID in the Swiss National Library's archive database,43,string
+P1671,route number,,43,string
+P1735,Comedien.ch identifier,Identifer in Comedien.ch database of actors and commedians,43,string
+P591,EC number,Enzyme Commission number (≠ European Commission number P232),43,string
+P892,Request for Comments identifier,"Request for Comments is a publication of IETF and the Internet Society (without RFC"" prefix)""",43,string
+P847,United States Navy aircraft designation,aircraft identifier,42,string
+P1236,Parsons code,Parsons code value for identifying music by melodic contours,41,string
+P1585,Municipality code of Brazil,,41,string
+P1807,Great Aragonese Encyclopedia ID,"identifier in the Spanish language, Aragon-themed, Great Aragonese Encyclopedia (GEA)",39,string
+P732,BGS Lexicon ID,ID for stratigraphic unit given by the British Geological Survey,39,string
+P965,burial plot reference,"string of references which identify a specific plot in a burial area, e.g. cemetery",39,string
+P1217,Internet Broadway Database venue ID,ID for each theatre or other venue,38,string
+P1395,National Cancer Institute ID,id at www.cancer.gov,38,string
+P1396,Linguasphere code,language code from Linguasphere Observatory,38,string
+P1626,Thai cultural heritage ID,identifier for cultural heritage properties in Thailand,38,string
+P416,quantity symbol,symbol for a physical quantity,38,string
+P1274,ISFDB title ID,ID for a title in the Internet Speculative Fiction Database,37,string
+P1311,lostbridges.org ID,database of covered bridges in the United States and Canada,37,string
+P897,United States Army and Air Force aircraft designation,aircraft identifier for US Army and Air Force aircraft until 1962,37,string
+P836,GSS code (2011),"UK Government Statistical Service code, a fixed length code of nine characters (new codes introduced in 2011)",36,string
+P1555,Executive Order number,number for an executive order of the US,35,string
+P1814,name in kana,the reading of a Japanese name in kana,34,string
+P845,Saskatchewan Register of Heritage Property identifier,identifier of the Saskatchewan Register of Heritage Property,34,string
+P909,Nova Scotia Register of Historic Places identifier,The unique identifier of Nova Scotia Register of Historic Places,32,string
+P464,NOR,ID for French official texts,31,string
+P1385,Enciclopédia Açoriana ID,entry in an Azores-themed encyclopedia,30,string
+P617,yard number,number of the ship assigned by its builder (shipyard),30,string
+P1209,CN,"a number given by State Administration of Press, Publication, Radio, Film and Television of the People’s Republic of China, to identify newspaper and magazine in China",29,string
+P1278,Legal Entity Identifier,string identifying a legally distinct entity per ISO 17442,29,string
+P1662,DOI Prefix,"Unique identifier specific to a DOI registrant, AKA DOIP",29,string
+P1746,ZooBank nomenclatural act,identifier for nomenclatural act at ZooBank,29,string
+P1793,format as a regular expression,regex describing an identifier or a Wikidata property,29,string
+P1799,Maltese Islands National Inventory of Cultural Property identifier,identifier in the National Inventory of Cultural Property of the Maltese Islands,29,string
+P600,Wine AppDB-ID,Application-ID in the the AppDB of WineHQ,29,string
+P1370,ihsi identifier,code for each of the Haitian administrative units,28,string
+P1413,SFDb ID,"identifier in a swedish film database. Type (like PERSON/"" or ""MOVIE/"") followed by ID Nr""",28,string
+P1481,vici.org ID,identifier on vici.org - archaeological atlas of antiquity,28,string
+P1616,SIREN number,ID of an organization in the SIRENE register maintained by INSEE,28,string
+P1651,YouTube video identifier,Identifier of a notable video on YouTube,28,string
+P1794,bureau du patrimoine de Seine-Saint-Denis ID,identifer in the atlas-patrimoine93.fr website,28,string
+P1257,depicts Iconclass notation,"Iconclass code depicted in an artwork. For linking Iconclass codes with their corresponding artistic themes or concepts, use P1256 (Iconclass notation).",27,string
+P824,Meteoritical Bulletin Database ID,ID for meteorites in the database of the Meteoritical Society,27,string
+P1755,Aviation Safety Network accident description ID,accident description ID per the Aviation Safety Network's database,26,string
+P1824,road number,number assigned to a stretch of public roadway,26,string
+P745,Low German Bibliography and Biography ID,,26,string
+P1632,Hermann–Mauguin notation,Hermann–Mauguin notation of the mineral's symmetry element (short form),25,string
+P1762,Hornbostel-Sachs classification,Hornbostel-Sachs classification of a musical instrument,25,string
+P507,Swedish county code,"identifier for a county in Sweden länskod"" (two-digit)""",25,string
+P1361,Anime News Network ID,,24,string
+P1297,IRS Employer Identification Number,number given to businesses by the United States Internal Revenue Service,23,string
+P1764,Flemish organization for Immovable Heritage relict ID,"relict"" identification code in the database of the Flemish organization for Immovable Heritage""",23,string
+P701,Dodis,"identifier in the dodis database (Diplomatic Documents of Switzerland 1945-1969), see Q661051",23,string
+P1281,WOEID,location ID on Yahoo! GeoPlanet and Flickr,22,string
+P886,LIR,"identifier in the Lexicon istoric retic (LIR), Romansh variant of Historical Dictionary of Switzerland",22,string
+P1232,Linguist list code,language code from Linguist list,21,string
+P1617,BBC Things identifer,Identifier in the BBC Things database (see Q18336371),21,string
+P1699,SkyscraperPage building id,ID of a building in the SkyscraperPage database,21,string
+P1388,German regional key,,20,string
+P1238,Swedish Football Association ID,database of Swedish soccer players,18,string
+P1770,Romania LMI code,identifier in 'Liste de monumente istorice din România' (Romanian heritage sites),18,string
+P731,Litholex ID,Lithostratigraphic database of Germany maintained by the BGR,18,string
+P763,PEI Register of Historic Places identifier,"identifier of a historic place in Prince Edward Island, Canada",18,string
+P933,heritagefoundation.ca ID,unique identifier of Heritage Foundation of Newfoundland and Labrador,18,string
+P1218,Internet Broadway Database production ID,ID for a specific run of a show,17,string
+P1223,NARA organization ID,,16,string
+P1820,Open Food Facts food additive slug,represents a food additive on Open Food Facts,16,string
+P1183,Gewässerkennzahl,a number to hydrographically order rivers and streams,14,string
+P1251,ABS ASCL code,Australian Standard Classification of Languages ID for languages,14,string
+P1252,AUSTLANG code,Australian Indigenous Languages Database language ID,14,string
+P1404,World Glacier Inventory ID,identifier in the World Glacier Inventory database,14,string
+P1693,Terminologia Embryologica (TE),standardized list of words used in the description of human embryologic and fetal structures,14,string
+P370,Sandbox-String,"Sandbox property for value of type String""""",14,string
+P656,RefSeq,qualifier to specify Reference Sequence identifier for the Protein and RNA (either p637 or p639),14,string
+P844,UBIGEO code,coding system for geographical locations in Peru used by the National Statistics Institute,14,string
+P1235,ISFDB series ID,"ID number of a series, periodical or franchise in the Internet Speculative Fiction Database",13,string
+P696,Neurolex ID,ID in the Neurolex database,13,string
+P1586,Catalan object of cultural interest ID,"identifier in the format: \d{1,4}-\p{2}",12,string
+P1338,EPSG ID,European Petroleum Survey Group Geodesy ID for geodetic datum,11,string
+P1392,ComicBookDB ID,identifier in a comic book database,11,string
+P1545,series ordinal,"position of an item in its parent series, generally to be used as a qualifier",11,string
+P718,Canmore ID,identifier in  the Royal Commission on the Ancient and Historical Monuments of Scotland's Canmore database,11,string
+P1305,Skyscraper Center ID,building ID as used on the CTBUH's www.skyscrapercenter.com,10,string
+P1377,MTR station code,Hong Kong station codes issued by MTR,10,string
+P1267,AlloCiné serie ID,,9,string
+P1407,MusicBrainz series ID,series identifier per the MusicBrainz open music encyclopedia,9,string
+P1790,BioStor author identifier,"Author identifier, in the BioStor database and archive of journal articles",9,string
+P799,Air Ministry specification,aircraft specification issued by the United Kingdom Air Ministry,9,string
+P894,Zentralblatt MATH,identifier in the zbMath database,9,string
+P1182,LIBRIS editions,ID for the items in the libris-catalogue about specific books,8,string
+P1573,BBC Genome identifier,identifier for a single episode/ programme in the BBC Genome database of Radio Times programme listings,8,string
+P1602,BBC Your Paintings venue identifier,"authority control identifier for venues housing art, in the UK",8,string
+P1668,ATCvet,ATCvet code,8,string
+P1760,Aviation Safety Network Wikibase Occurrence,Wikibase occurrence number per the Aviation Safety Network's database,8,string
+P221,ISO 639-6,language code per ISO 639-6,8,string
+P993,NFPA Health,,8,string
+P994,NFPA Fire,,8,string
+P995,NFPA Reactivity,NFPA code for chemical or physical reactivity,8,string
+P1189,Chinese Library Classification,identifier used for this class in the CLC,7,string
+P1246,patent number,string representing a patented invention,7,string
+P1541,Cycling Quotient identifier,identifier on http://www.cqranking.com,7,string
+P1588,Desa code of Indonesia,,7,string
+P1728,AllMusic artist ID,ID of an artist in AllMusic database,7,string
+P1787,art-name,type of pseudonym traditionnally adopted by writers and artists in East Asia,7,string
+P653,PubMed Health,ID published by the PubMed Health website,7,string
+P670,street number,"number in the street address. To be used as a qualifier of Property:P669 street""""",7,string
+P733,DINOloket ,database of geologic units in the Netherlands (Data Informatie Nederlandse Ondergrond),7,string
+P907,allgame ID,allgame video game database ID number,7,string
+P1143,BN (Argentine) editions,catalogue number for books (editions) in the National Library of the Argentine Republic,6,string
+P1188,Dharma Drum Buddhist College place ID,,6,string
+P1260,Cultural heritage database in Sweden,,6,string
+P1294,WWF ecoregion code,identifier for ecoregions,6,string
+P1316,SMDB ID,identifier in the Swedish Media Database,6,string
+P1380,uglybridges.com ID,database based on the National Bridge Inventory. Lists every U.S. bridge over 20 feet (6 meters) long,6,string
+P1550,Orphanet ID,ID in the Orpha.net database (without ORPHA prefix),6,string
+P1708,LfDS object ID,ID of Landesamt für Denkmalpflege Sachsen for national heritage sites,6,string
+P1715,RKD/ESD identifier (Slovenia),reference number of intangible cultural heritage of Slovenia (EID),6,string
+P1726,Florentine musea Inventario 1890  ID,museum inventory identifier,6,string
+P476,CELEX number,ID for European legal texts in EUR-Lex database,6,string
+P595,IUPHAR ID,ID of the International Union of Pharmacology databank,6,string
+P671,Mouse Genome Informatics ID,ID of a gene in the Mouse Genome Informatics database,6,string
+P773,ISO 3166-3,codes for country names which have been deleted from ISO 3166-1 since its first publication in 1974,6,string
+P778,Swedish code for parishes in the Church,Church of Sweden parish code,6,string
+P819,ADS bibcode,bibcode in the Astrophysics Data System,6,string
+P1172,Geokod,identifier for historical administrative division of Sweden (1862-1951),5,string
+P1203,Finnish municipality number,,5,string
+P1213,NLC authorities,person identifier for National Library of China,5,string
+P1381,bridgehunter.com ID,database of historic bridges,5,string
+P1397,State Catalogue of Geographical Names identifier (Russia),identifier in State Catalogue of Geographical Names (Russia),5,string
+P1700,SIPA identifier,Index number in the SIPA (Sistema de Informação para o Património Arquitectónico) database of heritage sites in Portugal,5,string
+P1821,Open Food Facts food category slug,represents a food category on Open Food Facts,5,string
+P502,HURDAT identifier,the subject's HURDAT (North Atlantic hurricane database) identifier,5,string
+P779,Swedish Pastoratskod,Pastoral district code for the Church of Sweden,5,string
+P1222,NARA person ID,,4,string
+P1234,ISFDB publication ID,ID number of an edition of a publication in the Internet Speculative Fiction Database,4,string
+P1386,Japanese High School Code,ID for Japanese high schools,4,string
+P1575,RISS catalog,"union catalog of South Korea and Japan, maintained by RISS",4,string
+P1649,Korean Movie Database ID,"South Korean online database of information related to Korean movies, animation, actors, television shows, production crew personnel and other film-related information.",4,string
+P1692,ICD-9-CM,ICD adaption assigning diagnostic and procedure codes,4,string
+P1717,SANDRE ID,ID of the French national Water Information System,4,string
+P1771,Integrated Postsecondary Education Data System identifier,Identifer for colleges and universities in the United States,4,string
+P1786,posthumous name,name given to a person after death (East Asia),4,string
+P1815,RSL book's identifier,,4,string
+P667,ICPC 2 ID,classification method for primary care encounters,4,string
+P818,arXiv ID,identifier of arXiv pre-print archive,4,string
+P862,Operational Requirement of the UK Air Ministry,specification for future military aircraft by the UK Air Ministry,4,string
+P1160,ISO 4 abbreviation,ISO 4 bibliographic code/abbreviation established in 1972,3,string
+P1187,Dharma Drum Buddhist College person ID,,3,string
+P1219,Internet Broadway Database show ID,ID for a play or other work (which may have had 1 or more productions),3,string
+P1224,NARA geographic ID,,3,string
+P1230,JSTOR journal code,ID used by JSTOR to identify a journal,3,string
+P1262,RAÄ-nummer,database of the cultural heritage in Sweden,3,string
+P1341,Italian Chamber of Deputies ID,ID code from the Italian Chamber of Deputies for incumbent and former deputies,3,string
+P1353,original spelling,original spelling of a scientific name,3,string
+P1400,FCC Facility ID,U.S. ID number for broadcast stations,3,string
+P1466,WALS lect code,code for a language,3,string
+P1471,reporting mark,reporting mark for railroads in North America,3,string
+P1624,MarineTraffic Port ID,port identification number assigned by the MarineTraffic database ,3,string
+P1798,ISO 639-5,ISO 639-5 code of a language family,3,string
+P663,DSM IV,classification found in the Diagnostic and Statistical Manual of Mental Disorders,3,string
+P760,DPLA ID,"books, paintings, films, museum objects and archival records that have been digitised throughout United States",3,string
+P777,Swedish civil parish code/ATA code,civil parish code for Sweden,3,string
+P888,JSTOR article ID,JSTOR stable periodical article identifier,3,string
+P932,PMCID,identifier issued by PubMed Central,3,string
+P1157,US Congress Bio identifier,person identifier on the Biographical Directory of the United States Congress,2,string
+P1261,Rundata,"database about runestones, mainly in Sweden, but stones in all of Europe, Greenland and U.S. can be found here",2,string
+P1270,Norway Database for Statistics on Higher education periodical ID,identifier for academic journals,2,string
+P1272,Norway Import Service and Registration Authority periodical code,,2,string
+P1277,Jufo ID,identifier in a Finnish Publication Forum,2,string
+P1428,Lost Art-ID,identifier in the Lost Art Internet Database,2,string
+P1453,catholic.ru identifier,identifier on the site catholic.ru,2,string
+P1467,WALS genus code,code for a language genus,2,string
+P1474,Nupill Literatura Digital - Document,document identifier from Nupill Literatura Digital,2,string
+P1564,At the Circulating Library ID,ID in the At the Circulating Library Victorian literature database,2,string
+P1580,University of Barcelona authority ID,,2,string
+P1645,NIST/CODATA ID,identifier for a physical constant,2,string
+P1653,TERYT municipality code,identifier for a municipality per the Główny Urząd Statystyczny in Poland,2,string
+P1655,station number,station number in subway system,2,string
+P1679,BBC Your Paintings artwork identifier,authority control identifier for artworks (publicly owned oil paintings in the UK),2,string
+P1702,IGESPAR identifier,Index number in the IGESPAR  (Instituto de Gestão do Património Arquitectónico e Arqueológico) database of heritage sites in Portugal,2,string
+P1707,DAAO identifier,Design & Art Australia Online identifier,2,string
+P1743,Bradley and Fletcher checklist number,reference for a species in the Bradley and Fletcher checklist of British lepidoptera,2,string
+P1744,Agassiz et al checklist number,"Reference for a species in the 2013 checklist of over 2,700 species British lepidoptera",2,string
+P1782,courtesy name,"name bestowed upon a person at adulthood in addition to one's given name, mostly in East Asia",2,string
+P1803,Masaryk University person ID,"ID of a person affiliated with Masaryk University (staff, alumnus, student…)",2,string
+P1810,named as,credit name for an individual that participated in the production of the product,2,string
+P1837,Gaoloumi ID,ID of a building in the the Gaoloumi database,2,string
+P1838,PSS-archi ID,ID of a building in the PSS-archi database,2,string
+P586,IPNI author ID,ID of a person in the International Plant Names Index,2,string
+P700,Kemler ID,code describing the hazards of a chemical in transport,2,string
+P849,Japanese military aircraft designation,aircraft designation per the Japanese military,2,string
+P860,e-archiv.li ID,"identifier in e-archiv.li, a directory of sources of Landesarchiv Liechtenstein",2,string
+P863,InPhO identifier ,link to the Indiana Philosophy Ontology project,2,string
+P874,UN class,UN hazard classification code,2,string
+P876,UN packaging group,packaging code according to UN transportation rules,2,string
+P918,NOC Occupation Code,NOC/CNP Code for a given occupation in Canada and Québec,2,string
+P919,SOC Occupation Code (2010),Standard Occupational Classification code for US jobs (2010 version),2,string
+P920,Spanish subject headings for public libraries,"subject headings for public libraries maintained by the Spanish Ministry of Education, Culture and Sport. Terms are linked (in different numbers) to LCSH, GND, RAMEAU, LEMAC (Subject Headings in Catalan).",2,string
+P1154,Scopus EID,unique academic work identifier assigned in Scopus bibliographic database,1,string
+P1155,Scopus Affiliation ID,Scopus uses a unique identifier for each organisation in author affiliations,1,string
+P1161,Z39.5 abbreviation,Z39.5 bibliographic code/abbreviation established in 1969 by National Information Standards Organization and used widely in the US,1,string
+P1162,Bluebook abbreviation,Bluebook citation style includes abbreviations,1,string
+P1208,ISMN,International Standard Music Number,1,string
+P1225,NARA topical subject ID,,1,string
+P1226,NARA specific records type ID,,1,string
+P1231,NARA catalogue record ID,unique identifier for catalogue records,1,string
+P1239,ISFDB publisher ID,ID number of a publisher in the Internet Speculative Fiction Database,1,string
+P1242,Theatricalia play ID,"Identifier for a theatrical work, in the Theatricalia database - http://theatricalia.com/",1,string
+P1243,International Standard Recording Code,,1,string
+P1271,Norway Database for Statistics on Higher education publisher ID,,1,string
+P1275,Norway Import Service and Registration Authority publisher code,,1,string
+P1300,bibcode,bibcode for a journal,1,string
+P1378,China railway TMIS station code,a five digit code for railway stations used in China railway system,1,string
+P1468,WALS family code,code for a language family,1,string
+P1544,Federal Register Document Number,Authority file ID in the United States Federal Register,1,string
+P1553,Yandex.Music ID,id on the site music.yandex.ru,1,string
+P1554,UBERON ID,ID from UBERON ontology (without prefix),1,string
+P1578,Gmelin Number,"unique identifier for inorganic chemical compounds, in the Gmelin database",1,string
+P1579,Beilstein Registry Number,Unique identifier for organic chemical compounds in the Beilstein database,1,string
+P1583,MalaCards ID,identifier in the Malacards database of diseases,1,string
+P1607,Dialnet author,,1,string
+P1609,Dialnet journal,,1,string
+P1610,Dialnet article,,1,string
+P1663,ProCyclingStats ID,Identifier on the website ProCyclingStats (www.procyclingstats.com),1,string
+P1664,Cycling Database ID,Identifier on the website Cycling Database (www.cyclingdatabase.com),1,string
+P1690,ICD-10-PCS,medical classification used for procedural coding ,1,string
+P1691,operations and procedures key (OPS),official classification of operational procedures,1,string
+P1736,Information Center for Israeli Art artist identifier,Authority control for artists,1,string
+P1738,Merck Index monograph,URL stem of page in The Merck Index Online,1,string
+P1739,CiNii book identifer,"Identifier for books, in the Japanese CiNii bibliography.",1,string
+P1751,BBC Your Paintings collection identifier,"authority control identifier for art collections, in the UK",1,string
+P1763,National Pipe Organ Register identifier,Identifier in National Pipe Organ Register,1,string
+P1785,temple name,name bestowed to a monarch after death (East Asia),1,string
+P1796,International Standard Industrial Classification code,code of industry by ISIC (International Standard Industrial Classification of All Economic Activities),1,string
+P1805,World Health Organisation International Nonproprietary Name,drug identifier,1,string
+P1806,ABoK number,knot identifier in the Ashley Book of Knots,1,string
+P1822,DSH object ID,"identifier for cultural monuments in Hamburg, Germany",1,string
+P1823,BAnQ ID,unique identifier for a work in the collection of Bibliothèque et Archives nationales du Québec,1,string
+P1825,Baseball-Reference.com major league player ID,Major League Baseball player ID assigned by Baseball-Reference.com,1,string
+P1826,Baseball-Reference.com minor league player ID,Minor League Baseball player ID assigned by Baseball-Reference.com,1,string
+P1827,ISWC,"unique identifier for musical works,  adopted as international standard ISO 15707",1,string
+P1832,GrassBase ID,ID in GrassBase - The Online World Grass Flora,1,string
+P1839,US Federal Election Commission identifier,"Identifier assigned by the US Federal Election Commission for federal candidates, parties, and other committees",1,string
+P627,IUCN-ID,source for IUCN conservation status (P141),1,string
+P679,ZVG number,identifier of GESTIS database,1,string
+P864,ACM Digital Library author identifier,Association for Computing Machinery Digital Library (ACM DL) author identifier,1,string
+P877,NFPA Other,NFPA Other,1,string
+P889,Mathematical Reviews identifier,"Mathematical Reviews is a journal and online database published by the American Mathematical Society (AMS) that contains brief synopses (and occasionally evaluations) of many articles in mathematics, statistics and theoretical computer science.",1,string
+P1113,series length,the number of items in a series,335,quantity
+P1083,seating capacity,"seating capacity of the venue, vehicle",11455,quantity
+P1086,atomic number,number of protons found in the nucleus of the atom,4651,quantity
+P1092,total produced,quantity of item produced,2483,quantity
+P1098,number of speakers,number of people who speak a language,841,quantity
+P1104,number of pages,number of pages in an edition of a written work,287,quantity
+P1101,floors above ground,above ground floor count of a building (ground floor included),185,quantity
+P1110,attendance,"number of people (spectators, ticket holders) at an event or exhibition",165,quantity
+P1096,orbital eccentricity,amount of the deviation of an orbit from a perfect circle,40,quantity
+P1081,Human Development Index,HDI value of a country,23,quantity
+P1099,number of masts,number of masts a ship has,12,quantity
+P1102,flattening,measure of the compression of an ellipsoid of revolution,5,quantity
+P1087,ELO rating,"quantitative measure of one's game-playing ability, particularly in chess",4,quantity
+P1093,gross tonnage,unitless index related to a ship's overall internal volume,14,quantity
+P1109,refractive index,refractive index of a substance with wavelength and temperature as qualifiers,12,quantity
+P1082,population,number of people inhabiting the place,270331,quantity
+P1112,Pokédex number,a Pokémon identification number,2642,quantity
+P1103,number of platforms,number of tracks serving a platform in a railway station,2388,quantity
+P1090,redshift,the redshift measure of an astronomical object,123,quantity
+P1100,number of cylinders,number of cylinders in a piston engine or compressor,64,quantity
+P1088,Mohs' hardness,,48,quantity
+P1108,electronegativity,,16,quantity
+P1181,numeric value,numerical value of a number (e.g. 1) or a constant (e.g. pi),10120,quantity
+P1148,neutron number,number of neutrons of an isotope,4505,quantity
+P1174,visitors per year ,number of people visiting a location each year,1052,quantity
+P1352,ranking,person's ranking in a sport,993,quantity
+P1114,quantity,number of instances of this subject,600,quantity
+P1120,number of deaths,number of people who died as a result of an event or cause,376,quantity
+P1128,employees,total number of employees of a company at a given point in time,331,quantity
+P1118,tennis singles ranking,ranking of player (use qualifiers P580 & P582 for timespan),244,quantity
+P1119,tennis doubles ranking,ranking of player in doubles (use qualifiers P580 & P582 for timespan),242,quantity
+P1132,number of participants,"number of participants of an event, e.g. people or groups of people that take part in the event",213,quantity
+P1215,apparent magnitude,apparent magnitude of an astronomic object,165,quantity
+P1121,oxidation state,,157,quantity
+P1342,number of seats,number of seats/members in an assembly (legislative house or similar),150,quantity
+P1725,beats per minute,tempo of a musical work,83,quantity
+P1641,port,default communication endpoint in TCP or UDP protocol,74,quantity
+P1339,number of injured,number of people with non-fatal injuries in an event,71,quantity
+P1548,maximum Strahler number,"highest Strahler number of a stream, creek, or river",61,quantity
+P1539,female population,,41,quantity
+P1540,male population,,41,quantity
+P1122,spin quantum number,,31,quantity
+P1198,unemployment rate,portion of a workforce population that is not employed,30,quantity
+P1139,floors below ground,the total number of below ground floors of the building,23,quantity
+P1436,collection or exhibition size,number of items in a collection or exhibition,20,quantity
+P1561,number of survivors,number of people surviving an event,20,quantity
+P1125,Gini coefficient,measure of statistical dispersion intended to represent the income distribution of a nation's residents,16,quantity
+P1301,number of elevators,number of elevators in a building,15,quantity
+P1697,total valid votes,vote count for the elections (excluding invalid votes),13,quantity
+P1569,number of edges,number of edges of a shape,12,quantity
+P1570,number of vertices,number of vertices of a shape,9,quantity
+P1470,maximum glide ratio ,maximum glide ratio of an aircraft,8,quantity
+P1247,compression ratio,compression ratio of an engine,7,quantity
+P1314,number of spans,number of spans a bridge has,6,quantity
+P1603,number of cases,"the cumulative number of confirmed, probable and suspected occurrences",6,quantity
+P1164,cardinality of the group,number of elements in a finite group,5,quantity
+P1350,number of matches played,matches or games a player officially appeared in,5,quantity
+P1446,number of missing,"number of people missing after an event - qualify with point in time (P585)""""",5,quantity
+P1590,number of casualties,number of people dead or injured because of this event.  Used when precise data on number of deaths and number of injured is unavailable.,5,quantity
+P1117,pKa,acid dissociation constant,4,quantity
+P1123,parity,property of elementary particle,4,quantity
+P1141,number of processor cores,the number of independent actual processing units,4,quantity
+P1351,number of points/goals scored,goals / points scored in a match used as qualifier to the participant. Use P1358 for league points.,4,quantity
+P1410,number of seats in legislature,number of seats a political party has in a given legislature,4,quantity
+P1457,absolute magnitude,absolute magnitude of an astronomic object,4,quantity
+P1129,national team caps,,3,quantity
+P1373,daily ridership,"number of people riding a transportation line or network, or using a station in a given day",3,quantity
+P1658,number of faces,number of faces of a mathematical solid,3,quantity
+P1124,teu,"capacity measured in twenty-foot equivalent unit""""",2,quantity
+P1279,inflation rate,percent change in CPI in one year,2,quantity
+P1345,number of victims,number of victims of a serial killer,2,quantity
+P1458,color index,color index of an astronomical object,2,quantity
+P1752,scale,"Proportional ratio of a linear dimension of a model, map, etc,  to the same feature of the original - 1:n. Use 1 for lifesize, positive numbers for smaller than lifesize, negative numbers for larger",2,quantity
+P1130,doubles titles,number of tournament victories in tennis doubles,1,quantity
+P1131,singles titles,number of tournament victories in tennis singles,1,quantity
+P1193,prevalence,portion of a population with a given disease,1,quantity
+P1295,emissivity ,ability of a substance to radiate thermal energy from its surface,1,quantity
+P1418,orbits completed,number of orbits a spacecraft has done around a body,1,quantity
+P1538,number of households,,1,quantity
+P1011,excluding,usually used as a qualifier,0,null
+P1032,Digital Rights Management system,technologies  to control the use of digital content and devices after sale,0,null
+P1097,g-factor,characteristic property of any elementary particle (Landé factor),0,null
+P1107,proportion,"to be used as a qualifier, value must be between 0 and 1",0,null
+P1111,votes received,number of votes for a candidate in an election,0,null
+P1016,asteroid taxonomy,type of asteroid classification,0,null
+P1039,type of kinship,"qualifier of relative (P1038)"" to indicate unusual family relationships (ancestor  son-in-law adoptions  etc). Avoid using for relationships that can be derived from the family tree or have an explicit property (spouse child  etc)""",0,null
+P1106,sandbox-quantity,property to be used for testing the quantity datatype,0,null
+P1126,isospin quantum number,characteristic property of any elementary particle,0,null
+P1127,isospin z-component,characteristic property of any elementary particle,0,null
+P1135,nomenclatural status,"the status of a scientific name, according to the relevant rules of nomenclature",0,null
+P1152,IPTC Media Topic,topic classification following the IPTC Media Topics vocabulary,0,null
+P1167,USB ID,vendor ID used in USB devices,0,null
+P1227,astronomical filter,passband used to isolate particular sections of the electromagnetic spectrum,0,null
+P1244,phone number (URL),number dialed into a telephone to communicate with a specific entity,0,null
+P1310,statement disputed by,entity that disputes a given statement,0,null
+P1354,shown with features,features depicted in a work,0,null
+P1355,matches won/games won,number of matches or games won in a league or an event,0,null
+P1356,matches lost/games lost,number of matches or games lost in a league or an event,0,null
+P1357,matches/games drawn/tied,number of matches or games drawn or tied in a league or an event,0,null
+P1358,points for,number of points in a league table or decathlon. (Use P1351 for goals/points in a match),0,null
+P1359,number of points/goals conceded,points conceded or goals against (use in league table items),0,null
+P1390,match time of score (minutes),minutes into a game when a goal is scored,0,null
+P1437,plea,"whether a person pleaded guilty, not guilty, etc.",0,null
+P1443,score method,"qualifier of points/goal scored by (P1363)""""",0,null
+P1450,Sandbox Monolingual text,sandbox for testing the monolingual text datatype,0,null
+P1480,sourcing circumstances,"qualifiers for claims: circa, misprint, presumably...",0,null
+P1608,Dialnet book,,0,null
+P1642,acquisition transaction,how the player was aquired; qualifier for P54 (member of sports team),0,null
+P1643,departure transaction,how the player was released or transferred from the roster; qualifier for P54 (member of sports team),0,null
+P1661,Alexa rank,The website's Alexa ranking with P585 as a qualifier for each value. The current value should be marked 'preferred'.,0,null
+P1665,Chess Games ID,Identifier on the website Chess Games (www.chessgames.com),0,null
+P1666,Chess Club ID,Identifier on the website Chess Club (www6.chessclub.com),0,null
+P1673,general formula,molecular formula of a class of compounds,0,null
+P1674,number confirmed,qualifier; number of occurrences classified as confirmed for reporting purposes,0,null
+P1675,number probable,qualifier for number of cases; number of occurrences classified as probable for reporting purposes,0,null
+P1676,number suspected,qualifier for number of cases; number of occurrences classified as suspected for reporting purposes,0,null
+P1686,awarded for work,qualifier of award received (P166) to specify the work that an award was given to the creator for,0,null
+P1688,AniDB identifier,ID on the site http://anidb.net,0,null
+P1689,central government debt as a percent of GDP,,0,null
+P1706,together with,qualifier to specify the person or group that this property is shared with,0,null
+P1721,pinyin transliteration,hanyu pinyin transliteration of a pinyin text (usually to be used as a qualifier),0,null
+P1729,AllMusic album ID,ID of an album in AllMusic database,0,null
+P1730,AllMusic song ID,ID of a song in AllMusic database,0,null
+P1734,oath of office date,when person swore the oath of office,0,null
+P1775,follower of,for unknown artists who work in the manner of the named artist,0,null
+P1776,circle of,"for unknown artists who lived in the same time as the named author in a similar style, possibly a follower or someone who had contact with the named artist",0,null
+P1777,manner of,"for unknown artists who worked in a similar style as the named author, but not necessary from the same period",0,null
+P1778,forgery after,for an artwork trying to appear to be the work of the named author,0,null
+P1779,possible creator,for a creative work with consderable uncertainty about the author,0,null
+P1780,school of,"for a creative work with author with a style influenced by the known author or circle, active in the same period, but a student or follower",0,null
+P1828,IPI Code,"international unique identifier for composer, author and other relevant parties",0,null
+P1829,Roud Folk Song Index,"Id for a database of nearly 200,000 references to nearly 25,000 songs",0,null
+P1831,electorate,the number of registered voters for the place,0,null
+P1833,number of registered users/contributors,number of registered users on a website,0,null
+P1836,draft pick number,overall pick number with which a player is selected in a sports draft,0,null
+P368,Sandbox-CommonsMediaFile,"Sandbox property for value of type Commons Media File""""",0,null
+P369,Sandbox-Item,"Sandbox property for value of type Item""""",0,null
+P405,taxon author,the author(s) that (optionally) may be cited with the scientific name,0,null
+P453,character role,specific role played or filled by subject (use only as qualifier of P161 or P725),0,null
+P548,version type,type of version (qualifier for P348),0,null
+P554,website username,username on a website that the person or organization has an account on (only use as qualifier of P553),0,null
+P578,Sandbox-TimeValue,"Sandbox property for value of type TimeValue""""",0,null
+P654,direction relative to location,qualifier for geographical locations to express relative direction,0,null
+P659,GenLoc assembly,specify the genome assembly of the gene in UCSC Genome Informatics website,0,null
+P678,incertae sedis,qualifier for P171 (parent taxon) to mark which intermediate ranks are incertae sedis,0,null
+P697,ex taxon author,"person to whom to ascribe a taxon name, denoted by ex"" (via P405)""",0,null
+P783,hymenium type,type of spore-bearing surface or that mushroom,0,null
+P792,chapter,title or number of the chapter where a claim is made,0,null
+P794,as,generic qualifier,0,null
+P820,arXiv classification,arXiv classification of pre-print articles,0,null
+P857,CNKI,identifier in the China National Knowledge Infrastructure database,0,null
+P875,UN code classification,UN code classification,0,null
+P893,Social Science Research Network ID,article/paper identifier at the SSRN,0,null
+P922,magnetic ordering,magnetic ordering of a substance,0,null
+P925,presynaptic connection,neuron connects on its presynaptic end to,0,null
+P926,postsynaptic connection,neuron connects on its postsynaptic end to,0,null
+P928,activating neurotransmitter,which neurotransmitter activates the neuron,0,null
+P929,color space,mathematical model describing the way colors can be represented as tuples of numbers,0,null
+P958,"section, verse, or paragraph","paragraph, column, or other kind of special indication to find information on a page or on a document (legal texts et al.)",0,null
+P967,guest of honor,"guest(s) of honor invited to an event, e.g. a convention",0,null
+P980,code for weekend and holiday homes (Sweden),a type of Statistics Sweden-code,0,null
+P999,ARICNS,ARICNS code,0,null
+P1476,title,the title of a work,15473,monolingualtext
+P1705,native label,label for the items in their official language (Q23492) or their original language (P364),7924,monolingualtext
+P1813,short name,"the short name of a place, organisation, person etc.",3585,monolingualtext
+P1448,official name,official name of the subject in its official language(s),1548,monolingualtext
+P1477,birth name,"full name of a person at birth, if different from their current, generally used name (samples: John Peter Doe for Joe Doe, Ann Smith for Ann Miller)",1364,monolingualtext
+P1680,subtitle,"for works, when the title is followed by a subtitle",1227,monolingualtext
+P1451,motto text,short motivation sentence associated to item (e.g. at the bottom of its coat of arms),1214,monolingualtext
+P1449,nickname,the nickname of an entity,433,monolingualtext
+P1559,name in native language,name of a person in their native language,388,monolingualtext
+P1549,demonym,"the demonym for people or things associated with a given place. In English, this should start with a Capital letter. Singular masculine adjective form is preferred. Add a qualifier if another form is added.",360,monolingualtext
+P1684,inscription,"inscriptions, markings and signatures on an object",84,monolingualtext
+P1635,religious name,name taken or used as a member of a religious community,47,monolingualtext
+P1638,working title,temporary name of a product or project used during its development,10,monolingualtext
+P1683,quote,"quote supporting the statement claim (to be used in the sources"" field)""",6,monolingualtext
+P625,coordinate location,geocoordinates of the subject,2139981,globe-coordinate
+P1332,coordinate of northernmost point,northernmost point of a location. For an administrative entity this includes offshore islands,110,globe-coordinate
+P1333,coordinate of southernmost point,southernmost point of a place. For administrative entities this includes offshore islands,109,globe-coordinate
+P1335,coordinate of westernmost point,westernmost point of a location,109,globe-coordinate
+P1334,coordinate of easternmost point,easternmost point of a location,108,globe-coordinate
+P1259,coordinates of the point of view,"point from which the scene depicted by the element is seen (element can be a photo, a painting, etc.)",16,globe-coordinate
+P626,Sandbox-GeoCoordinateValue,"Sandbox property for value of type GeoCoordinateValue""""",1,globe-coordinate
+P10,video,relevant video,264,commonsMedia
+P109,signature,image of a person's signature,3475,commonsMedia
+P18,image,"relevant illustration of the subject; if available, use more specific properties (sample: coat of arms image, locator map, flag image, signature image, logo image)",795805,commonsMedia
+P94,coat of arms image,image of the item's coat of arms,51120,commonsMedia
+P242,locator map image,geographic map image which highlights the location of the subject,41541,commonsMedia
+P41,flag image,picture of the item's flag,22146,commonsMedia
+P948,Wikivoyage banner,banner for the related Wikivoyage page,8588,commonsMedia
+P181,range map image,range map of a taxon,6074,commonsMedia
+P154,logo image,"graphic mark or emblem commonly used by commercial enterprises, organizations and products",5279,commonsMedia
+P117,chemical structure,representation of the structure for a chemical compound,4224,commonsMedia
+P158,seal image,image of subject's seal (emblem),4174,commonsMedia
+P14,highway marker,graphic representing the highway,3930,commonsMedia
+P15,road map,map of the road,3265,commonsMedia
+P1442,grave picture,"picture of a person or animal's grave, gravestone or tomb",2633,commonsMedia
+P51,audio,relevant sound,592,commonsMedia
+P443,pronunciation audio,audio media file on Wikimedia Commons with pronunciation,467,commonsMedia
+P990,recording of the subject's spoken voice,audio file representing the speaking voice of a person; or of an  animated cartoon or other fictitious character,349,commonsMedia
+P989,spoken text audio,audio file for the spoken work or Wikipedia article,330,commonsMedia
+P996,scan file (Commons),file related to the content of the source/book/report on Wikimedia Commons,270,commonsMedia
+P1801,commemorative plaque image,"image of plaque or inscription commemorating or mentioning the subject. For graves, use grave picture (P1442)",198,commonsMedia
+P1766,place name sign,image of road sign with place name on it,125,commonsMedia
+P1621,detail map,a map containing details about the entire location,38,commonsMedia
+P367,astronomic symbol image,image of the symbol that identify a planet or an asteroid of the solar system,30,commonsMedia
+P491,orbit diagram,image with the diagram of the orbit of an astronomic body,8,commonsMedia
+P207,bathymetry image,"file with bathymetric chart, bathymetric map",6,commonsMedia
+P1543,monogram,image of a person's monogram,3,commonsMedia
+P692,Gene Atlas Image,image showing the GeneAtlas expression pattern,1,commonsMedia

@@ -151,8 +151,8 @@ public class WikidataQueryAPI
 
     public static void example0() throws SQLException{
 
-          String itemId = "Q9430";
-          String lang ="es";
+          String itemId = "Q2";
+          String lang ="en";
 
           System.out.println("Wikidata Entry: "+ getItemLabel(itemId, lang));
           System.out.println("Description: "+ getItemDescription(itemId, lang));
