@@ -1,4 +1,6 @@
-package hms.wikidata.dbimport;
+package hms.wikidata.old;
+
+import hms.wikidata.model.ClaimItem;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package hms.wikidata.dbimport;
+package hms.wikidata.model;
 
 public class ClaimItem
 {

@@ -1,5 +1,7 @@
 package hms.wikidata.dbimport;
 
+import hms.wikidata.model.MetaDataFields;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -15,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import javax.management.RuntimeErrorException;
 import javax.swing.text.html.parser.Entity;
 
 import com.fasterxml.jackson.core.JsonFactory;
@@ -38,10 +41,12 @@ public class JacksonImporter {
 	
 		
 //		extractAndInsertIntoDB(MetaDataFields.descriptions);
-		extractAndInsertIntoDB(MetaDataFields.aliases);
+//		extractAndInsertIntoDB(MetaDataFields.aliases);
 //		parseWikidata(JSON_FILE_LOCATION);
 //		extractAndInsertClaims();
 		
+		
+		extractAndInsertClaimsReferences();
 		
 	}
 	
@@ -134,8 +139,7 @@ public class JacksonImporter {
 			
 			String lang = metaFieldElements.get("language").asText();
 			
-			if(lang.equals("ar"))
-					System.out.println();
+			
 			String metaFieldValue = metaFieldElements.get("value").asText();
 			
 			System.out.println("Insert " + metaDataFieldName +": " + itemID + "\t" + metaFieldValue + "\t" + lang );
@@ -249,9 +253,36 @@ public class JacksonImporter {
 								finalValue = "Q"+datavalueNode.get("value").get("numeric-id").asText();
 								
 							}
-	
+							
+							else if(datatype.asText().equals("time")){
+								finalValue = datavalueNode.get("value").toString();
+							}
+							else if(datatype.asText().equals("wikibase-property")){
+								finalValue = "P"+datavalueNode.get("value").get("numeric-id");
+							}
+							
+							else if(datatype.asText().equals("globe-coordinate")){
+								finalValue = datavalueNode.get("value").toString();
+							}
+							
+							else if(datatype.asText().equals("quantity")){
+								finalValue = datavalueNode.get("value").toString();
+							}
+							else if(datatype.asText().equals("monolingualtext")){
+								finalValue = datavalueNode.get("value").toString();
+							}
+							else if(datatype.asText().equals("string")){
+								finalValue = datavalueNode.get("value").toString();
+							}
+							else if(datatype.asText().equals("commonsMedia")){
+								finalValue = datavalueNode.get("value").toString();
+							}
+							else if(datatype.asText().equals("url")){
+								finalValue = datavalueNode.get("value").asText();
+							}
 							else {
-								finalValue = datavalueNode.get("value").asText();	
+								finalValue = datavalueNode.get("value").toString();	
+								
 							}
 							
 												
@@ -275,6 +306,203 @@ public class JacksonImporter {
 		}
 	}
 	
+	
+	public static void extractAndInsertClaimsReferences() throws IOException {
+		System.out.println("item id \t claim id \t reference id \t reference type \t reference value");
+
+		JsonFactory f = new MappingJsonFactory();
+
+		JsonParser jp = f.createParser(new File(JSON_FILE_LOCATION));
+
+		JsonToken current;
+
+		current = jp.nextToken();
+		System.out.println(current);
+
+		if (current == JsonToken.START_ARRAY) {
+			// For each of the records in the array
+			while (jp.nextToken() != JsonToken.END_ARRAY) {
+				// read the record into a tree model,
+				// this moves the parsing position to the end of it
+				JsonNode node = jp.readValueAsTree();
+				
+				String itemID = node.get("id").asText();
+				
+				JsonNode claimsNode = node.get("claims");
+				
+				if(claimsNode!=null){
+					for (Iterator<JsonNode> iterator = claimsNode.elements(); iterator.hasNext();) { 
+					
+						JsonNode singleClaim =  iterator.next();
+						
+						
+						for (Iterator<JsonNode> claimIterator = singleClaim.elements(); claimIterator.hasNext();) {	 
+							
+							JsonNode content = claimIterator.next();
+							JsonNode ms = content.get("mainsnak");
+						
+							String claimId = ms.get("property").asText();
+							
+							JsonNode datatypeNode = ms.get("datatype");
+							//Some attributes don't have a value "novalue"
+							if(datatypeNode == null){
+								continue;
+							}
+							
+							String datatype = datatypeNode.asText();
+							
+							JsonNode datavalueNode = ms.get("datavalue");
+						
+							String targetOfClaim = null;
+							
+							if(datatype.equals("wikibase-item")){
+							
+								targetOfClaim = "Q"+datavalueNode.get("value").get("numeric-id").asText();
+								
+							}
+							
+							else if(datatype.equals("time")){
+								targetOfClaim = datavalueNode.get("value").toString();
+							}
+							else if(datatype.equals("wikibase-property")){
+								targetOfClaim = "P"+datavalueNode.get("value").get("numeric-id");
+							}
+							
+							else if(datatype.equals("globe-coordinate")){
+								targetOfClaim = datavalueNode.get("value").toString();
+							}
+							
+							else if(datatype.equals("quantity")){
+								targetOfClaim = datavalueNode.get("value").toString();
+							}
+							else if(datatype.equals("monolingualtext")){
+								targetOfClaim = datavalueNode.get("value").toString();
+							}
+							else if(datatype.equals("string")){
+								targetOfClaim = datavalueNode.get("value").toString();
+							}
+							else if(datatype.equals("commonsMedia")){
+								targetOfClaim = datavalueNode.get("value").toString();
+							}
+							else if(datatype.equals("url")){
+								targetOfClaim = datavalueNode.get("value").asText();
+							}
+							else {
+								targetOfClaim = datavalueNode.get("value").toString();	
+								
+							}
+							
+							
+							JsonNode referencesNode = content.get("references");
+							
+							
+							if(referencesNode!=null){
+							//For each reference
+							
+								for (Iterator<JsonNode> refIterator = referencesNode.elements(); refIterator.hasNext();) {	 
+									
+										JsonNode referenceNode = refIterator.next();
+										
+										
+										JsonNode refSnaksNode = referenceNode.get("snaks");
+										
+										String refHash = referenceNode.get("hash").asText();
+										
+										//for each reference snaks node
+										
+										for (Iterator<JsonNode> refSnaksIterator = refSnaksNode.elements(); refSnaksIterator.hasNext();) {	
+											
+											JsonNode refSanksItems = refSnaksIterator.next();
+											
+										
+											
+											for (Iterator<JsonNode> refSanksItemsIterator = refSanksItems.elements(); refSanksItemsIterator.hasNext();) {	
+												
+											
+												
+												JsonNode ttt = refSanksItemsIterator.next();
+												String snakType = ttt.get("snaktype").asText();
+												String property = ttt.get("property").asText();
+
+
+												
+												if(snakType.equals("value")){
+													
+													datatype = ttt.get("datatype").asText();
+
+													String value = null ;
+												
+													if(datatype.equals("wikibase-item")){
+														value = "Q"+ttt.get("datavalue").get("value").get("numeric-id").asText();
+													}
+													else if(datatype.equals("time")){
+														value = ttt.get("datavalue").get("value").toString();
+													}
+													else if(datatype.equals("wikibase-property")){
+														value = "P"+ttt.get("datavalue").get("value").get("numeric-id");
+													}
+													
+													else if(datatype.equals("globe-coordinate")){
+														value = ttt.get("datavalue").get("value").toString();
+													}
+													
+													else if(datatype.equals("quantity")){
+														value = ttt.get("datavalue").get("value").toString();
+													}
+													else if(datatype.equals("monolingualtext")){
+														value = ttt.get("datavalue").get("value").toString();
+													}
+													else if(datatype.equals("string")){
+														value = ttt.get("datavalue").get("value").toString();
+													}
+													else if(datatype.equals("commonsMedia")){
+														value = ttt.get("datavalue").get("value").toString();
+													}
+													else if(datatype.equals("url")){
+														value = ttt.get("datavalue").get("value").asText();
+													}
+													else {
+														value = ttt.get("datavalue").get("value").toString();
+														
+													}
+													
+													System.out.println(itemID + "\t" + claimId + "\t" + targetOfClaim + "\t" + property + "\t" + datatype + "\t" + value + "\t" + refHash );
+
+													try {
+														WikidataToRDB.insertClaimReference(itemID, claimId, targetOfClaim, property, datatype, value, refHash);
+													} catch (SQLException e) {
+														// TODO Auto-generated catch block
+														e.printStackTrace();
+														throw new RuntimeException();
+													}
+
+												
+												}
+												else{
+													
+													System.err.println(itemID + "\t" + claimId + "\t" + property + "\t" + null + "\t" + "no-value \t" + refHash );
+
+												}
+												
+												
+		
+											}
+											
+										}
+										
+										
+										
+								}
+							}
+				
+						}					
+						
+					}
+					
+				}
+			}
+		}
+	}
 	/**
 //	 * extract 
 //	 * @throws JsonParseException

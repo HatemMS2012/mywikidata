@@ -1,4 +1,6 @@
-package hms.wikidata.dbimport;
+package hms.wikidata.old;
+
+import hms.wikidata.dbimport.WikidataToRDB;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

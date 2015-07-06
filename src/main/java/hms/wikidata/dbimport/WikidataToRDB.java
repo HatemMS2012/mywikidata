@@ -1,11 +1,15 @@
 package hms.wikidata.dbimport;
 
+import hms.wikidata.model.ClaimItem;
+import hms.wikidata.old.WikiDataQueryTool;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -34,9 +38,14 @@ public class WikidataToRDB
                                         "VALUES (?,?,?,?,?);";
 
     
-    static final String insert_claim_wiki_entity_type = "INSERT INTO wiki_claim(entity_id,claim_id,simple_value,wikidata_item_value,type) VALUES (?,?,null,?,?);";
-    static final String insert_claim_simple_type = "INSERT INTO wiki_claim(entity_id,claim_id,simple_value,wikidata_item_value,type) VALUES (?,?,?,null,?);";
+    static final String insert_claim_wiki_entity_type = "INSERT INTO wiki_claims(entity_id,claim_id,simple_value,wikidata_item_value,type) VALUES (?,?,null,?,?);";
+    static final String insert_claim_simple_type = "INSERT INTO wiki_claims(entity_id,claim_id,simple_value,wikidata_item_value,type) VALUES (?,?,?,null,?);";
     
+    
+    static final String insert_claim_reference = " INSERT INTO item_claim_reference (entity_id,    claim_id,  calim_target_id,  reference_prop,   "
+    																										+ " reference_value_type,    reference_value, reference_hash)"
+    																										+ "    VALUES (?,?,?,?,?,?,?)";
+ 
     
     static final String check_entity_exist = "SELECT id FROM entity WHERE id = ? and lang = ?";
     static final String check_claim_exist = "SELECT claim_id FROM wiki_claim WHERE claim_id = ? and entity_id = ?";
@@ -59,8 +68,11 @@ public class WikidataToRDB
     
     private static final String SELECT_CLAIM_ARGUMENTS = "SELECT entity_id as domain, wikidata_item_value as \"range\" FROM wikidata_20150420.wiki_claim where claim_id =?" ;
     private static final String SELECT_ITEM_LABEL = "SELECT value FROM label where entity_id = ? and language =?";
+    private static final String SELECT_LABELS = "SELECT value FROM label where language =? limit 10";
+
     
-    static Connection conn = null;
+    
+    public static Connection conn = null;
     Statement stmt = null;
     static{
         try{
@@ -110,6 +122,7 @@ public class WikidataToRDB
     
     public static String getItemLabel(String itemId, String lang){
         
+    	String label = null ;
     	PreparedStatement st;
 		try {
 			st = conn.prepareStatement(SELECT_ITEM_LABEL);
@@ -119,7 +132,9 @@ public class WikidataToRDB
 	    	
 	    	if(result.next()){
 	    		
-	    		return result.getString("value");
+	    		label = result.getString("value");
+	    		st.close();
+	    		result.close();
 	    	}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -127,9 +142,36 @@ public class WikidataToRDB
 		}
     	
     	
-    	return null;
+    	return label;
     	
     }
+    
+	public static List<String> getLabels(String lang){
+		
+		List<String> labels = new ArrayList<String>();
+		
+		PreparedStatement st;
+			try {
+				st = conn.prepareStatement(SELECT_LABELS);
+				st.setString(1, lang);
+				ResultSet result = st.executeQuery();
+		    	
+		    	while(result.next()){
+		    		
+		    		String label = result.getString("value");
+		    		labels.add(label);
+		    	}
+		    	st.close();
+		    	result.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    	
+	    	
+	    	return labels;
+	    	
+	    }
     
     
     public static Set<String> getEntitiesWithLabels(){
@@ -362,6 +404,29 @@ public class WikidataToRDB
     	insertPropSt.close();
         
     }
+    
+    
+    public static void insertClaimReference(String entity_id, String    claim_id, String targetOfClaim,  String   reference_prop,
+    		String  reference_value_type, String    reference_value, String  reference_hash)
+            throws SQLException {
+            
+    	PreparedStatement insertPropSt = null;
+
+    	
+    	insertPropSt = conn.prepareStatement(insert_claim_reference);
+    	
+   
+        insertPropSt.setString(1, entity_id);
+     	insertPropSt.setString(2, claim_id);
+     	insertPropSt.setString(3, targetOfClaim);
+    	insertPropSt.setString(4, reference_prop);
+    	insertPropSt.setString(5, reference_value_type);
+    	insertPropSt.setString(6, reference_value);
+    	insertPropSt.setString(7, reference_hash);
+    	insertPropSt.execute();
+    	insertPropSt.close();
+        
+    }
 
     public static void insertAliases(String itemID, String lang, List<String> entity_aliases)
         throws SQLException
@@ -444,13 +509,7 @@ public class WikidataToRDB
     public static void main(String[] args) throws SQLException
     {
 
-        String itemId = "Q937";
-        insert(itemId,"en");
-        insert(itemId,"de");
-        insert(itemId,"fr");
-        insert(itemId,"es");
-        insert(itemId,"it");
-        insert(itemId,"ar");
+        System.out.println(getLabels("en"));
     }
 
 }
