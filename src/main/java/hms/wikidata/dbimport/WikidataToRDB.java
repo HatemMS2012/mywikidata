@@ -92,6 +92,24 @@ public class WikidataToRDB
         }
     }
     
+    public static void init(){
+    	
+    	try {
+    		//STEP 2: Register JDBC driver
+	        Class.forName("com.mysql.jdbc.Driver");
+	
+	        //STEP 3: Open a connection
+	//        System.out.println("Connecting to database...");
+	        conn = DriverManager.getConnection(DB_URL,USER,PASS);
+	     }
+	     catch(SQLException e){
+	         e.printStackTrace();
+	     }
+	     catch (ClassNotFoundException e) {
+	         // TODO Auto-generated catch block
+	         e.printStackTrace();
+	     }
+    }
     
     public static Map<String, String> getClaimArguments(String calimId, String lang){
       

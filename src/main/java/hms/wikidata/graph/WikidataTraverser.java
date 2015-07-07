@@ -15,28 +15,28 @@ public class WikidataTraverser {
 	private static StringBuffer jsonOuptput = new StringBuffer();
 	
 	
-	public static String geneateTreeJSON(String itemId, int depth,String lang, boolean advanced){
-		
-		if(advanced){
-			generateTreeOverPropertiesAndValuesAdvanced(itemId, depth, lang);
-		}
-		else{
-			generateTreeOverProperties(itemId, depth,lang);
-		}
-		
-		String finalLabel = itemId;
-		
-		if(lang!=null){
-
-			String itemLabel = JacksonDBAPI.getItemLabel(itemId,lang);
-
-			finalLabel = itemId + " (" + itemLabel +  ")"; 
-		}
-		String finalString = "{\"" + finalLabel + "\":" + jsonOuptput.substring(0, jsonOuptput.toString().length()-1).toString() + "}";
-		
-		return finalString;
-		
-	}
+//	public static String geneateTreeJSON(String itemId, int depth,String lang, boolean advanced){
+//		
+//		if(advanced){
+//			generateTreeOverPropertiesAndValuesAdvanced(itemId, depth, lang);
+//		}
+//		else{
+//			generateTreeOverProperties(itemId, depth,lang);
+//		}
+//		
+//		String finalLabel = itemId;
+//		
+//		if(lang!=null){
+//
+//			String itemLabel = JacksonDBAPI.getItemLabel(itemId,lang);
+//
+//			finalLabel = itemId + " (" + itemLabel +  ")"; 
+//		}
+//		String finalString = "{\"" + finalLabel + "\":" + jsonOuptput.substring(0, jsonOuptput.toString().length()-1).toString() + "}";
+//		
+//		return finalString;
+//		
+//	}
 	
 	/**
 	 * Generates a tree representation for a given Wikidata entity.
@@ -50,8 +50,16 @@ public class WikidataTraverser {
 	 */
 	public static String geneateTreeJSON(String itemId, int depth,String lang, List<String>targetProps){
 		
-	
-		generateTreeOverPropertiesAndValues(itemId, depth, lang,targetProps);
+		
+		jsonOuptput = new StringBuffer();
+		
+		if(targetProps == null){
+			generateTreeOverPropertiesAndValues(itemId, depth, lang);
+				
+		}
+		else{
+			generateTreeOverPropertiesAndValues(itemId, depth, lang,targetProps);
+		}
 		
 		
 		String finalLabel = itemId;
@@ -68,25 +76,25 @@ public class WikidataTraverser {
 		
 	}
 	
-	public static String geneateTreeJSON2(String itemId, int depth,String lang, List<String>targetProps){
-		
-		
-		generateTreeOverPropertiesAndValues2(itemId, depth, lang,targetProps);
-		
-		
-		String finalLabel = itemId;
-		
-		if(lang!=null){
-
-			String itemLabel = JacksonDBAPI.getItemLabel(itemId,lang);
-
-			finalLabel = itemId + " (" + itemLabel +  ")"; 
-		}
-		String finalString = "{\"name\": \"" + finalLabel + "\", \"children\":" + jsonOuptput.substring(0, jsonOuptput.toString().length()-1).toString() + "}";
-		
-		return finalString;
-		
-	}
+//	public static String geneateTreeJSON2(String itemId, int depth,String lang, List<String>targetProps){
+//		
+//		
+//		generateTreeOverPropertiesAndValues2(itemId, depth, lang,targetProps);
+//		
+//		
+//		String finalLabel = itemId;
+//		
+//		if(lang!=null){
+//
+//			String itemLabel = JacksonDBAPI.getItemLabel(itemId,lang);
+//
+//			finalLabel = itemId + " (" + itemLabel +  ")"; 
+//		}
+//		String finalString = "{\"name\": \"" + finalLabel + "\", \"children\":" + jsonOuptput.substring(0, jsonOuptput.toString().length()-1).toString() + "}";
+//		
+//		return finalString;
+//		
+//	}
 	
 	/**
 	 * Generates a tree representation for a given wikidata entity
@@ -308,11 +316,15 @@ public class WikidataTraverser {
 	 * @param targetProp The set of properties you want to consider in the hierarchy
 	 */
 	private static void generateTreeOverPropertiesAndValues(String itemId, int depth, String lang, List<String> targetProp){
+		
+		
 		if(depth <= 0)
 			
 			return;
 		
 		Map<String, String> claimValueMap = JacksonDBAPI.getEntityClaimsIdsAndValues(itemId);
+		
+	
 		
 		if(claimValueMap.size() == 0){
 			jsonOuptput.append("[],");
@@ -379,6 +391,102 @@ public class WikidataTraverser {
 			
 				generateTreeOverPropertiesAndValues(claimValMain,depth,lang,targetProp);
 			}
+		}
+		if(depth==0 ){
+			jsonOuptput.append("],");
+		}
+		
+		else{
+			
+			jsonOuptput.append("},");
+			jsonOuptput = new StringBuffer(jsonOuptput.toString().replace("],}", "]}").replace("},},", "}},"));
+		
+
+		}
+	}
+	
+	/**
+	 * Generates a tree representation for a given wikidata entity.
+	 * The method recursively extract the properties of a given entity and their ranges and apply the 
+	 * same procedure on the ranges
+	 * @param itemId The item you want to create the tree for
+	 * @param depth The recursive depth
+	 * @param lang language of the labels
+	 */
+	private static void generateTreeOverPropertiesAndValues(String itemId, int depth, String lang){
+		
+		
+		if(depth <= 0)
+			
+			return;
+		
+		Map<String, String> claimValueMap = JacksonDBAPI.getEntityClaimsIdsAndValues(itemId);
+		
+		if(claimValueMap.size() == 0){
+			jsonOuptput.append("[],");
+			return;
+		}
+		
+		int nrCommas = 0 ;
+		//count the total of accepted elements
+		for(String claimId : claimValueMap.keySet()){
+			
+				nrCommas++;
+			
+		}
+		
+		depth--;
+		
+		if(depth==0){
+			jsonOuptput.append("[");
+		}
+		else{
+			jsonOuptput.append("{");
+		}
+
+	
+		int countCommas = 1;
+		
+		for(String claimId : claimValueMap.keySet()){
+			
+			String claimIdWithouthSource = claimId.split("#")[0];
+			
+			
+				
+				String labels = claimId;
+				String claimValMain = claimValueMap.get(claimId);
+			
+				if(lang !=null){
+			
+					String claimLabel = JacksonDBAPI.getItemLabel(claimIdWithouthSource,lang);
+				
+					labels = claimIdWithouthSource + " (" +claimLabel+")" ;
+				
+					String claimVal = claimValueMap.get(claimId);
+					
+					if(claimVal.startsWith("Q")){
+						
+						 String claimValLab = JacksonDBAPI.getItemLabel(claimVal,lang);
+						 
+						 claimVal = claimVal +": " +claimValLab;
+					}
+					
+					labels += " |" + claimVal + "|";
+				}
+				
+				
+				jsonOuptput.append("\"").append(labels).append("\"");
+				
+				if(depth!=0){
+					jsonOuptput.append(":");
+				}
+				else if(countCommas < nrCommas){
+					jsonOuptput.append(",");
+					countCommas ++ ;
+				}
+			
+				generateTreeOverPropertiesAndValues(claimValMain,depth,lang);
+			
 		}
 		if(depth==0 ){
 			jsonOuptput.append("],");
@@ -485,7 +593,7 @@ private static void generateTreeOverPropertiesAndValues2(String itemId, int dept
 	
 	public static void main(String[] args) {
 		String itemId = "Q1";
-		int depth = 3;
+		int depth = 1;
 		String lang = "en";
 	
 //		System.out.println(geneateTreeJSON(itemId,depth,lang,false));
@@ -493,9 +601,9 @@ private static void generateTreeOverPropertiesAndValues2(String itemId, int dept
 
 		
 		List<String> targetProperties = new ArrayList<String>();
-		targetProperties.add("P279");
+//		targetProperties.add("P279");
 		targetProperties.add("P31");
-		targetProperties.add("P361");
+//		targetProperties.add("P361");
 		
 		
 		System.out.println(geneateTreeJSON(itemId,depth,lang,targetProperties));

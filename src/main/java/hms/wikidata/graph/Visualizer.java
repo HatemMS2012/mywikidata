@@ -1,7 +1,5 @@
 package hms.wikidata.graph;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -12,18 +10,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.core.JsonToken;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.MappingJsonFactory;
-import com.fasterxml.jackson.databind.node.JsonNodeType;
+
 
 public class Visualizer {
 
 
-	static StringBuffer result = new StringBuffer();
+	private static StringBuffer result = new StringBuffer();
 	
 	public static void parse(String json) {
 	
@@ -49,22 +41,30 @@ public class Visualizer {
 		    	
 		    	Object aa =  jsonObj.get(key);
 		    	
-//		    	if(aa instanceof JSONObject){
-		    		traverse(key,aa);
-//		    	}
-//		    	else if(aa instanceof JSONArray){ 
-//		    		JSONArray aaa = (JSONArray) aa;
-//		    		for (int i = 0; i < aaa.length(); i++) {
-//		    			System.out.println(root + ":" + aaa.get(i));	
-//					}
-//		    		
-//		    	}
+	    		traverse(key,aa);
 	    	}
 	    }
+	    
+	    else if(nestedJSON instanceof JSONArray){ 
+    		
+			JSONArray aaa = (JSONArray) nestedJSON;
+    	
+
+			for (int i = 0; i < aaa.length(); i++) {
+				
+				String fullTarget = aaa.get(i).toString();
+				
+				String target = fullTarget.substring(fullTarget.indexOf("|")+1, fullTarget.lastIndexOf("|"));
+				
+	    		String relationName = fullTarget.substring(fullTarget.indexOf("(")+ 1, fullTarget.indexOf(")")) ;
+
+	    		result.append(root + "\t" + relationName + "\t" + target ).append("\n");	
+			}
+		}
 	}
 	    
 
-		public static void parse2(String json) {
+		public static void parseJSON4D3(String json) {
 		
 			
 			JSONObject jObject = new JSONObject(json);
@@ -92,15 +92,44 @@ public class Visualizer {
 			    	Object aa =  jsonObj.get(key);
 			    	
 
-			    		traverse2(key,aa);
+			    		traverseJSON4d3(key,aa);
 
 		    	}
 		    }
+			else if(nestedJSON instanceof JSONArray){ 
+	    		
+	    		int nrCommas = ((JSONArray) nestedJSON).length()-1;
+		    	int commmaCounter = 0;
+	    		
+				JSONArray aaa = (JSONArray) nestedJSON;
+	    	
+
+		    	
+				for (int i = 0; i < aaa.length(); i++) {
+					
+					String fullTarget = aaa.get(i).toString();
+					
+					String target = fullTarget.substring(fullTarget.indexOf("|")+1, fullTarget.lastIndexOf("|"));
+					
+		    		String relationName = fullTarget.substring(fullTarget.indexOf("(")+ 1, fullTarget.indexOf(")")) ;
+
+
+		    		
+		    		result.append("{\"name\":\"").append(target ).append("\"}");
+		    		
+		    		if(commmaCounter < nrCommas){
+		    			result.append(",\n");
+		    			commmaCounter++;
+		    		}
+			    	
+				}
+
+			}
 		    result.append("]}");
 
 
 	}
-	public static void traverse2(String father, Object root) {
+	public static void traverseJSON4d3(String father, Object root) {
 		
 		String fatherLabel = father.substring(father.indexOf("|")+1, father.lastIndexOf("|")); 
 
@@ -124,7 +153,7 @@ public class Visualizer {
 		    	
 	    		Object aa =  ((JSONObject) root).get(key);
 		    	
-		    	traverse2(key, aa);
+		    	traverseJSON4d3(key, aa);
 		      
 	
 	    	}
@@ -208,30 +237,19 @@ public class Visualizer {
 	}
 	
 	
-	public static String generateVisualationInstruction(){
+	public static String generateVisualationInstruction(String json){
 		
 
 		
 		StringBuffer visCode = new StringBuffer();
 		
 		
-		String[] resultLines = result.toString().split("\n");
+		String[] resultLines = json.toString().split("\n");
+		if(resultLines[0].length() == 0)
+			return null;
 		
 		Map<String, Integer> nodeIdMap = new HashMap<String, Integer>();
 		int id = 1 ;
-		
-//		 // create an array with nodes
-//		  var nodes = new vis.DataSet([
-//		    {id: 1, label: 'Node 1'},
-//		    {id: 2, label: 'Node 2'},
-//		    {id: 3, label: 'Node 3'},
-//		    {id: 4, label: 'Node 4'},
-//		    {id: 5, label: 'Node 5'},
-//		    {id: 6, label: 'Node 6'},
-//		    {id: 7, label: 'Node 7'},
-//		    {id: 8, label: 'Node 8'}
-//		  ]);
-//		  
 		  
 		visCode.append("var nodes = new vis.DataSet([\n");
 		
@@ -239,9 +257,9 @@ public class Visualizer {
 			
 			String[] linElement = line.split("\t");
 			
-			String sourceNode = linElement[0];
+			String sourceNode = linElement[0].replace("'", "");
 		
-			String targetNode = linElement[2];
+			String targetNode = linElement[2].replace("'", "");
 
 			
 			if(nodeIdMap.get(sourceNode) == null){
@@ -263,23 +281,15 @@ public class Visualizer {
 
 		visCode.append("]);\n \n \n");
 		
-//		 var edges = new vis.DataSet([
-//        {from: 1, to: 8, arrows:'to', dashes:true},
-//        {from: 1, to: 3, arrows:'to'},
-//        {from: 1, to: 2, arrows:'to, from'},
-//        {from: 2, to: 4, arrows:'to, middle'},
-//        {from: 2, to: 5, arrows:'to, middle, from'},
-//        {from: 5, to: 6, arrows:{to:{scaleFactor:2}}},
-//        {from: 6, to: 7, arrows:{middle:{scaleFactor:0.5},from:true}}
-//      ]);
+
 		visCode.append( "var edges = new vis.DataSet([\n");
 
 		for(String line : resultLines){
 			
 			String[] linElement = line.split("\t");
-			String sourceNode = linElement[0];
-			String relation = linElement[1];
-			String targetNode = linElement[2];
+			String sourceNode = linElement[0].replace("'", "");;
+			String relation = linElement[1].replace("'", "");;
+			String targetNode = linElement[2].replace("'", "");;
 			
 			visCode.append("{from:").append(nodeIdMap.get(sourceNode)).append(", to:").append(nodeIdMap.get(targetNode)).append(",")
 			.append("label:'").append(relation).append("',")
@@ -292,46 +302,77 @@ public class Visualizer {
 	}
 	
 	public static void main(String[] args) throws JSONException {
-			String itemId = "Q76";
-			int depth = 6;
+			
+			String itemId = "Q1";
+			int depth = 1;
 			String lang = "en";
 		
 			List<String> targetProperties = new ArrayList<String>();
-			targetProperties.add("P279");
-			targetProperties.add("P31");
-			targetProperties.add("P361");
+//			targetProperties.add("P279");
+			targetProperties.add("P314");
+//			targetProperties.add("P361");
+//			String repsonse = Visualizer.generateTreeForEntity(itemId, depth, lang, targetProperties);
+//			System.out.println(repsonse);
 			
+			String res = generateCodeForVis(itemId, depth, lang, targetProperties);
+			System.out.println(res);
+//			System.out.println("Output \n" + VIS_SPECIFIC_HEAD + "\n" +  res + VIS_SPECIFIC_TAIL );
 			
-			String json = WikidataTraverser.geneateTreeJSON(itemId,depth,lang,targetProperties);
-			System.out.println(json);
-			parse2(json);
-			
-			System.out.println("........");
-			System.out.println(result.toString().replace("},]", "}]"));
-//			System.out.println(result.toString().replace("},}", "}}"));
-
-			
-//			System.out.println(generateVisualationInstruction());
-//			
 	}
+
 	 
-	 
+	/**
+	 * Generate d3 json response for a tree representation of wikidata entity (Q and P)
+	 * @param itemId
+	 * @param depth
+	 * @param lang
+	 * @param targetProperties Properties to consider in the construction of the tree
+	 * @return
+	 */
+	public static String generateTreeForEntity(String itemId,int depth,String lang,	List<String> targetProperties  ){
+		result = new StringBuffer();
+		String json = WikidataTraverser.geneateTreeJSON(itemId,depth,lang,targetProperties);
+		parseJSON4D3(json);
+		String finalJSONString = result.toString().replace("},]", "}]");
+		
+		result = new StringBuffer();
+		return finalJSONString;
+		
+	}
 	
-//	public static void main(String[] args) throws JsonParseException, IOException {
-//		
-//		String itemId = "Q1";
-//		int depth = 2;
-//		String lang = "en";
-//	
-//		List<String> targetProperties = new ArrayList<String>();
-//		targetProperties.add("P279");
-//		targetProperties.add("P31");
-//		targetProperties.add("P361");
-//		
-//		
-//		String json = WikidataTraverser.geneateTreeJSON(itemId,depth,lang,targetProperties);
-//		
-//		generateGraphStructure(json);
-//		
-//	}
+	public static String generateTreeAsText(String itemId,int depth,String lang,	List<String> targetProperties  ){
+		result = new StringBuffer();
+		String json = WikidataTraverser.geneateTreeJSON(itemId,depth,lang,targetProperties);
+		parse(json);
+		String finalJSONString = result.toString().replace("},]", "}]");
+		return finalJSONString;
+		
+	}
+	
+	/**
+	 * Generate d3 json response for a tree representation of wikidata entity (Q and P)
+	 * @param itemId
+	 * @param depth
+	 * @param lang
+	 * @param targetProperties Properties to consider in the construction of the tree
+	 * @return
+	 */
+	public static String generateCodeForVis(String itemId,int depth,String lang,	List<String> targetProperties  ){
+		result = new StringBuffer();
+		
+		//String json = WikidataTraverser.geneateTreeJSON(itemId,depth,lang,targetProperties);
+		generateTreeAsText(itemId, depth, lang, targetProperties);
+		System.out.println(result);
+		String res= null;
+		if(result.toString().length()!=0){
+	
+			 res = generateVisualationInstruction(result.toString());
+		}
+		
+		
+		return res;
+		
+	}
+	
+	
 }
