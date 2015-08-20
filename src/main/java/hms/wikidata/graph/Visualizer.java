@@ -2,9 +2,12 @@ package hms.wikidata.graph;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
+import java.util.Set;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -263,8 +266,15 @@ public class Visualizer {
 
 			
 			if(nodeIdMap.get(sourceNode) == null){
+				
+				
 				nodeIdMap.put(sourceNode, id);
-				visCode.append(" {id:").append(id).append(", label: '").append(sourceNode).append("' },\n");
+				if(id == 1){
+					visCode.append(" {id:").append(id).append(", label: '").append(sourceNode).append("',color: {background:'red', border:'blue'} },\n");
+				}
+				else{
+					visCode.append(" {id:").append(id).append(", label: '").append(sourceNode).append("' },\n");
+				}
 				id ++;
 			}
 			if(nodeIdMap.get(targetNode) == null){
@@ -303,18 +313,18 @@ public class Visualizer {
 	
 	public static void main(String[] args) throws JSONException {
 			
-			String itemId = "Q1";
+			String itemId = "P69";
 			int depth = 1;
 			String lang = "en";
 		
-			List<String> targetProperties = new ArrayList<String>();
+			Set<String> targetProperties = new HashSet<String>();
 //			targetProperties.add("P279");
-			targetProperties.add("P314");
+			targetProperties.add("P31");
 //			targetProperties.add("P361");
-//			String repsonse = Visualizer.generateTreeForEntity(itemId, depth, lang, targetProperties);
+//			String repsonse = Visualizer.generateTreeForEntity(itemId, depth, lang, targetProperties,true);
 //			System.out.println(repsonse);
 			
-			String res = generateCodeForVis(itemId, depth, lang, targetProperties);
+			String res = generateCodeForVis(itemId, depth, lang, targetProperties,true);
 			System.out.println(res);
 //			System.out.println("Output \n" + VIS_SPECIFIC_HEAD + "\n" +  res + VIS_SPECIFIC_TAIL );
 			
@@ -329,9 +339,16 @@ public class Visualizer {
 	 * @param targetProperties Properties to consider in the construction of the tree
 	 * @return
 	 */
-	public static String generateTreeForEntity(String itemId,int depth,String lang,	List<String> targetProperties  ){
+	public static String generateTreeForEntity(String itemId,int depth,String lang,	Set<String> targetProperties, boolean useInstance  ){
 		result = new StringBuffer();
-		String json = WikidataTraverser.geneateTreeJSON(itemId,depth,lang,targetProperties);
+		String json = null;
+		if(useInstance){
+	
+			json = WikidataTraverser.generateInstanceForProperty(itemId, lang, depth, targetProperties);
+		}
+		else{
+			json = WikidataTraverser.geneateTreeJSON(itemId,depth,lang,targetProperties);
+		}
 		parseJSON4D3(json);
 		String finalJSONString = result.toString().replace("},]", "}]");
 		
@@ -340,9 +357,16 @@ public class Visualizer {
 		
 	}
 	
-	public static String generateTreeAsText(String itemId,int depth,String lang,	List<String> targetProperties  ){
+	public static String generateTreeAsText(String itemId,int depth,String lang, Set<String> targetProperties, boolean useInstance){
 		result = new StringBuffer();
-		String json = WikidataTraverser.geneateTreeJSON(itemId,depth,lang,targetProperties);
+		String json  = null;
+		if(useInstance){
+			
+			json = WikidataTraverser.generateInstanceForProperty(itemId, lang, depth, targetProperties);
+		}
+		else{
+			json = WikidataTraverser.geneateTreeJSON(itemId,depth,lang,targetProperties);	
+		}
 		parse(json);
 		String finalJSONString = result.toString().replace("},]", "}]");
 		return finalJSONString;
@@ -357,11 +381,11 @@ public class Visualizer {
 	 * @param targetProperties Properties to consider in the construction of the tree
 	 * @return
 	 */
-	public static String generateCodeForVis(String itemId,int depth,String lang,	List<String> targetProperties  ){
+	public static String generateCodeForVis(String itemId,int depth,String lang, Set<String> targetProperties, boolean useInstance){
 		result = new StringBuffer();
 		
 		//String json = WikidataTraverser.geneateTreeJSON(itemId,depth,lang,targetProperties);
-		generateTreeAsText(itemId, depth, lang, targetProperties);
+		generateTreeAsText(itemId, depth, lang, targetProperties,useInstance);
 		System.out.println(result);
 		String res= null;
 		if(result.toString().length()!=0){

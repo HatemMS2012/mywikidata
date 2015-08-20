@@ -2,7 +2,9 @@ package hms.wikidata.graph;
 
 import hms.wikidata.dbimport.JacksonDBAPI;
 
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -48,7 +50,7 @@ public class WikidataTraverser {
 	 * @param targetProp The set of properties you want to consider in the hierarchy
 	 * @return JSON representation of the tree
 	 */
-	public static String geneateTreeJSON(String itemId, int depth,String lang, List<String>targetProps){
+	public static String geneateTreeJSON(String itemId, int depth,String lang, Set<String>targetProps){
 		
 		
 		jsonOuptput = new StringBuffer();
@@ -75,6 +77,70 @@ public class WikidataTraverser {
 		return finalString;
 		
 	}
+	
+	/**
+	 * Generate tree representation for an instance of a given property
+	 * @param propId
+	 * @param lang
+	 * @param max
+	 * @param depth
+	 * @param targetProps
+	 */
+	public static String generateInstanceForProperty(String propId, String lang, int depth,Set<String> targetProps){
+		 
+		String instanceJSON = null;
+		
+		String instanceId = getRandomInstance(propId, lang);
+		
+	
+		
+		if(instanceId !=null){
+			List<String> propRelatedProps = JacksonDBAPI.getEntityClaimsIds(propId);
+	//		depth +=1;
+
+				
+			if(targetProps == null){
+					
+					targetProps = new HashSet<String>();
+					
+					//Get all properties related to the source item
+					
+					List<String> itemProps = JacksonDBAPI.getEntityClaimsIds(instanceId);
+					targetProps.addAll(itemProps);
+			}
+				
+			targetProps.add(propId);
+				
+			targetProps.addAll(propRelatedProps);
+				
+				
+			instanceJSON = geneateTreeJSON(instanceId, depth, lang, targetProps);
+			
+		}
+		
+		return instanceJSON;
+		
+	}
+	
+	/**
+	 * Get a random entity that uses a given property
+	 * @param propId
+	 * @param lang
+	 * @return
+	 */
+//	public static String getRandomInstance(String propId, String lang){
+//		
+//		
+//		String instanceId = null;
+//		
+//		while (instanceId ==null) {
+//			
+//			instanceId = JacksonDBAPI.getClaimArgumentsRandom(propId, lang);
+//		
+//			
+//		}
+//		return instanceId;
+//	}
 	
 //	public static String geneateTreeJSON2(String itemId, int depth,String lang, List<String>targetProps){
 //		
@@ -199,7 +265,7 @@ public class WikidataTraverser {
 				String claimLabel = JacksonDBAPI.getItemLabel(claimId,lang);
 				labels = claimId + " (" +claimLabel+")" ;
 				String claimVal = claimValueMap.get(claimId);
-				if(claimVal.startsWith("Q")){
+				if(claimVal.startsWith("Q") || claimVal.startsWith("P")){
 					 String claimValLab = JacksonDBAPI.getItemLabel(claimVal,lang);
 					 claimVal = claimVal +": " +claimValLab;
 				}
@@ -271,7 +337,7 @@ public class WikidataTraverser {
 				String claimLabel = JacksonDBAPI.getItemLabel(claimId,lang);
 				labels = claimId + " (" +claimLabel+")" ;
 				String claimVal = claimValueMap.get(claimId);
-				if(claimVal.startsWith("Q")){
+				if(claimVal.startsWith("Q") || claimVal.startsWith("P")){
 					 String claimValLab = JacksonDBAPI.getItemLabel(claimVal,lang);
 					 claimVal = claimVal +": " +claimValLab;
 				}
@@ -315,9 +381,9 @@ public class WikidataTraverser {
 	 * @param lang language of the labels
 	 * @param targetProp The set of properties you want to consider in the hierarchy
 	 */
-	private static void generateTreeOverPropertiesAndValues(String itemId, int depth, String lang, List<String> targetProp){
+	public static void generateTreeOverPropertiesAndValues(String itemId, int depth, String lang, Set<String> targetProp){
 		
-		
+//		System.out.println(tagPropSet.size());
 		if(depth <= 0)
 			
 			return;
@@ -358,17 +424,28 @@ public class WikidataTraverser {
 			if(targetProp.contains(claimIdWithouthSource)){
 				
 				String labels = claimId;
+			
 				String claimValMain = claimValueMap.get(claimId);
 			
 				if(lang !=null){
 			
 					String claimLabel = JacksonDBAPI.getItemLabel(claimIdWithouthSource,lang);
 				
+					if(claimLabel.toLowerCase().contains("identifier") || claimLabel.toLowerCase().contains("image") || claimLabel.toLowerCase().contains("ISNI")  || claimLabel.toLowerCase().contains("SUDOC") || claimLabel.toLowerCase().contains("NUKAT")  || claimLabel.toLowerCase().contains("FIND a Grave ID"))
+						continue;
+				
 					labels = claimIdWithouthSource + " (" +claimLabel+")" ;
 				
 					String claimVal = claimValueMap.get(claimId);
+				
+					if(claimVal.contains("time")){
+						String date = claimVal.split(",")[0].replace("{'time':'+", "").replace("{'time':'-", "").replace("'", "").replace("+", "").split("-")[0];
+						Calendar a = javax.xml.bind.DatatypeConverter.parseDateTime(date);
+						claimVal = String.valueOf(a.get(1));
+						
+					}
 					
-					if(claimVal.startsWith("Q")){
+					if(claimVal.startsWith("Q")||claimVal.startsWith("P")){
 						
 						 String claimValLab = JacksonDBAPI.getItemLabel(claimVal,lang);
 						 
@@ -388,9 +465,14 @@ public class WikidataTraverser {
 					jsonOuptput.append(",");
 					countCommas ++ ;
 				}
+				
 			
 				generateTreeOverPropertiesAndValues(claimValMain,depth,lang,targetProp);
 			}
+		}
+		if(jsonOuptput.toString().endsWith(",")){
+			jsonOuptput = new StringBuffer(jsonOuptput.toString().substring(0,jsonOuptput.toString().lastIndexOf(",")));
+			
 		}
 		if(depth==0 ){
 			jsonOuptput.append("],");
@@ -413,7 +495,7 @@ public class WikidataTraverser {
 	 * @param depth The recursive depth
 	 * @param lang language of the labels
 	 */
-	private static void generateTreeOverPropertiesAndValues(String itemId, int depth, String lang){
+	public static void generateTreeOverPropertiesAndValues(String itemId, int depth, String lang){
 		
 		
 		if(depth <= 0)
@@ -454,17 +536,29 @@ public class WikidataTraverser {
 			
 				
 				String labels = claimId;
+				
 				String claimValMain = claimValueMap.get(claimId);
 			
 				if(lang !=null){
 			
 					String claimLabel = JacksonDBAPI.getItemLabel(claimIdWithouthSource,lang);
 				
+					if(claimLabel.toLowerCase().contains("identifier") || claimLabel.toLowerCase().contains("image") || claimLabel.toLowerCase().contains("ISNI")  || claimLabel.toLowerCase().contains("SUDOC") || claimLabel.toLowerCase().contains("NUKAT")  || claimLabel.toLowerCase().contains("FIND a Grave ID"))
+						continue;
+					
+					
 					labels = claimIdWithouthSource + " (" +claimLabel+")" ;
 				
 					String claimVal = claimValueMap.get(claimId);
 					
-					if(claimVal.startsWith("Q")){
+					if(claimVal.contains("time")){
+						String date = claimVal.split(",")[0].replace("{'time':'+", "").replace("{'time':'-", "").replace("'", "").replace("+", "").split("-")[0];
+						Calendar a = javax.xml.bind.DatatypeConverter.parseDateTime(date);
+						claimVal = String.valueOf(a.get(1));
+						
+					}
+					
+					if(claimVal.startsWith("Q")||claimVal.startsWith("P")){
 						
 						 String claimValLab = JacksonDBAPI.getItemLabel(claimVal,lang);
 						 
@@ -502,7 +596,7 @@ public class WikidataTraverser {
 	}
 	
 
-private static void generateTreeOverPropertiesAndValues2(String itemId, int depth, String lang, List<String> targetProp){
+private static void generateTreeOverPropertiesAndValues2(String itemId, int depth, String lang, Set<String> targetProp){
 		if(depth <= 0)
 			
 			return;
@@ -551,6 +645,13 @@ private static void generateTreeOverPropertiesAndValues2(String itemId, int dept
 				
 					String claimVal = claimValueMap.get(claimId);
 					
+					if(claimVal.contains("time")){
+						String date = claimVal.split(",")[0].replace("{'time':'+", "").replace("{'time':'-", "").replace("'", "").replace("+", "").split("-")[0];
+						Calendar a = javax.xml.bind.DatatypeConverter.parseDateTime(date);
+						claimVal = String.valueOf(a.get(1));
+						
+					}
+					
 					if(claimVal.startsWith("Q")){
 						
 						 String claimValLab = JacksonDBAPI.getItemLabel(claimVal,lang);
@@ -591,22 +692,44 @@ private static void generateTreeOverPropertiesAndValues2(String itemId, int dept
 		}
 	}
 	
-	public static void main(String[] args) {
-		String itemId = "Q1";
-		int depth = 1;
-		String lang = "en";
-	
-//		System.out.println(geneateTreeJSON(itemId,depth,lang,false));
-//		System.out.println(geneateTreeJSON(itemId,depth,lang,true));
 
+	public static String getRandomInstance(String propId, String lang){
 		
-		List<String> targetProperties = new ArrayList<String>();
-//		targetProperties.add("P279");
-		targetProperties.add("P31");
+		String instanceId = JacksonDBAPI.getClaimArgumentsRandom(propId, lang);
+		
+		while (instanceId  ==null) {
+			instanceId = JacksonDBAPI.getClaimArgumentsRandom(propId, lang);
+			
+		}
+		
+		if(instanceId !=null){
+			instanceId = instanceId.split("-")[0];
+		}
+		return instanceId;
+	}
+	public static void main(String[] args) {
+		
+		
+		String result = generateInstanceForProperty("P69", "en", 1, null);
+		
+		System.out.println(result);
+		
+		
+//		String itemId = "P69";
+//		int depth =1;
+//		String lang = "en";
+//	
+////		System.out.println(geneateTreeJSON(itemId,depth,lang,false));
+////		System.out.println(geneateTreeJSON(itemId,depth,lang,true));
+//
+//		
+//		List<String> targetProperties = new ArrayList<String>();
+////		targetProperties.add("P279");
+//		targetProperties.add("P31");
 //		targetProperties.add("P361");
-		
-		
-		System.out.println(geneateTreeJSON(itemId,depth,lang,targetProperties));
+//		
+//		
+//		System.out.println(geneateTreeJSON(itemId,depth,lang,targetProperties));
 	}
 	
 	

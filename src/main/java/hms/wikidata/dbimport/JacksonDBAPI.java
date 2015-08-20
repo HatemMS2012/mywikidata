@@ -1,5 +1,9 @@
 package hms.wikidata.dbimport;
 
+
+import hms.wikidata.model.ExperimentalArgTypes;
+import hms.wikidata.model.PropertyOfficialCategory;
+import hms.wikidata.model.StructuralPropertyMapper;
 import hms.wikidata.model.WikiReference;
 
 import java.io.File;
@@ -12,14 +16,21 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 public class JacksonDBAPI {
 
 	
   //Queries
     
-    private static final String SELECT_CLAIM_ARGUMENTS = "SELECT entity_id as domain, wikidata_item_value as \"range\" FROM wikidata_20150420.wiki_claims where claim_id =? limit ?" ;
-   
+    private static final String SELECT_CLAIM_ARGUMENTS = "SELECT entity_id as domain, wikidata_item_value as \"range\", simple_value as range2 FROM wikidata_20150420.wiki_claims where claim_id =? limit ?" ;
+
+    private static final String SELECT_CLAIM_RANGE = "SELECT entity_id as domain, wikidata_item_value as \"range\", simple_value as range2 FROM wikidata_20150420.wiki_claims where entity_id = ? and claim_id =?" ;
+
+    private static final String SELECT_CLAIM_ARGUMENTS_RANDOM = "SELECT entity_id as domain, wikidata_item_value as \"range\" FROM wikidata_20150420.wiki_claims where claim_id =?   limit 100" ;
+    private static final String SELECT_CLAIM_ARGUMENTS_RANDOM_TOTAL = "select count(*) from (SELECT * FROM wikidata_20150420.wiki_claims where claim_id =? limit 1000) ff";
+  
+ 
     private static final String SELECT_ENTITY_STATEMENTS = "select claim_id from wiki_claims where entity_id = ?" ;
     
     private static final String SELECT_ENTITY_STATEMENTS_AND_VALUES = "select claim_id, simple_value, wikidata_item_value from wiki_claims where entity_id = ?" ;
@@ -76,8 +87,117 @@ public class JacksonDBAPI {
     
     private static final String SELECT_WIKIMEDIA_CATEGORIES = "select entity_id from wiki_claims where claim_id = 'P31' and wikidata_item_value = 'Q4167836' limit 100" ;
     
+    
+    private static final String SELECT_OFFICIAL_CATEGORIZED_PROPERTIES = "SELECT * FROM wikidata_20150420.wikidata_prop_official_category where category = ?";
+    
+    
+    private static final String SELECT_EXPRIMENTAL_PROPERTY_ARG_TYPES = "select * from arg_type_expriment where id = ?";
+    
+    private static final String SELECT_EXPRIMENTAL_FN_ALIGNMENT_FOR_PROPERTY = "SELECT * FROM wikidata_20150420.fn_wikidata where sim_method = ? and propId =? order by rank asc";
 
+    
+    /**
+     * Get the argument types of a given property.
+     * NOTE: the type extraction procedure is still experimental
+     * @param propId
+     * @return
+     */
+    public static ExperimentalArgTypes getExperimentalArgTypes(String propId){
+    
+    	ExperimentalArgTypes argTypes = new ExperimentalArgTypes();
+    	
+    	PreparedStatement st;
 
+    	try {
+			st =WikidataToRDB.conn.prepareStatement(SELECT_EXPRIMENTAL_PROPERTY_ARG_TYPES);
+			st.setString(1,propId);
+		
+			ResultSet result =  st.executeQuery();
+		
+			if(result.next()){
+				
+				argTypes.setId(propId);
+				argTypes.setLabel(result.getString("label"));
+				argTypes.setDescription(result.getString("description"));
+				argTypes.setTypeArg1(result.getString("arg1"));
+				argTypes.setTypeArg2(result.getString("arg2"));
+				argTypes.setCategory(result.getString("category"));
+			}
+			
+			st.close();
+		}
+	    catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+
+    	return argTypes;
+    }
+
+    
+    /**
+     * Get experimental matching frame from a given property
+     * @param propId
+     * @return
+     */
+    public static List<String> getExperimentalFNAlignment(String propId,String method){
+        
+    	
+    	PreparedStatement st;
+    	List<String> matchingFrames = new ArrayList<String>();
+
+    	try {
+			st =WikidataToRDB.conn.prepareStatement(SELECT_EXPRIMENTAL_FN_ALIGNMENT_FOR_PROPERTY);
+			st.setString(2,propId);
+			st.setString(1,method);
+			
+			ResultSet result =  st.executeQuery();
+		
+			while(result.next()){
+				
+				String frameId = result.getString("frameId");
+				String arg1 = result.getString("arg1_role");
+				String arg2 = result.getString("arg2_role");
+				
+				String r = frameId+":"+arg1+"#"+arg2;
+				matchingFrames.add(r);
+			}
+			st.close();
+    	}
+    	
+    	 catch (SQLException e) {
+ 			
+ 			e.printStackTrace();
+ 		}
+    	return matchingFrames;
+	}
+    /**
+     * Get the list of ids for the properties that were categorized by Wikidata people
+     * @return
+     */
+    public static List<String> getOfficialProperties(PropertyOfficialCategory category){
+    	
+    	List<String> propIdList= new ArrayList<String>();
+    	PreparedStatement st;
+
+    	try {
+			st =WikidataToRDB.conn.prepareStatement(SELECT_OFFICIAL_CATEGORIZED_PROPERTIES);
+			st.setString(1, category.toString());
+			ResultSet result =  st.executeQuery();
+			while(result.next()){
+				propIdList.add(result.getString("prop_id"));
+				
+			}
+			
+			st.close();
+		}
+	    catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+    	return propIdList;
+    }
     /**
      * Get the IDs of the claims linked to a given entity, i.e., Q or P
      * @param entityId
@@ -340,12 +460,54 @@ public class JacksonDBAPI {
 
     
     
-    public static String getClaimRange(String itemId, String calimId){
+    public static List<String> getClaimRange(String itemId, String calimId){
+    
+    	List<String> propRange = new ArrayList<String>();
+    	PreparedStatement st;
 
+    	try {
+			st =WikidataToRDB.conn.prepareStatement(SELECT_CLAIM_RANGE);
+			st.setString(1, itemId);
+			st.setString(2, calimId);
+			
+			ResultSet result = st.executeQuery();
+			
+			while(result.next()){
+			
+				String range1 = result.getString("range");
+				String range2 = result.getString("range2");
+				
+				if(range1 != null){
+					propRange.add(range1);
+				}
+				else if(range2 != null){
+					propRange.add(range2);
+				}
+				
+				
+			}
+			st.close();
+			result.close();
+    	}
+	    catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    
+	    return propRange;
+	    
     	
-    	return null;
+
     }
-	  public static List<String> getClaimArguments(String calimId, String lang, int maxReturned){
+    
+    /**
+     * Get a list of items that participate in a given statement
+     * @param calimId
+     * @param lang
+     * @param maxReturned
+     * @return
+     */
+	  public static List<String> getClaimArguments(String calimId, int maxReturned){
 	      
 	    	List<String> argList = new ArrayList<String>();
 	    	PreparedStatement st;
@@ -359,8 +521,16 @@ public class JacksonDBAPI {
 		    		
 		    		String domainID = result.getString("domain");
 		    		String rangeID = result.getString("range");
+		    		String rangeIDSimpleValue = result.getString("range2");
 		    		
-		    		argList.add(domainID + "-" + rangeID);
+		    		if(rangeID!= null){
+		    		
+		    			argList.add(domainID + "-" + rangeID);
+		    		}
+		    		else if(rangeIDSimpleValue !=null){
+		    			argList.add(domainID + "-" + rangeIDSimpleValue);
+
+		    		}
 		    		
 		    	}
 		    	st.close();
@@ -371,6 +541,75 @@ public class JacksonDBAPI {
 	    	
 	    	
 	    	return argList;
+	    	
+	    }
+	  
+	  public static int getClaimArgumentsCountForRandom(String calimId, String lang){
+		  
+		  int total = 0;
+		  
+		  PreparedStatement st;
+			try {
+				st =WikidataToRDB.conn.prepareStatement(SELECT_CLAIM_ARGUMENTS_RANDOM_TOTAL);
+				st.setString(1, calimId);
+				ResultSet result = st.executeQuery();
+				if(result.next()){
+					
+					total = result.getInt(1);
+					
+				}
+				result.close();
+				st.close();
+				
+		  } catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return total;
+	  }
+	  public static String getClaimArgumentsRandom(String calimId, String lang){
+	      
+		    Random randomGenerator = new Random();
+
+		   	String arguments = null;
+	    	
+	    	PreparedStatement st;
+			try {
+				st =WikidataToRDB.conn.prepareStatement(SELECT_CLAIM_ARGUMENTS_RANDOM);
+				st.setString(1, calimId);
+				
+				int i = 1 ;
+			
+				int total = getClaimArgumentsCountForRandom(calimId, lang);
+				
+				int randomInt = 1+ (randomGenerator.nextInt(total));
+				
+			
+				
+				ResultSet result = st.executeQuery();
+		    	
+		    	while(i!=randomInt){
+		    		result.next();
+		    		i ++ ;
+		    	}
+		    	if(result.next()){	
+			    	String domainID = result.getString("domain");
+			    	String rangeID = result.getString("range");
+			    		
+			    	arguments = domainID + "-" + rangeID;
+		    	}
+		    	
+		    	
+		    	
+		    	result.close();
+		    	st.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    	
+	    	
+	    	return arguments;
 	    	
 	    }
 	    
@@ -622,11 +861,31 @@ public class JacksonDBAPI {
 	    }
 	public static void main(String[] args) throws FileNotFoundException {
 		
+		System.out.println(getExperimentalFNAlignment("P22","WN"));
+//		System.out.println(getClaimArgumentsRandom("P1534", "en"));
 		
-		Map<String, String> val = getEntityClaimsIdsAndValues("Q5");
-		for(String key:val.keySet()){
-			System.out.println( getItemLabel(key.split("#")[0], "en") + "\t" + getItemLabel(val.get(key), "en"));
-		}
+//		for (PropertyOfficialCategory type : PropertyOfficialCategory.values()) {
+//
+//			System.out.println(type);
+//			System.out.println(".................");
+//			List<String> propList = getOfficialProperties(type);
+//			for(String propId : propList){
+//				String propType = StructuralPropertyMapper.structuarlPropertiesMap.get("instanceOf");
+//				String res = getClaimRange(propId, propType);
+//				
+//				if(res!=null){
+//					System.out.println(getItemLabel(propId,"en") + " " + getItemLabel(propType, "en") + " " + getItemLabel(res,"en"));
+//				}
+//	
+//			}
+//			System.out.println(" ------------- ");
+//		}
+//		
+		
+//		Map<String, String> val = getEntityClaimsIdsAndValues("Q5");
+//		for(String key:val.keySet()){
+//			System.out.println( getItemLabel(key.split("#")[0], "en") + "\t" + getItemLabel(val.get(key), "en"));
+//		}
 //		List<String> catIds = getWikimediaCategoryItemIds();
 //		
 //		for(String catId : catIds){
