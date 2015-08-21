@@ -1,6 +1,7 @@
 package hms.wikidata.dbimport;
 
 
+import hms.wikidata.model.ClaimRealization;
 import hms.wikidata.model.ExperimentalArgTypes;
 import hms.wikidata.model.PropertyOfficialCategory;
 import hms.wikidata.model.StructuralPropertyMapper;
@@ -28,7 +29,12 @@ public class JacksonDBAPI {
     private static final String SELECT_CLAIM_RANGE = "SELECT entity_id as domain, wikidata_item_value as \"range\", simple_value as range2 FROM wikidata_20150420.wiki_claims where entity_id = ? and claim_id =?" ;
 
     private static final String SELECT_CLAIM_ARGUMENTS_RANDOM = "SELECT entity_id as domain, wikidata_item_value as \"range\" FROM wikidata_20150420.wiki_claims where claim_id =?   limit 100" ;
+    private static final String SELECT_CLAIM_REALIZATION = "SELECT entity_id as domain, wikidata_item_value as \"range\" FROM wikidata_20150420.wiki_claims where claim_id =? limit ?" ;
+
+    
     private static final String SELECT_CLAIM_ARGUMENTS_RANDOM_TOTAL = "select count(*) from (SELECT * FROM wikidata_20150420.wiki_claims where claim_id =? limit 1000) ff";
+    
+    
   
  
     private static final String SELECT_ENTITY_STATEMENTS = "select claim_id from wiki_claims where entity_id = ?" ;
@@ -91,10 +97,17 @@ public class JacksonDBAPI {
     private static final String SELECT_OFFICIAL_CATEGORIZED_PROPERTIES = "SELECT * FROM wikidata_20150420.wikidata_prop_official_category where category = ?";
     
     
-    private static final String SELECT_EXPRIMENTAL_PROPERTY_ARG_TYPES = "select * from arg_type_expriment where id = ?";
+    private static final String SELECT_EXPRIMENTAL_PROPERTY_ARG_TYPES = "SELECT t1.id, t1.arg1, t1.arg2, t2.arg1 as real_arg1, t2.arg2 as real_arg2 "
+    																  + "FROM arg_type_expriment_reduced t1, arg_type_from_realizations_expriment t2 "
+    																  + "where t1.id = t2.id  and t1.id = ?";
+    
+
+    
     
     private static final String SELECT_EXPRIMENTAL_FN_ALIGNMENT_FOR_PROPERTY = "SELECT * FROM wikidata_20150420.fn_wikidata where sim_method = ? and propId =? order by rank asc";
 
+    
+    private static final String SELECT_ENTITY_ID = "select * from item where type =?";
     
     /**
      * Get the argument types of a given property.
@@ -117,11 +130,17 @@ public class JacksonDBAPI {
 			if(result.next()){
 				
 				argTypes.setId(propId);
-				argTypes.setLabel(result.getString("label"));
-				argTypes.setDescription(result.getString("description"));
-				argTypes.setTypeArg1(result.getString("arg1"));
-				argTypes.setTypeArg2(result.getString("arg2"));
-				argTypes.setCategory(result.getString("category"));
+				argTypes.setLabel(getItemLabel(propId, "en"));
+				argTypes.setDescription(getItemDescription(propId,"en"));
+				
+				String arg1 = result.getString("arg1").replace("{", "").replace("}", "");
+				String arg2 = result.getString("arg2").replace("{", "").replace("}", "");
+				
+				String realArg1 = ", REAL=" + result.getString("real_arg1");
+				String realArg2 = ", REAL=" + result.getString("real_arg2");
+				
+				argTypes.setTypeArg1("{"+arg1+realArg1+"}");
+				argTypes.setTypeArg2("{"+arg2+realArg2+"}");
 			}
 			
 			st.close();
@@ -170,6 +189,38 @@ public class JacksonDBAPI {
  			e.printStackTrace();
  		}
     	return matchingFrames;
+	}
+    
+    /**
+     * Get a list of entities of a given type, i.e., property or item
+     * @param type
+     * @return
+     */
+    public static List<String> getEntityIdList(String type){
+        
+    	
+    	PreparedStatement st;
+    	List<String> entityIdList = new ArrayList<String>();
+
+    	try {
+			st =WikidataToRDB.conn.prepareStatement(SELECT_ENTITY_ID);
+			st.setString(1,type);
+			
+			
+			ResultSet result =  st.executeQuery();
+		
+			while(result.next()){
+				
+				entityIdList.add(result.getString("id"));
+			}
+			st.close();
+    	}
+    	
+    	 catch (SQLException e) {
+ 			
+ 			e.printStackTrace();
+ 		}
+    	return entityIdList;
 	}
     /**
      * Get the list of ids for the properties that were categorized by Wikidata people
@@ -567,6 +618,13 @@ public class JacksonDBAPI {
 			}
 			return total;
 	  }
+	  
+	  /**
+	   * Get a relation of specific property
+	   * @param calimId
+	   * @param lang
+	   * @return
+	   */
 	  public static String getClaimArgumentsRandom(String calimId, String lang){
 	      
 		    Random randomGenerator = new Random();
@@ -639,6 +697,46 @@ public class JacksonDBAPI {
 	    	return label;
 	    	
 	    }
+	    
+	    /**
+	     * Get all realization of a specific property
+	     * @param propId
+	     * @param max
+	     * @return
+	     */
+	public static List<ClaimRealization> getClaimRelatization(String propId, int max) {
+
+		List<ClaimRealization>  realizationList = new ArrayList<ClaimRealization>();
+
+		PreparedStatement st;
+		try {
+			st = WikidataToRDB.conn.prepareStatement(SELECT_CLAIM_REALIZATION);
+			st.setString(1, propId);
+			st.setInt(2, max);
+
+			ResultSet result = st.executeQuery();
+
+			while (result.next()) {
+				String domainID = result.getString("domain");
+				String rangeID = result.getString("range");
+				ClaimRealization cRealization = new ClaimRealization();
+				cRealization.setPropId(propId);
+				cRealization.setDomain(domainID);
+				cRealization.setRange(rangeID);
+				
+				realizationList.add(cRealization);
+			}
+
+			result.close();
+			st.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return realizationList;
+
+	}
 	    
 	    public static List<String> getItemAliases(String itemId, String lang){
 	        
@@ -860,8 +958,11 @@ public class JacksonDBAPI {
 	    	
 	    }
 	public static void main(String[] args) throws FileNotFoundException {
-		
-		System.out.println(getExperimentalFNAlignment("P22","WN"));
+		System.out.println(getExperimentalArgTypes("P1000"));
+
+//		System.out.println(getExperimentalFNAlignment("P22","WN"));
+//		List<ClaimRealization> r = getClaimRelatization("P108",1000);
+//		System.out.println(r.size());
 //		System.out.println(getClaimArgumentsRandom("P1534", "en"));
 		
 //		for (PropertyOfficialCategory type : PropertyOfficialCategory.values()) {
